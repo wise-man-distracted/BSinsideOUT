@@ -1,0 +1,23 @@
+@use '../custom' as *;
+
+header {
+    color: black;
+    background-color: blanchedalmond;
+}
+
+button {
+    font-family: Montserrat, sans-serif;
+}
+
+header>a {
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 2.25rem;
+}
+
+header>nav>ul {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+}

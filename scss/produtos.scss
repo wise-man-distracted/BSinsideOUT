@@ -1,0 +1,79 @@
+@use "custom";
+
+body {
+    background-color: #27282b;
+    color: aliceblue;
+    font-family: Roboto, sans-serif;
+  }
+  
+  header {
+    color: black;
+    background-color: blanchedalmond;
+  }
+  
+  button {
+    font-family: Montserrat, sans-serif;
+  }
+  
+  header > a {
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 2.25rem;
+  }
+  
+  header > nav > ul {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  .carousel-item {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 470px;
+  }
+  
+  #carticon {
+    height: 65px;
+    width: 65px;
+    padding-top: 12px;
+    padding-left: 10px;
+  }
+  
+  .carousel {
+    font-family: "MedievalSharp", cursive;
+  }
+  
+  .container-divisao {
+    width: 100%;
+    margin: 0px;
+    /* margin-top: 5px; */
+    height: 80px;
+    /* margin-bottom: 5px; */
+    background-color: black;
+    padding: 3px;
+  }
+  
+  body {
+    background-color: #27282b;
+  }
+  
+  #iframe {
+    width: 800px;
+  }
+  
+  /* REVIEWS */
+  
+  .user {
+    width: 250px;
+    height: 150px;
+  }

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome para icons-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Fontes: Roboto e Montserrat -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@100;300;400;500;700&display=swap");
+    </style>
+    <!-- font:medieval para os slides -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Ropa+Sans&family=Texturina:wght@100&display=swap");
+    </style>
+
+    <title>InsideOut</title>
+    <link rel="stylesheet" href="/assets/css/produtos.css" />
+  </head>
+  <body>
+    <header
+      class="container drop-shadow w-88pc my-5 mx-auto flex gap-7 justify-between py-3 px-4"
+    >
+      <a id="logo" href="/index.html">
+        inside<strong style="color: #84c9fb; font-weight: 700">OUT</strong>
+      </a>
+      <a href="" class="flex lg:hidden items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </a>
+      <nav class="lg:flex hidden items-center">
+        <ul class="flex gap-7">
+          <li>
+            <a href="" class="rounded-lg primary-button py-3 px-4"
+              >Meu Carrinho</a
+            >
+          </li>
+          <li><a href="">Loja</a></li>
+          <li><a href="">Promoções</a></li>
+          <li><a href="">Categorias</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SLIDES CARROUSEL -->
+    <section>
+      <div class="slides">
+        <div class="row justify-content-center">
+          <div class="col-md-12 px-4">
+            <div
+              id="carouselExampleInterval"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img
+                    src="/public/slide-winter.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h2 class="display-6 text-start text-light">
+                      Encountering Winter's Wrath
+                    </h2>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="public/slide-forest.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h2 class="display-6 text-start text-light">
+                      Character Secrets
+                    </h2>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="/public/Webp.net-resizeimage.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h2 class="display-6 text-start text-light">
+                      More Monsters Than Ever
+                    </h2>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIÇÃO DO PRODUTO -->
+
+    <section id="intro">
+      <div class="container-lg py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-5 pb-3 text-light">Descrição do produto</div>
+              <div class="fs-4 py-1 text-light">
+                SOME SECRETS ARE WORTH DYING FOR
+              </div>
+              <div class="display-6 fs-6 py-1 text-light">
+                Feel the cold touch of death in this adventure for the world’s
+                greatest roleplaying game.
+              </div>
+            </h1>
+            <p class="my-4 text-light fs-6">
+              Beneath the unyielding night sky, you stand before a towering
+              glacier and recite an ancient rhyme, causing a crack to form in
+              the great wall of ice. Beyond this yawning fissure, the Caves of
+              Hunger await. And past this icy dungeon is a secret so old and
+              terrifying that few dare speak of it. The mad wizards of the
+              Arcane Brotherhood long to possess that which the god of winter’s
+              wrath has so coldly preserved—as do you! What fantastic secrets
+              and treasures are entombed in the sunless heart of the glacier,
+              and what will their discovery mean for the denizens of Icewind
+              Dale?
+            </p>
+            <a href="#pricing" class="btn btn-outline-light btn-lg text-center"
+              >Reviews and More</a
+            >
+          </div>
+
+          <!-- CARD DO PRODUTO -->
+
+          <div class="col-8 col-lg-4 col-xl-3 mt-3">
+            <div class="card border-5 bg-dark">
+              <div class="card-body text-center py-5">
+                <h4 class="h4 cards-title text-light">
+                  Livro Icewind Dale: Rime of the Frostmaiden
+                </h4>
+                <p class="card-subtitle text-muted pt-3">D&D Adventure Book</p>
+                <p class="display-5 my-4 text-warning fw-bold">R$ 90,00</p>
+                <p class="card-text mx-5 text-warning d-none d-lg-block">
+                  À vista no PIX com até <strong>10% OFF</strong>
+                </p>
+                <a href="#" class="btn btn-outline-light btn-lg mt-3"
+                  >BUY NOW</a
+                >
+
+                <a href="#" class="btn btn-outline-light btn-md border-0">
+                  <img src="/public/shopping-cart (1).png" alt="" id="carticon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-xl py-4">
+        <div class="row justify-content-center align-items-center text-center">
+          <h1>
+            <div class="display-5 pb-3 text-light">Watch the Introduction</div>
+
+            <div class="display-6 fs-6 py-1 text-muted">
+              Feel the cold touch of <strong>death</strong> in this adventure.
+            </div>
+          </h1>
+        </div>
+      </div>
+
+      <!-- DIVISAO-DESCRIÇÃO -->
+
+      <div class="container-divisao align-items-center text-center mb-3">
+        <div class="fs-3 text-muted text-center">
+          <small
+            >Icewind Dale | Editora: Wizards of the Coast | Idioma: Inglês | 319
+            pages</small
+          >
+        </div>
+      </div>
+
+      <!-- VIDEO DO PRODUTO -->
+      <div class="container py-4">
+        <center>
+          <iframe
+            class="container"
+            id="iframe"
+            width="400"
+            height="315"
+            src="https://www.youtube.com/embed/iGWx5h5q7MY?autoplay=1 "
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </center>
+      </div>
+    </section>
+
+    <section></section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
