@@ -8,7 +8,7 @@
 // THEME COLORS
 $ruby:     #700812;
 $orange:  #fd7e14;
-$shasadow:  #2c2511;
+$dark-silver:  #2c2511;
 
 
 // GRAY, WHITE, BLACK
@@ -45,7 +45,11 @@ $utilities: map-merge(
       (
         values: map-merge(
           map-get(map-get($utilities, "width"), "values"),
-          (90: 90%),
+          (
+            90: 90%,
+            95: 95%,
+            200: 200%,
+          ),
         ),
       ),
     ),

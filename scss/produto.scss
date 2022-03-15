@@ -1,0 +1,57 @@
+@use "custom";
+
+// IMPORT THE COMPONENTS 
+@use 'components/buttons';
+@use 'components/typography';
+
+
+// IMPORT THE SECTIONS 
+@use 'sections/navbar';
+@use 'sections/footer';
+
+.carousel-item {
+  height: 300px;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 470px;
+}
+
+#carticon {
+  height: 65px;
+  width: 65px;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+
+.carousel {
+  font-family: "MedievalSharp", cursive;
+}
+
+.container-divisao {
+  width: 100%;
+  margin: 0px;
+  /* margin-top: 5px; */
+  height: 80px;
+  /* margin-bottom: 5px; */
+  background-color: black;
+  padding: 3px;
+}
+
+#iframe {
+  width: 800px;
+}
+
+/* REVIEWS */
+
+.user {
+  width: 250px;
+  height: 150px;
+}

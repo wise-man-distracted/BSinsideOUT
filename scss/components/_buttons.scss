@@ -1,1 +1,13 @@
 @use '../custom' as *;
+
+$primary: #84C9FB;
+
+.primary-button {
+    background-color: $primary;
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+button {
+    font-family: Montserrat, sans-serif;
+  }

@@ -8,21 +8,10 @@
 // IMPORT THE SECTIONS 
 @use 'sections/navbar';
 @use 'sections/footer';
+@use 'sections/main-hero';
 
 $primary: #84C9FB;
 
-body {
-    background-color: #27282B;
-    color: aliceblue;
-    font-family: Roboto, sans-serif;
-}
-
-
-
-.primary-button {
-    background-color: $primary;
-    color: white;
-}
 
 main>section {
     background-color: rgb(39, 40, 43);
@@ -74,37 +63,3 @@ div>p {
 #opaque-wrapper {
     background-color:rgba(0,0,0,.5);
 }
-
-/* Compras */
-.carousel-item {
-    height: 470px;
-  }
-  
-  .carousel-item img {
-    position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 470px;
-  }
-  
-  #carticon {
-    height: 65px;
-    width: 65px;
-    padding-top: 12px;
-    padding-left: 10px;
-  }
-  
-  .carousel {
-    font-family: "MedievalSharp", cursive;
-  }
-  
-  .container-divisao {
-    width: 100%;
-    margin: 0px;
-    /* margin-top: 5px; */
-    height: 80px;
-    /* margin-bottom: 5px; */
-    background-color: black;
-    padding: 3px;
-  }

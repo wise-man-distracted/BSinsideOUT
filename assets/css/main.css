@@ -11650,6 +11650,14 @@ textarea.form-control-lg {
   width: 90% !important;
 }
 
+.w-95 {
+  width: 95% !important;
+}
+
+.w-200 {
+  width: 200% !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -15967,81 +15975,97 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: #27282b;
-  color: aliceblue;
-  font-family: Roboto, sans-serif;
-}
-
-header {
-  color: black;
-  background-color: blanchedalmond;
+.primary-button {
+  background-color: #84C9FB;
+  font-family: Montserrat, sans-serif;
+  color: white;
 }
 
 button {
   font-family: Montserrat, sans-serif;
 }
 
-header > a {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #27282b;
+  color: aliceblue;
+  font-family: Roboto, sans-serif;
+}
+
+header.nav-bar {
+  color: black;
+  background-color: blanchedalmond;
+}
+header.nav-bar > a {
   font-weight: 100;
   color: rgba(0, 0, 0, 0.25);
   font-size: 2.25rem;
 }
-
-header > nav > ul {
+header.nav-bar > nav > ul {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
-.carousel-item {
-  height: 300px;
-  width: 100%;
-}
-
-.carousel-item img {
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 470px;
-}
-
-#carticon {
-  height: 65px;
-  width: 65px;
-  padding-top: 12px;
-  padding-left: 10px;
-}
-
-.carousel {
-  font-family: "MedievalSharp", cursive;
-}
-
-.container-divisao {
-  width: 100%;
-  margin: 0px;
-  /* margin-top: 5px; */
-  height: 80px;
-  /* margin-bottom: 5px; */
-  background-color: black;
-  padding: 3px;
-}
-
-body {
+main > section {
   background-color: #27282b;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-#iframe {
-  width: 800px;
+article > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 1.3rem;
 }
 
-/* REVIEWS */
-.user {
-  width: 250px;
-  height: 150px;
+article > h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 1.3rem;
 }
 
-/*# sourceMappingURL=produtos.css.map */
+/* Categorias */
+section > div > div > a {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  z-index: 10;
+}
+
+div > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 0rem;
+}
+
+article > p {
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+}
+
+div > p {
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 0;
+  overflow: wrap;
+}
+
+#opaque-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=main.css.map */

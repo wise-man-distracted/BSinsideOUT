@@ -11650,6 +11650,14 @@ textarea.form-control-lg {
   width: 90% !important;
 }
 
+.w-95 {
+  width: 95% !important;
+}
+
+.w-200 {
+  width: 200% !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -15967,6 +15975,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.primary-button {
+  background-color: #84C9FB;
+  font-family: Montserrat, sans-serif;
+  color: white;
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -15975,97 +15993,38 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-header {
+body {
+  background-color: #27282b;
+  color: aliceblue;
+  font-family: Roboto, sans-serif;
+}
+
+header.nav-bar {
   color: black;
   background-color: blanchedalmond;
 }
-
-button {
-  font-family: Montserrat, sans-serif;
-}
-
-header > a {
+header.nav-bar > a {
   font-weight: 100;
   color: rgba(0, 0, 0, 0.25);
   font-size: 2.25rem;
 }
-
-header > nav > ul {
+header.nav-bar > nav > ul {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
-body {
-  background-color: #27282B;
-  color: aliceblue;
-  font-family: Roboto, sans-serif;
-}
-
-.primary-button {
-  background-color: #84C9FB;
-  color: white;
-}
-
-main > section {
-  background-color: #27282b;
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-article > h1 {
-  font-size: 3rem;
-  font-weight: 500;
-  line-height: 1;
-  padding-bottom: 1.3rem;
-}
-
-article > h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1;
-  padding-bottom: 1.3rem;
-}
-
-/* Categorias */
-section > div > div > a {
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 1;
-  z-index: 10;
-}
-
-div > h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1;
-  padding-bottom: 0rem;
-}
-
-article > p {
-  font-size: 1rem;
-  font-family: Montserrat, sans-serif;
-}
-
-div > p {
-  font-size: 1rem;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  line-height: 0;
-  overflow: wrap;
-}
-
-#opaque-wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Compras */
 .carousel-item {
-  height: 470px;
+  height: 300px;
+  width: 100%;
 }
 
 .carousel-item img {
+  width: 100%;
+  margin: auto;
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -16094,4 +16053,14 @@ div > p {
   padding: 3px;
 }
 
-/*# sourceMappingURL=style.css.map */
+#iframe {
+  width: 800px;
+}
+
+/* REVIEWS */
+.user {
+  width: 250px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=produto.css.map */
