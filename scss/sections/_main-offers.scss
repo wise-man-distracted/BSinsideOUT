@@ -1,1 +1,43 @@
 @use '../custom' as *;
+
+section.offers-sec {
+    gap: 1rem; /* 16px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+    padding-top: 0.75rem; /* 12px */
+    padding-bottom: 0.75rem; /* 12px */
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
+    width: 96%;
+    >div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 1.25rem; /* 20px */
+        gap: 1.25rem; /* 20px */
+        width: 100%;
+        >div {
+            background-size: cover;
+            border-radius: 0.25rem; /* 4px */
+            height: 12rem; /* 192px */
+            width: 100%
+        }
+        >div:nth-last-of-type(1) {
+            background-image: url(../../public/offer1.jpg);
+        }
+        >div:nth-last-of-type(2) {
+            background-image: url(../../public/offer2.jpg);
+        }
+        >div:nth-last-of-type(3) {
+            background-image: url(../../public/offer3.jpg);
+        }
+        >div:nth-last-of-type(4) {
+            background-image: url(../../public/offer4.jpg);
+        }
+        >div:nth-last-of-type(5) {
+            background-image: url(../../public/offer5.jpg);
+        }
+        >div:nth-last-of-type(6) {
+            background-image: url(../../public/offer6.jpg);
+        }
+    }
+}
