@@ -16035,6 +16035,17 @@ section article > p {
 header.nav-bar {
   color: black;
   background-color: blanchedalmond;
+  width: 93%;
+  margin-top: 1.25rem;
+  /* 20px */
+  margin-bottom: 1.25rem;
+  /* 20px */
+  padding-left: 1rem;
+  /* 16px */
+  padding-right: 1rem;
+  /* 16px */
+  gap: 1.75rem;
+  /* 28px */
 }
 header.nav-bar > a {
   font-weight: 100;
