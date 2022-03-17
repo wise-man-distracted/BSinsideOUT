@@ -16104,4 +16104,13 @@ header.nav-bar > nav > ul {
   height: 150px;
 }
 
+.card-img-top {
+  height: 150px;
+}
+
+.card {
+  text-align: center;
+  background-color: black;
+}
+
 /*# sourceMappingURL=produto.css.map */

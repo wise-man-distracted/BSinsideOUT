@@ -1,13 +1,12 @@
 @use "custom";
 
-// IMPORT THE COMPONENTS 
-@use 'components/buttons';
-@use 'components/typography';
+// IMPORT THE COMPONENTS
+@use "components/buttons";
+@use "components/typography";
 
-
-// IMPORT THE SECTIONS 
-@use 'sections/navbar';
-@use 'sections/footer';
+// IMPORT THE SECTIONS
+@use "sections/navbar";
+@use "sections/footer";
 
 .carousel-item {
   height: 300px;
@@ -54,4 +53,15 @@
 .user {
   width: 250px;
   height: 150px;
+}
+
+.card-img-top {
+  height: 150px;
+}
+
+.card {
+  // width: 500px;
+
+  text-align: center;
+  background-color: black;
 }
