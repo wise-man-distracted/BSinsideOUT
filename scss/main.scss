@@ -20,22 +20,9 @@ section {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Categorias */
-section>div>div>a {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1;
-    z-index: 10;
-}
+
 
 section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-    padding-bottom: 0rem;
-}
-
-section>div>article>h2 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;
@@ -48,8 +35,8 @@ div>p {
     font-family: Roboto, sans-serif;
     font-weight: 700;
     line-height: 0;
-    overflow: wrap;
 }
+
 
 #opaque-wrapper {
     background-color:rgba(0,0,0,.5);

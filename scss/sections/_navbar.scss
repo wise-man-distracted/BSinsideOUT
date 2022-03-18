@@ -18,6 +18,11 @@ header.nav-bar {
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         font-size: 1rem;
+        a {
+            font-weight: 100;
+            color: rgba(0, 0, 0, 0.75);
+            font-size: 1rem;
+        }
     
     }
 }
