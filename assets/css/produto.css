@@ -16057,8 +16057,8 @@ header.nav-bar > nav > ul {
   font-size: 1rem;
 }
 header.nav-bar > nav > ul a {
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.75);
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.999);
   font-size: 1rem;
 }
 

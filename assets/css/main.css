@@ -16057,8 +16057,8 @@ header.nav-bar > nav > ul {
   font-size: 1rem;
 }
 header.nav-bar > nav > ul a {
-  font-weight: 100;
-  color: rgba(0, 0, 0, 0.75);
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.999);
   font-size: 1rem;
 }
 
@@ -16258,23 +16258,27 @@ section.offers-sec > div:first-of-type > div {
   /* 192px */
   width: 100%;
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(1) {
+section.offers-sec > div:first-of-type > div:nth-of-type(1) {
   background-image: url(../../public/offer1.jpg);
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(2) {
+section.offers-sec > div:first-of-type > div:nth-of-type(2) {
   background-image: url(../../public/offer2.jpg);
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(3) {
+section.offers-sec > div:first-of-type > div:nth-of-type(3) {
   background-image: url(../../public/offer3.jpg);
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(4) {
+section.offers-sec > div:first-of-type > div:nth-of-type(4) {
   background-image: url(../../public/offer4.jpg);
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(5) {
+section.offers-sec > div:first-of-type > div:nth-of-type(5) {
   background-image: url(../../public/offer5.jpg);
 }
-section.offers-sec > div:first-of-type > div:nth-last-of-type(6) {
+section.offers-sec > div:first-of-type > div:nth-of-type(6) {
   background-image: url(../../public/offer6.jpg);
+}
+
+#opaque-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section {
@@ -16287,17 +16291,6 @@ section h2 {
   font-weight: 700;
   line-height: 1;
   padding-bottom: 0rem;
-}
-
-div > p {
-  font-size: 1rem;
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  line-height: 0;
-}
-
-#opaque-wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=main.css.map */
