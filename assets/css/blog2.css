@@ -1,0 +1,56 @@
+header.nav-bar {
+    color: black;
+    background-color: blanchedalmond;
+    width: 93%;
+    margin-top: 1.25rem;
+    /* 20px /
+    margin-bottom: 1.25rem;
+    / 20px /
+    padding-left: 1rem;
+    / 16px /
+    padding-right: 1rem;
+    / 16px /
+    gap: 1.75rem;
+    / 28px */
+  }
+  header.nav-bar > a {
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 2.25rem;
+  }
+  header.nav-bar > nav > ul {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  button {
+    font-family: Montserrat, sans-serif;
+    border-radius: 0.5rem;
+    /* 8px /
+    padding-top: 0.5rem;
+    / 8px /
+    padding-bottom: 0.5rem;
+    / 8px /
+    padding-left: 0.75rem;
+    / 12px /
+    padding-right: 0.75rem;
+    / 12px */
+    background: none;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .primary-button {
+    background-color: #84C9FB;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    border: none;
+  }
