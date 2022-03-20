@@ -16051,10 +16051,15 @@ header.nav-bar > a {
   color: rgba(0, 0, 0, 0.25);
   font-size: 2.25rem;
 }
-header.nav-bar > nav > ul {
+header.nav-bar > nav {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+@media (max-width: 900px) {
+  header.nav-bar > nav {
+    display: none !important;
+  }
 }
 header.nav-bar > nav > ul a {
   font-weight: 200;

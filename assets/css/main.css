@@ -16051,10 +16051,15 @@ header.nav-bar > a {
   color: rgba(0, 0, 0, 0.25);
   font-size: 2.25rem;
 }
-header.nav-bar > nav > ul {
+header.nav-bar > nav {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+@media (max-width: 900px) {
+  header.nav-bar > nav {
+    display: none !important;
+  }
 }
 header.nav-bar > nav > ul a {
   font-weight: 200;
@@ -16104,7 +16109,14 @@ section.hero-sec > div:first-of-type {
   height: 100%;
   width: 90%;
   margin-top: 2.5rem;
-  /* flex-basis: 100%; */
+}
+@media (max-width: 900px) {
+  section.hero-sec > div:first-of-type {
+    text-align: center !important;
+  }
+  section.hero-sec > div:first-of-type div {
+    justify-content: center !important;
+  }
 }
 section.hero-sec > div:last-of-type {
   background-image: url(../../public/gio.jpg);
@@ -16118,6 +16130,11 @@ section.hero-sec > div:last-of-type {
   margin-bottom: 1.25rem;
   /* 20px */
   flex-basis: 70%;
+}
+@media (max-width: 900px) {
+  section.hero-sec > div:last-of-type {
+    display: none !important;
+  }
 }
 section.hero-sec article > h1 {
   font-size: 3rem;
@@ -16197,6 +16214,16 @@ section.categories-sec > div:first-of-type {
   /* 20px */
   gap: 1.25rem;
   /* 20px */
+}
+@media (max-width: 900px) {
+  section.categories-sec > div:first-of-type {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 500px) {
+  section.categories-sec > div:first-of-type {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 section.categories-sec > div:first-of-type > div {
   overflow: hidden;
