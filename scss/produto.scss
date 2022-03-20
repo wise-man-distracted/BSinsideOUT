@@ -8,24 +8,42 @@
 @use "sections/navbar";
 @use "sections/footer";
 
+$primary: #84c9fb;
+
+.primary-button {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+  border-radius: 0.5rem; /* 8px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  background: none;
+  color: white;
+}
+
 .carousel-item {
   height: 350px;
   width: 100%;
 }
 
-.container-fluid.shadow.align-items-center.justify-content-between.d-flex.py-3.my-3.mx-auto.w-95 {
+.container-bg {
   background: #323336 !important;
 }
-.container-fluid.shadow.align-items-center.justify-content-between.py-3.my-3.mx-auto.w-95 {
-  background: #323336 !important;
+.card-bg {
+  background: #27282b !important;
 }
 
 #main {
   background: #27282b !important;
 }
-#slides {
-  background: #323336 !important;
-}
+
 .container-slides {
   background: #323336 !important;
 }
@@ -37,6 +55,10 @@
   top: 0;
   left: 0;
   min-height: 470px;
+}
+
+#descricao {
+  text-align: justify;
 }
 
 #carticon {
