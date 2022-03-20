@@ -16094,12 +16094,32 @@ footer.footer > div:last-of-type > p {
 }
 
 .carousel-item {
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 
+.container-fluid.shadow.align-items-center.justify-content-between.d-flex.py-3.my-3.mx-auto.w-95 {
+  background: #323336 !important;
+}
+
+.container-fluid.shadow.align-items-center.justify-content-between.py-3.my-3.mx-auto.w-95 {
+  background: #323336 !important;
+}
+
+#main {
+  background: #27282b !important;
+}
+
+#slides {
+  background: #323336 !important;
+}
+
+.container-slides {
+  background: #323336 !important;
+}
+
 .carousel-item img {
-  width: 100%;
+  width: 80%;
   margin: auto;
   position: absolute;
   object-fit: cover;
@@ -16127,6 +16147,10 @@ footer.footer > div:last-of-type > p {
   /* margin-bottom: 5px; */
   background-color: black;
   padding: 3px;
+}
+
+#iframe {
+  width: 600px;
 }
 
 /* REVIEWS */
