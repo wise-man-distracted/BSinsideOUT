@@ -1,0 +1,9 @@
+// IMPORT THE COMPONENTS
+@use "components/buttons";
+@use "components/typography";
+
+// IMPORT THE SECTIONS
+@use "sections/navbar";
+@use "sections/footer";
+
+$primary: #84c9fb;
