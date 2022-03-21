@@ -9,7 +9,12 @@ section.hero-sec {
         height: 100%;
         width: 90%;
         margin-top: 2.5rem;
-        /* flex-basis: 100%; */
+       @media (max-width: 900px) {
+           text-align: center !important;
+           div {
+            justify-content: center !important;
+        }
+       }
     }
     >div:last-of-type {
         background-image: url(../../public/gio.jpg);
@@ -20,6 +25,9 @@ section.hero-sec {
         margin-top: 1.25rem; /* 20px */
         margin-bottom: 1.25rem; /* 20px */
         flex-basis: 70%;
+        @media (max-width: 900px) {
+            display: none !important;
+        }
     }
     article>h1 {
         font-size: 3rem;
