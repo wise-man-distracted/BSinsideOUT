@@ -16,7 +16,7 @@
     </style>
 
     <title>insideOUT - Produto</title>
-    <link rel="stylesheet" href="/assets/css/produto.css" />
+    <link rel="stylesheet" href="/assets/css/cadastro.css" />
   </head>
   <body>
     <header
@@ -30,7 +30,7 @@
           <li>
             <button href="" class="rounded-pill primary-button py-2 px-3">
               Meu Carrinho
-            </button>
+            <!-- </button> -->
           </li>
           <li><a href="">Loja</a></li>
           <li><a href="">Promoções</a></li>
@@ -39,23 +39,24 @@
         </ul>
       </nav>
     </header>
-    <section id="login">
+    <section class="cadastro-container">
       <div class="title">
         <h1>Já é cadastrado na InsideOUT?</h1>
-        <h2>Entre com seu login</h2>
+        <h2>Entre com seu login.</h2>
         <h3>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          reprehenderit optio magnam possimus alias sequi?
+          reprehenderit optio magnam possimus alias sequi. 
         
         <h3/>
       </div>
       <div class="cadastro-form">
         <form>
-          <input type="email" placeholder="E-mail" />
-          <input type="password" placeholder="Senha" />
-          <input type="radio" id="sim" value="sim" for="sim" /> Lembrar senha
-
-          <button type="submit">Entrar</button>
+          <input class="input-login" type="email" placeholder="E-mail" />
+          <input class="input-login" type="password" placeholder="Senha" />
+          <div class="checkbox">
+            <label><input type="checkbox" /> Lembrar a senha</label>          
+        </div>
+          <button class="button-entrar" type="submit">Entrar</button>
           <p>          
               Ao clicar em “Entrar”, você está concordando com os Termos de
               Uso.
@@ -131,7 +132,7 @@
           <label for="text">CVV</label>
           <input type="text">
         </div>
-        <button type="submit"> Cadastrar</button>
+        <button class= "primary-button" type="submit"> Cadastrar</button>
       </div>
   
       </form>

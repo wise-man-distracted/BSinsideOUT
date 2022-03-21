@@ -1,14 +1,87 @@
-// * {
-//   color: white;
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
+@use "custom";
 
-// #cadastro {
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   margin: 3rem;
-//   align-items: center;
-// }
+// IMPORT THE COMPONENTS
+@use "components/buttons";
+@use "components/typography";
+
+// IMPORT THE SECTIONS
+@use "sections/navbar";
+@use "sections/footer";
+
+$primary: #84c9fb;
+
+.primary-button {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border-radius: 2px;
+  width: 100%;
+  // margin-top: 30px;
+}
+
+.cadastro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #323336;
+  padding: 10%;
+  gap: 10%;
+}
+
+.cadastro-container h1 {
+  font-size: 47px;
+}
+
+.cadastro-container h3 {
+  padding-top: 30px;
+  display: flex;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  line-height: 20px;
+}
+
+.cadastro-form {
+  width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #47484b;
+  padding: 1vw;
+}
+
+.input-login {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  display: flex;
+  box-sizing: border-box;
+  border: none;
+}
+
+.lembrar-senha {
+  margin-top: 30px;
+}
+
+.cadastro-form p {
+  margin-top: 30px;
+  display: flex;
+  font-size: 8px;
+  color: white;
+  opacity: 0.6;
+}
+
+.button-entrar {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 30px;
+}
