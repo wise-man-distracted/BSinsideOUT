@@ -14,9 +14,7 @@ $primary: #84c9fb;
   background-color: $primary;
   font-family: Montserrat, sans-serif;
   color: white;
-  border-radius: 2px;
-  width: 100%;
-  // margin-top: 30px;
+  border: none;
 }
 
 .cadastro-container {
@@ -45,12 +43,10 @@ $primary: #84c9fb;
 }
 
 .cadastro-form {
-  width: 25%;
-  box-sizing: border-box;
+  width: 400px;
+  // box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: #47484b;
   padding: 1vw;
 }
@@ -84,4 +80,70 @@ $primary: #84c9fb;
   border-radius: 2px;
   width: 100%;
   margin-top: 30px;
+}
+
+// FORM CADASTRO
+
+.btn-cadastrar {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background-color: #323336;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form {
+  // background-color: aqua;
+  width: 100%;
+}
+
+.wrapper .form .input-field {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.wrapper .form .input-field label {
+  width: 200px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .input-field input,
+.wrapper .form .input-field .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.wrapper .form .input-field .textarea {
+  resize: none;
+  height: 125px;
+}
+
+.wrapper .form .input-field .custom-select {
+  position: relative;
+  width: 100%;
+  outline: none;
 }

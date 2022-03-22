@@ -64,81 +64,65 @@
         </form>
       </div>
     </section>
-    <section id="cadastro">
-      <form id="form">
-        <h4>Informações Pessoais</h4>
-      <div>
-        <label for="Nome">Nome Completo</label>
-        <input type="text">      
-        <label for="Email">E-mail</label>
-        <input type="email">
-      </div>
-      <div>
-        <label for="Nome do usuário">Nome do usuário</label>
-        <input type="text" placeholder="@ exemplo_335">
-        <label for="image">Foto</label>
-        <input type="image" placeholder="Escolher foto">
-      </div>
-      <div>
-        <label for="text">Endereço Completo</label>        
-        <input type="text" placeholder="Rua da Bhia, 305">
-      </div>
-        <label for="text">Complemento  <small>(Opcional)</small></label>
-        <input type="text" placeholder="Ap. 205">
-        <div>  
-          <div>
-            <label for="país">País</label>
-            <select name="país" id="país">
-              <option value="">Selecione</option>
-            </select>
-          </div>
-            <label for="estado">Estado</label>
-            <select name="estado" id="estado">
-              <option value="">Selecione</option>
-            <div>
-          </div>
-              <div>
-            </select>
-          <div>
-            <label for="cep">CEP</label>
-            <select name="cep" id="cep">
-              <option value="">Selecione</option>
-            </select>
-          </div>
-        </div> 
 
-        <!-- DROPDOWN AQUI PAIS-CIDADE E CEP -->
-      <div>
-        <input type="checkbox">O endereço de entrega é o mesmo endereço de cobrança
-      </div>
-      <div>  
-        <input type="checkbox">Salvar essa informação para as próximas compras
-      </div>
-      <h4>Informações do Pagamento</h4>
-      <div>
-        <input type="radio">Crédito
-        <input type="radio">Débito
-        <input type="radio">Paypal
-      </div>
-      <div>
-        <label for="">Nome do cartão</label>
-        <input type="text">
-        <p>Nome como está escrito no cartão</p>
-        <label for="">Número do cartão</label>
-        <input type="text">
-        <div>
-          <label for="date">Data de Vencimento</label>
-          <input type="date">
-          <label for="text">CVV</label>
-          <input type="text">
+    <div class="wrapper">
+      <div class="title">Cadastre-se na InsideOUT</div>
+      <div class="form">
+        <div class="input-field">
+          <label>Nome Completo</label>
+          <input type="text" class="input">
         </div>
-        <button class= "primary-button" type="submit"> Cadastrar</button>
+        <div class="input-field">
+          <label>Nome de Usuário</label>
+          <input type="text" class="input" placeholder="@exemplo.335">
+        </div>
+        <div class="input-field">
+          <label>Senha</label>
+          <input type="password" class="input">
+        </div>
+        <div class="input-field">
+          <label>Confirme a Senha</label>
+          <input type="password" class="input">
+        </div>
+        <div class="input-field">
+          <label>Gênero</label>
+          <div class="custom-select">
+            <select>
+              <option value="default" default  >Selecionar</option>
+              <option value="">Masculino</option>
+              <option value="">Feminino</option>
+              <option value="">Outros</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-field">
+          <label>Email</label>
+          <input type="email" class="input">
+        </div>
+        <div class="input-field">
+          <label>Endereço Completo</label>
+          <textarea class="textarea" placeholder="Avenida Bahia, 304, ap 502, Bloco A"></textarea>
+        </div>
+        <div class="input-field terms"></div>
+        <label class="check">
+          <input type="checkbox"> Concordo com os Termos e Condições          
+        </label>  
+        <label class="check">
+          <input type="checkbox"> Aceito receber notícias e promoções da InsideOUT      
+        </label>  
+        
+        <button class="btn-cadastrar">Criar seu cadastro</button>              
       </div>
-  
-      </form>
-    </section>
+      
+    </div>
 
-    <!-- <footer class="footer">
+
+
+    
+    
+    
+
+    <footer class="footer">
       <div>
         <a href="">Sobre nós</a>
         <a href="">Trabalhe conosco</a>
@@ -152,9 +136,9 @@
       <div>
         <p>© 2021-2022 insideOUT, Todos Direitos Reservados</p>
       </div>
-    </footer> -->
+    </footer>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
