@@ -16117,6 +16117,13 @@ footer.footer > div:last-of-type > p {
   gap: 10%;
 }
 
+.title {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+}
+
 .cadastro-container h1 {
   font-size: 47px;
 }
@@ -16131,20 +16138,21 @@ footer.footer > div:last-of-type > p {
 }
 
 .cadastro-form {
-  width: 400px;
-  display: flex;
-  justify-content: center;
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
   background-color: #47484b;
-  padding: 1vw;
 }
 
 .input-login {
   width: 100%;
-  padding: 12px 15px;
-  margin: 15px 0;
-  display: flex;
-  box-sizing: border-box;
-  border: none;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
 }
 
 .lembrar-senha {
@@ -16154,9 +16162,13 @@ footer.footer > div:last-of-type > p {
 .cadastro-form p {
   margin-top: 30px;
   display: flex;
-  font-size: 8px;
+  font-size: 12px;
   color: white;
   opacity: 0.6;
+}
+
+.cadastro-form a {
+  color: white;
 }
 
 .button-entrar {
@@ -16165,7 +16177,7 @@ footer.footer > div:last-of-type > p {
   color: white;
   border: none;
   border-radius: 2px;
-  width: 100%;
+  width: 50%;
   margin-top: 30px;
 }
 
