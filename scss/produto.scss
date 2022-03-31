@@ -99,3 +99,39 @@ button {
   text-align: center;
   background-color: black;
 }
+
+// reviews
+
+.testimonials-section {
+  background: #323336;
+  color: black;
+  margin-top: 20px;
+}
+
+.testimonials-section img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid #323336;
+  border-radius: 50%;
+  margin-top: -4.5em;
+  margin-right: 80%;
+}
+
+.testimonials-section li {
+  background: rgb(252, 240, 240);
+  text-align: center;
+  padding: 2em 1em;
+  margin: 0 auto 3em auto;
+  border-radius: 0.8em;
+  color: black;
+}
+
+@media only screen and (min-width: 1080px) {
+  .testimonials-section ul {
+    display: flex;
+  }
+
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+}
