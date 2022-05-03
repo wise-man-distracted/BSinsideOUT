@@ -16119,7 +16119,7 @@ section.hero-sec > div:first-of-type {
   }
 }
 section.hero-sec > div:last-of-type {
-  background-image: url(../../public/gio.jpg);
+  background-image: url("/img/gio.jpg");
   background-size: cover;
   height: 16rem;
   /* 256px */
@@ -16286,22 +16286,22 @@ section.offers-sec > div:first-of-type > div {
   width: 100%;
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(1) {
-  background-image: url(../../public/offer1.jpg);
+  background-image: url(/img/offer1.jpg);
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(2) {
-  background-image: url(../../public/offer2.jpg);
+  background-image: url(/img/offer2.jpg);
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(3) {
-  background-image: url(../../public/offer3.jpg);
+  background-image: url(/img/offer3.jpg);
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(4) {
-  background-image: url(../../public/offer4.jpg);
+  background-image: url(/img/offer4.jpg);
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(5) {
-  background-image: url(../../public/offer5.jpg);
+  background-image: url(/img/offer5.jpg);
 }
 section.offers-sec > div:first-of-type > div:nth-of-type(6) {
-  background-image: url(../../public/offer6.jpg);
+  background-image: url(/img/offer6.jpg);
 }
 
 #opaque-wrapper {

@@ -17,7 +17,7 @@ section.hero-sec {
        }
     }
     >div:last-of-type {
-        background-image: url(../../public/gio.jpg);
+        background-image: url('/img/gio.jpg');
         background-size: cover;
         height: 16rem; /* 256px */
         border-radius: 9999px;
