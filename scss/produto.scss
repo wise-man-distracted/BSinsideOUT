@@ -28,11 +28,6 @@ button {
   color: white;
 }
 
-.carousel-item {
-  height: 350px;
-  width: 100%;
-}
-
 .container-bg {
   background: #323336 !important;
 }
@@ -42,19 +37,6 @@ button {
 
 #main {
   background: #27282b !important;
-}
-
-.container-slides {
-  background: #323336 !important;
-}
-.carousel-item img {
-  width: 80%;
-  margin: auto;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  min-height: 470px;
 }
 
 #carticon {
