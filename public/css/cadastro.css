@@ -15994,6 +15994,13 @@ textarea.form-control-lg {
   border: none;
 }
 
+.inside-button {
+  background-color: #FF5858;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+}
+
 button {
   font-family: Montserrat, sans-serif;
   border-radius: 0.5rem;

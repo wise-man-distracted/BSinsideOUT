@@ -8,12 +8,20 @@
 // IMPORT THE SECTIONS 
 @use 'sections/navbar';
 @use 'sections/footer';
+
+// OUT-RELATED SECTIONS
 @use 'sections/main-hero';
 @use 'sections/main-sec2';
 @use 'sections/main-categories';
 @use 'sections/main-offers';
+// INSIDE-RELATED SECTIONS
+@use 'sections/inside-hero';
+@use 'sections/inside-sec3';
+@use 'sections/inside-sec4';
+
 
 $primary: #84C9FB;
+$primary-inside: #FF5858;
 
 section {
     background-color: rgb(39, 40, 43);

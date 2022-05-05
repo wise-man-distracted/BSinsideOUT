@@ -15,4 +15,7 @@ module.exports = {
   showThemingKit: (req, res) => {
     res.render("theming-kit"/* , { layout: './layouts/no-header-footer' } */);
   },
+  showInside: (req, res) => {
+    res.render("inside", { layout: './layouts/inside' });
+  },
 };
