@@ -16437,6 +16437,37 @@ section.inside-sec4 > div:nth-child(2) {
   background-image: url(/img/inside-sec4.jpg);
 }
 
+section.inside-sec5 {
+  gap: 1rem;
+  /* 16px */
+  padding-left: 3rem;
+  /* 48px */
+  padding-right: 3rem;
+  /* 48px */
+  padding-top: 0.75rem;
+  /* 12px */
+  padding-bottom: 0.75rem;
+  /* 12px */
+  margin-top: 1.25rem;
+  /* 20px */
+  margin-bottom: 1.25rem;
+  /* 20px */
+  width: 96%;
+}
+section.inside-sec5 > div:first-of-type {
+  height: 100%;
+  width: 90%;
+  margin-top: 2.5rem;
+  /* 40px */
+}
+section.inside-sec5 > div:nth-child(2) {
+  overflow: hidden;
+  height: 10rem;
+  /* 160px */
+  width: 100%;
+  background-image: url(/img/inside-sec5.jpg);
+}
+
 section {
   background-color: #27282b;
   background-color: rgba(255, 255, 255, 0.05);
