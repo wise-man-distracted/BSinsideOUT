@@ -7,6 +7,9 @@ $primary-inside: #FF5858;
     font-family: Montserrat, sans-serif;
     color: white;
     border: none;
+    >a {
+        color: white !important;
+    }
 }
 
 .inside-button {
@@ -14,6 +17,9 @@ $primary-inside: #FF5858;
     font-family: Montserrat, sans-serif;
     color: white;
     border: none;
+    >a {
+        color: white !important;
+    }
 }
 
 button {

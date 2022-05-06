@@ -15993,12 +15993,18 @@ textarea.form-control-lg {
   color: white;
   border: none;
 }
+.primary-button > a {
+  color: white !important;
+}
 
 .inside-button {
   background-color: #FF5858;
   font-family: Montserrat, sans-serif;
   color: white;
   border: none;
+}
+.inside-button > a {
+  color: white !important;
 }
 
 button {
@@ -16068,7 +16074,7 @@ header.nav-bar > nav {
     display: none !important;
   }
 }
-header.nav-bar > nav > ul a {
+header.nav-bar > nav > ul > li > a {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.999);
   font-size: 1rem;
@@ -16466,6 +16472,56 @@ section.inside-sec5 > div:nth-child(2) {
   /* 160px */
   width: 100%;
   background-image: url(/img/inside-sec5.jpg);
+}
+
+section.login-sec {
+  gap: 2.5rem;
+  padding-left: 3rem;
+  /* 48px */
+  padding-right: 3rem;
+  /* 48px */
+}
+section.login-sec > div:first-of-type {
+  height: 100%;
+  width: 90%;
+  margin-top: 2.5rem;
+}
+@media (max-width: 900px) {
+  section.login-sec > div:first-of-type {
+    text-align: center !important;
+  }
+  section.login-sec > div:first-of-type div {
+    justify-content: center !important;
+  }
+}
+section.login-sec > div:last-of-type {
+  height: 16rem;
+  /* 256px */
+  border-radius: 10%;
+  width: 100%;
+  margin-top: 1.25rem;
+  /* 20px */
+  margin-bottom: 1.25rem;
+  /* 20px */
+  flex-basis: 70%;
+}
+section.login-sec article > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 1.3rem;
+}
+section.login-sec article > h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: 1.3rem;
+}
+section.login-sec article > div {
+  margin-top: 2.5rem;
+  /* 40px */
+  margin-bottom: 0.5rem;
+  /* 8px */
 }
 
 section {

@@ -21,7 +21,7 @@ header.nav-bar {
         @media (max-width: 900px) {
             display: none !important;
         }
-        >ul a {
+        >ul>li>a {
             font-weight: 200;
             color: rgba(0, 0, 0, 0.999);
             font-size: 1rem;

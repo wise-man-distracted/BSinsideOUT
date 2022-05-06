@@ -15993,12 +15993,18 @@ textarea.form-control-lg {
   color: white;
   border: none;
 }
+.primary-button > a {
+  color: white !important;
+}
 
 .inside-button {
   background-color: #FF5858;
   font-family: Montserrat, sans-serif;
   color: white;
   border: none;
+}
+.inside-button > a {
+  color: white !important;
 }
 
 button {
@@ -16068,7 +16074,7 @@ header.nav-bar > nav {
     display: none !important;
   }
 }
-header.nav-bar > nav > ul a {
+header.nav-bar > nav > ul > li > a {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.999);
   font-size: 1rem;
