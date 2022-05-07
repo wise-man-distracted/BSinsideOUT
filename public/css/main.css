@@ -16486,18 +16486,9 @@ section.login-sec > div:first-of-type {
   width: 90%;
   margin-top: 2.5rem;
 }
-@media (max-width: 900px) {
-  section.login-sec > div:first-of-type {
-    text-align: center !important;
-  }
-  section.login-sec > div:first-of-type div {
-    justify-content: center !important;
-  }
-}
 section.login-sec > div:last-of-type {
-  height: 16rem;
-  /* 256px */
-  border-radius: 10%;
+  padding: 1rem;
+  border-radius: 4px;
   width: 100%;
   margin-top: 1.25rem;
   /* 20px */
@@ -16522,6 +16513,10 @@ section.login-sec article > div {
   /* 40px */
   margin-bottom: 0.5rem;
   /* 8px */
+}
+
+#loginHelp {
+  text-align: center;
 }
 
 section {
