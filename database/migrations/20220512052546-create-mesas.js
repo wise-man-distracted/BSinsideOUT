@@ -52,7 +52,7 @@ module.exports = {
           //   key:"id"
       },    
           createdAt: Sequelize.DataTypes.DATE,
-          updatedAt: Sequelize.DataTypes.DATE,
+          updatedAt: Sequelize.DataTypes.DATE
       }
     );
   },

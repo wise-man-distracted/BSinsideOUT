@@ -41,7 +41,7 @@ module.exports = {
     },
           createdAt: Sequelize.DataTypes.DATE,
           updatedAt: Sequelize.DataTypes.DATE,
-          deletedAt: Sequelize.DataTypes.DATE,
+          deletedAt: Sequelize.DataTypes.DATE
       }
     );
   },
