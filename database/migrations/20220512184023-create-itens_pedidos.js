@@ -2,18 +2,28 @@
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('usuarios_in_mesas',
+    await queryInterface.createTable('itens_pedidos',
     {
       id: {
         type: Sequelize.DataTypes.INTEGER,
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
-      },
-      status: {
+      },      
+      quantidade: {
         type: Sequelize.DataTypes.TINYINT(1),
         allowNull: true
-      },  
+      },
+      pedidos_id: {
+        type: Sequelize.DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model:{
+            tableName: "pedidos"
+          },
+          key:"id"
+        }
+        },        
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
@@ -24,12 +34,12 @@ module.exports = {
           key:"id"
         }
       },
-      mesas_id: {
+      produtos_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
         references: {
           model:{
-            tableName: "mesas"
+            tableName: "produtos"
           },
           key:"id"
         }
@@ -41,6 +51,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('usuarios_in_mesas');
+    await queryInterface.dropTable('itens_pedidos');
   }
 };

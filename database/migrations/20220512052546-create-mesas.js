@@ -43,16 +43,18 @@ module.exports = {
       },              
         usuarios_id: {
           type: Sequelize.DataTypes.INTEGER,
-          allowNull: false
-          // AQUI SERÁ UMA FUTURA FK
-          // references: {
-          //   model:{
-          //   tableName: "usuarios"
-          //   },
-          //   key:"id"
+          allowNull: false,
+          references: {
+            model:{
+            tableName: "usuarios"
+            },
+            key:"id"
+          }
       },    
           createdAt: Sequelize.DataTypes.DATE,
-          updatedAt: Sequelize.DataTypes.DATE
+          updatedAt: Sequelize.DataTypes.DATE,
+          deletedAt: Sequelize.DataTypes.DATE
+
       }
     );
   },

@@ -25,25 +25,26 @@ module.exports = {
       mesas_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
-        // AQUI SERÁ UMA FUTURA FK
-        // references: {
-        //   model:{
-        //     tableName: "mesas"
-        //   },
-        //   key:"id"
-        // }
+        references: {
+          model:{
+            tableName: "mesas"
+          },
+          key:"id"
+        }
       },
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
-        // AQUI SERÁ UMA FUTURA FK
-        // references: {
-        //   model:{
-        //     tableName: "usuarios"
-        //   },
-        //   key:"id"
-        // }
-      }
+        references: {
+          model:{
+            tableName: "usuarios"
+          },
+          key:"id"
+        }
+      },
+          createdAt: Sequelize.DataTypes.DATE,
+          updatedAt: Sequelize.DataTypes.DATE,
+          deletedAt: Sequelize.DataTypes.DATE
     });
   },
 
