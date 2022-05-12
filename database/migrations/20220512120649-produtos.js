@@ -17,7 +17,11 @@ module.exports = {
       distribuidor: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
-      },
+      },          
+      preco: {
+        type: Sequelize.DataTypes.INTEGER,
+        allowNull: false
+      },    
       estoque: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
