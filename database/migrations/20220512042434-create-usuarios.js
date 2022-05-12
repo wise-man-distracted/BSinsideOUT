@@ -16,15 +16,15 @@ module.exports = {
           allowNull: false
       },
         nascimento: {
-          type: Sequelize.DataTypes.DATEONLY(),
+          type: Sequelize.DataTypes.DATEONLY,
           allowNull: false
       },
         endereco: {
-          type: Sequelize.DataTypes.STRING(),
+          type: Sequelize.DataTypes.STRING,
           allowNull: false
       },
         classe: {
-          type: Sequelize.DataTypes.BOOLEAN(),
+          type: Sequelize.DataTypes.BOOLEAN,
           allowNull: false
       },
         sexo: {
