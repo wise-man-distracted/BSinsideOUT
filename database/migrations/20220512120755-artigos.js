@@ -22,6 +22,18 @@ module.exports = {
         type: Sequelize.DataTypes.DATE,
         allowNull: false
       },
+      imagem1: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
+      imagem2: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
+      imagem3: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,

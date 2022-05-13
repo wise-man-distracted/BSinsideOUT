@@ -17,11 +17,30 @@ module.exports = {
       distribuidor: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
-      },          
+      },            
       preco: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
-      },    
+      },
+      rating: {
+        type: Sequelize.DataTypes.TINYINT(1),
+      },
+      imagem1: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
+      imagem2: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
+      imagem3: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },
+      imagem4: {
+        type: Sequelize.DataTypes.STRING(45),
+        allowNull: false
+      },   
       estoque: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false
@@ -29,7 +48,10 @@ module.exports = {
       descricao: {
         type: Sequelize.DataTypes.STRING(1000),
         allowNull: false
-      },
+      },      
+      descricao_curta: {
+        type: Sequelize.DataTypes.STRING
+      },  
       categorias_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,

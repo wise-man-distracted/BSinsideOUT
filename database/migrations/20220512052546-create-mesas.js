@@ -40,6 +40,10 @@ module.exports = {
         sistema: {
           type: Sequelize.DataTypes.STRING(150),
           allowNull: false
+      },
+        cover_img: {
+          type: Sequelize.DataTypes.STRING(45),
+          allowNull: false
       },              
         usuarios_id: {
           type: Sequelize.DataTypes.INTEGER,

@@ -9,7 +9,11 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
-      },      
+      },
+      titulo: {
+        type: Sequelize.DataTypes.STRING, 
+        allowNull: false 
+      },
       rating: {
         type: Sequelize.DataTypes.TINYINT(1),
         allowNull: true
