@@ -18,6 +18,7 @@
   "author": "wise-man-distracted, rphaell",
   "license": "ISC",
   "devDependencies": {
+    "mariadb": "^3.0.0",
     "nodemon": "^2.0.16",
     "sass": "^1.44.0",
     "sequelize-cli": "^6.4.1"
