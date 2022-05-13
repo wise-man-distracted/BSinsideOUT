@@ -9,6 +9,9 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
+      },
+        titulo: {
+        type: Sequelize.DataTypes.STRING,  
       },      
       comentario: {
         type: Sequelize.DataTypes.STRING,
