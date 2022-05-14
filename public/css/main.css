@@ -17693,7 +17693,6 @@ body {
 }
 
 .clean-related-item {
-  border: 1px solid #eaeaea;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -17705,7 +17704,7 @@ body {
 
 .clean-related-item .related-name a {
   font-size: 1em;
-  color: #212529;
+  color: white;
   text-decoration: none;
 }
 
@@ -17730,7 +17729,7 @@ body {
 .clean-related-item .related-name .h4 {
   font-size: 1.3em;
   font-weight: 600;
-  color: #0d6efd;
+  color: #84C9FB;
 }
 
 .clean-blog-post {
@@ -18119,6 +18118,11 @@ body {
 section {
   background-color: #27282b;
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+.basic-sec {
+  background-color: #27282b !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 section h2 {

@@ -1,3 +1,6 @@
+@use '../custom' as *;
+$primary: #84C9FB;
+
 .vanilla-zoom {
     width: 100%;
 
@@ -1204,7 +1207,6 @@ body {
 }
 
 .clean-related-item {
-    border: 1px solid #eaeaea;
     padding-top: 20px;
     padding-bottom: 20px
 }
@@ -1216,7 +1218,7 @@ body {
 
 .clean-related-item .related-name a {
     font-size: 1em;
-    color: #212529;
+    color: white;
     text-decoration: none
 }
 
@@ -1241,7 +1243,7 @@ body {
 .clean-related-item .related-name .h4 {
     font-size: 1.3em;
     font-weight: 600;
-    color: #0d6efd
+    color: $primary
 }
 
 .clean-blog-post {
