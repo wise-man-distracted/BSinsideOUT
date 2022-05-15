@@ -11,16 +11,15 @@ module.exports = {
         primaryKey: true
       },
       titulo: {
-        type: Sequelize.DataTypes.STRING, 
+        type: Sequelize.DataTypes.STRING(50), 
         allowNull: false 
       },
       rating: {
         type: Sequelize.DataTypes.TINYINT(1),
-        allowNull: true
       },
       comentario: {
-        type: Sequelize.DataTypes.STRING(1000),
-        allowNull: true
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
       },           
       artigos_id: {
         type: Sequelize.DataTypes.INTEGER,

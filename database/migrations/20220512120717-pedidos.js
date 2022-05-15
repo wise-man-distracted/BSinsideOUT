@@ -16,7 +16,6 @@ module.exports = {
       },
       frete: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false
       },
       cep: {
         type: Sequelize.DataTypes.STRING,

@@ -15,24 +15,22 @@ module.exports = {
         allowNull: false
       },
       conteudo: {
-        type: Sequelize.DataTypes.STRING(10000),
+        type: Sequelize.DataTypes.TEXT,
         allowNull: false
       },
       data: {
         type: Sequelize.DataTypes.DATE,
         allowNull: false
       },
-      imagem1: {
-        type: Sequelize.DataTypes.STRING(45),
+      img_1: {
+        type: Sequelize.DataTypes.STRING,
         allowNull: false
       },
-      imagem2: {
-        type: Sequelize.DataTypes.STRING(45),
-        allowNull: false
+      img_2: {
+        type: Sequelize.DataTypes.STRING
       },
-      imagem3: {
-        type: Sequelize.DataTypes.STRING(45),
-        allowNull: false
+      img_3: {
+        type: Sequelize.DataTypes.STRING
       },
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
