@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   async up (queryInterface, Sequelize) {    
 
@@ -47,7 +49,7 @@ module.exports = {
       },              
         usuarios_id: {
           type: Sequelize.DataTypes.INTEGER,
-          allowNull: false,
+          allowNull: true,
           references: {
             model:{
             tableName: "usuarios"
@@ -56,8 +58,7 @@ module.exports = {
           }
       },    
           createdAt: Sequelize.DataTypes.DATE,
-          updatedAt: Sequelize.DataTypes.DATE,
-          deletedAt: Sequelize.DataTypes.DATE
+          updatedAt: Sequelize.DataTypes.DATE,          
 
       }
     );
