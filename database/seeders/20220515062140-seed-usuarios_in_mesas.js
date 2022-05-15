@@ -7,23 +7,23 @@ module.exports = {
     {
       id: 1,
       status: 2,
-      createdAt: new Date().toISOString().substring(0,19),
-      updatedAt: new Date().toISOString().substring(0,19),
-      deletedAt: new Date().toISOString().substring(0,19),
+      usuarios_id: 2,
+      mesas_id: 1,
+      createdAt: new Date()
     },
     {
       id: 2,
-      status: 3,
-      createdAt: new Date().toISOString().substring(0,19),
-      updatedAt: new Date().toISOString().substring(0,19),
-      deletedAt: new Date().toISOString().substring(0,19),
+      status: 0,
+      usuarios_id: 3,
+      mesas_id: 2,
+      createdAt: new Date()
     },
     {
       id: 3,
-      status: 4,
-      createdAt: new Date().toISOString().substring(0,19),
-      updatedAt: new Date().toISOString().substring(0,19),
-      deletedAt: new Date().toISOString().substring(0,19),
+      status: 1,
+      usuarios_id: 1,
+      mesas_id: 3,
+      createdAt: new Date()
     }
     ], {});
     
