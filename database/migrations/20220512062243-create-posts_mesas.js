@@ -12,19 +12,19 @@ module.exports = {
       },      
       pinned: {
         type: Sequelize.DataTypes.TINYINT(1),
-        allowNull: true
+        allowNull: false
       },
       status: {
         type: Sequelize.DataTypes.TINYINT(1),
-        allowNull: true
+        allowNull: false
       },
       post: {
         type: Sequelize.DataTypes.TEXT,
-        allowNull: true
+        allowNull: false
       },      
       mesas_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model:{
             tableName: "mesas"
@@ -34,7 +34,7 @@ module.exports = {
       },
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model:{
             tableName: "usuarios"

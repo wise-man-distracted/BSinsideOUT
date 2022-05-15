@@ -16,7 +16,7 @@ module.exports = {
       },  
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model:{
             tableName: "usuarios"
@@ -26,7 +26,7 @@ module.exports = {
       },
       mesas_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model:{
             tableName: "mesas"
