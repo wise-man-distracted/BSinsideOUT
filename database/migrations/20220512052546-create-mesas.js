@@ -21,17 +21,15 @@ module.exports = {
       },
         duracao: {
           type: Sequelize.DataTypes.STRING(100),
-          allowNull: false
     },
         frequencia_encontros: {
           type: Sequelize.DataTypes.STRING(100),
-          allowNull: false
       },
         max_players: {
           type: Sequelize.DataTypes.TINYINT(1),
           allowNull: false
       },
-        settings: {
+        campanha: {
           type: Sequelize.DataTypes.STRING(150),
           allowNull: false
       },
@@ -44,12 +42,12 @@ module.exports = {
           allowNull: false
       },
         cover_img: {
-          type: Sequelize.DataTypes.STRING(45),
+          type: Sequelize.DataTypes.STRING,
           allowNull: false
       },              
         usuarios_id: {
           type: Sequelize.DataTypes.INTEGER,
-          allowNull: true,
+          allowNull: false,
           references: {
             model:{
             tableName: "usuarios"

@@ -11,12 +11,11 @@ module.exports = {
         primaryKey: true
       },
       status: {
-        type: Sequelize.DataTypes.TINYINT(1),
-        allowNull: true
+        type: Sequelize.DataTypes.TINYINT(1)
       },  
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: true,
+        allowNull: false,
         references: {
           model:{
             tableName: "usuarios"
@@ -26,7 +25,7 @@ module.exports = {
       },
       mesas_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: true,
+        allowNull: false,
         references: {
           model:{
             tableName: "mesas"

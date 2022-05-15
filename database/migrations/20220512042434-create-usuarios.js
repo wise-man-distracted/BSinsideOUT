@@ -15,17 +15,18 @@ module.exports = {
           type: Sequelize.DataTypes.STRING(150),
           allowNull: false
       },
+        foto: {
+          type: Sequelize.DataTypes.STRING
+      },
         nascimento: {
           type: Sequelize.DataTypes.DATEONLY,
           allowNull: false
       },
         endereco: {
           type: Sequelize.DataTypes.STRING,
-          allowNull: false
       },
         classe: {
           type: Sequelize.DataTypes.BOOLEAN,
-          allowNull: false
       },
         sexo: {
           type: Sequelize.DataTypes.CHAR(1),
@@ -33,7 +34,8 @@ module.exports = {
         },        
         email: {
           type: Sequelize.DataTypes.STRING(100),
-          allowNull: false
+          allowNull: false,
+          unique: true
       },              
         senha: {
           type: Sequelize.DataTypes.STRING(64),

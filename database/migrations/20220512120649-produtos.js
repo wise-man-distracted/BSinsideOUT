@@ -25,32 +25,29 @@ module.exports = {
       rating: {
         type: Sequelize.DataTypes.TINYINT(1),
       },
-      imagem1: {
-        type: Sequelize.DataTypes.STRING(45),
+      img_1: {
+        type: Sequelize.DataTypes.STRING,
         allowNull: false
       },
-      imagem2: {
-        type: Sequelize.DataTypes.STRING(45),
-        allowNull: false
+      img_2: {
+        type: Sequelize.DataTypes.STRING
       },
-      imagem3: {
-        type: Sequelize.DataTypes.STRING(45),
-        allowNull: false
+      img_3: {
+        type: Sequelize.DataTypes.STRING
       },
-      imagem4: {
-        type: Sequelize.DataTypes.STRING(45),
-        allowNull: false
+      img_4: {
+        type: Sequelize.DataTypes.STRING
       },   
       estoque: {
-        type: Sequelize.DataTypes.INTEGER,
-        allowNull: false
+        type: Sequelize.DataTypes.INTEGER
       },
       descricao: {
-        type: Sequelize.DataTypes.STRING(1000),
+        type: Sequelize.DataTypes.TEXT,
         allowNull: false
       },      
       descricao_curta: {
-        type: Sequelize.DataTypes.STRING
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
       },  
       categorias_id: {
         type: Sequelize.DataTypes.INTEGER,
