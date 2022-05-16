@@ -34,7 +34,10 @@ module.exports = {
         },
         msg: {
           type: Sequelize.DataTypes.STRING
-        }
+        },
+        createdAt: Sequelize.DataTypes.DATE,
+        updatedAt: Sequelize.DataTypes.DATE,
+        deletedAt: Sequelize.DataTypes.DATE
       },
       
       );

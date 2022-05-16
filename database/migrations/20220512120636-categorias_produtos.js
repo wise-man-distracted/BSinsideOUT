@@ -14,6 +14,9 @@ module.exports = {
         type: Sequelize.DataTypes.STRING(100),
         allowNull: false
       },
+      img: {
+        type: Sequelize.DataTypes.STRING
+      },
       createdAt: Sequelize.DataTypes.DATE,
       updatedAt: Sequelize.DataTypes.DATE,
       deletedAt: Sequelize.DataTypes.DATE

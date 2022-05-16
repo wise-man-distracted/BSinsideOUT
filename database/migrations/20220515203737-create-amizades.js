@@ -34,7 +34,10 @@ module.exports = {
         },
         status: {
           type: Sequelize.DataTypes.BOOLEAN
-        }
+        },
+        createdAt: Sequelize.DataTypes.DATE,
+        updatedAt: Sequelize.DataTypes.DATE,
+        deletedAt: Sequelize.DataTypes.DATE
       },
       
       );
