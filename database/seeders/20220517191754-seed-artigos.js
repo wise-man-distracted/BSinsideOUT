@@ -27,6 +27,7 @@ Anim cillum sunt duis occaecat. Ipsum adipisicing in non nisi ipsum fugiat do ei
 
 Ad aliqua nisi cupidatat cillum quis enim aute sit sint. Eiusmod veniam sit culpa ex duis dolor culpa. Culpa magna magna mollit consectetur quis pariatur sint eiusmod nulla laborum aute. Cillum do id labore culpa cupidatat aliquip sit cillum velit aliqua cillum.`,
       data: new Date(),
+      descricao_curta: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       img_1: "https://images.unsplash.com/photo-1611104866937-e7e05b8571b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
       img_2: "https://images.unsplash.com/photo-1605420801008-456056f2c700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       img_3: "https://images.unsplash.com/photo-1530451918823-b2c35b34f7e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -57,6 +58,7 @@ Amet anim pariatur amet laborum quis fugiat excepteur culpa est Lorem. Mollit Lo
 
 Incididunt aliquip proident ad et ea minim in mollit ut aliqua dolor ullamco labore. Sunt consectetur cillum cupidatat elit consectetur sunt veniam Lorem esse aliquip consectetur ad. Est esse ea aliquip elit ex officia adipisicing voluptate commodo eiusmod adipisicing velit consectetur. Mollit velit ut proident in irure qui esse ea eu. Do irure duis officia mollit dolor consequat sit sint officia cillum dolore exercitation. Eiusmod occaecat enim excepteur in amet ipsum voluptate eiusmod.`,
       data: new Date(),
+      descricao_curta: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       img_1: "https://images.unsplash.com/photo-1595345639192-5ae79fc1a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       img_2: "https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       img_3: "https://images.unsplash.com/photo-1591334770544-a83728c5768b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b2xkJTIwbWFuJTIwcGxheWluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
@@ -87,6 +89,7 @@ Mollit commodo deserunt labore ad dolore eiusmod eiusmod eiusmod sit sit Lorem e
 
 Commodo officia labore consequat pariatur irure adipisicing aute magna ex do anim. Ut laborum magna esse excepteur qui velit aute. Ullamco magna proident dolore reprehenderit excepteur laborum dolor amet nostrud aliqua dolor ex dolore nisi.`,
       data: new Date(),
+      descricao_curta: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       img_1: "https://images.unsplash.com/photo-1517499414974-3b42addf2d86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       img_2: "https://images.unsplash.com/photo-1497395217579-0d6deaff0906?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       img_3: "https://images.unsplash.com/photo-1528699633788-424224dc89b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80",

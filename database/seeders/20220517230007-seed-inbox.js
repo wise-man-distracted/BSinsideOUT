@@ -6,7 +6,7 @@ module.exports = {
       id: 1,
       msg: "mensagem do inbox aqui",
       usuarios_id1: 1,
-      usuarios_id2: 1,
+      usuarios_id2: 2,
 
     },
     {

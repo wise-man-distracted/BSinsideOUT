@@ -26,14 +26,14 @@ module.exports = {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
       },
-      imagem1: {
+      img_1: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
       },
-      imagem2: {
+      img_2: {
         type: Sequelize.DataTypes.STRING
       },
-      imagem3: {
+      img_3: {
         type: Sequelize.DataTypes.STRING
       },
       usuarios_id: {
