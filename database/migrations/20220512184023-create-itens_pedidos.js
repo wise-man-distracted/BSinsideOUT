@@ -23,7 +23,7 @@ module.exports = {
           },
           key:"id"
         }
-        },        
+      },        
       usuarios_id: {
         type: Sequelize.DataTypes.INTEGER,
         allowNull: false,

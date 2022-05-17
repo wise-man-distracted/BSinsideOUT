@@ -10,7 +10,7 @@ module.exports = {
         allowNull: false,
         primaryKey: true
       },
-        titulo: {
+      titulo: {
         type: Sequelize.DataTypes.STRING(50),  
       },      
       comentario: {

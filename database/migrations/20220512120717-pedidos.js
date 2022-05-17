@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true,
         allowNull: false
-        },
+      },
       status: {
         type: Sequelize.DataTypes.BOOLEAN,
         allowNull: false
