@@ -22,14 +22,18 @@ module.exports = {
         type: Sequelize.DataTypes.DATE,
         allowNull: false
       },
-      img_1: {
+      descricao_curta: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false
       },
-      img_2: {
+      imagem1: {
+        type: Sequelize.DataTypes.STRING,
+        allowNull: false
+      },
+      imagem2: {
         type: Sequelize.DataTypes.STRING
       },
-      img_3: {
+      imagem3: {
         type: Sequelize.DataTypes.STRING
       },
       usuarios_id: {
