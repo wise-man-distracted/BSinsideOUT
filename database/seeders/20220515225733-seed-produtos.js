@@ -25,7 +25,8 @@ Duis aliquip culpa laborum reprehenderit culpa sit eu. Aute ea officia nostrud s
 
 Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. Sunt sunt cillum est ipsum ullamco. Est ex labore esse nostrud laboris dolore labore et labore ipsum duis nisi laboris.`,
       descricao_curta: "Aliqua nulla deserunt eu eu pariatur.",
-      categorias_id: 5
+      categorias_id: 5,
+      createdAt: new Date()
     },
     {
       id: 2,
@@ -54,7 +55,8 @@ Occaecat ad non est consectetur ex laborum velit consectetur esse. Est pariatur 
 
 Ea et nulla incididunt elit laboris commodo ad esse cupidatat ullamco voluptate commodo consequat enim. Anim velit aliquip eiusmod in in qui. Ex ut elit officia excepteur culpa occaecat anim commodo eu enim.`,
       descricao_curta: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
-      categorias_id: 4
+      categorias_id: 4,
+      createdAt: new Date()
     },
     {
       id: 3,
@@ -79,10 +81,10 @@ Nulla ad qui dolor eu irure. Ad incididunt minim ullamco officia sit anim consec
 
 Culpa magna non quis elit culpa laboris excepteur pariatur velit magna reprehenderit. Enim velit commodo minim consequat ipsum. Quis labore voluptate ad ad fugiat incididunt occaecat id. Proident labore consequat irure officia.`,
       descricao_curta: "Dolor culpa sint aliqua sunt quis proident est sit aute velit sit magna.",
-      categorias_id: 1
+      categorias_id: 1,
+      createdAt: new Date()
     }
     ], {});
-    
   },
 
   async down (queryInterface, Sequelize) {
