@@ -4,29 +4,29 @@ module.exports = {
      await queryInterface.bulkInsert('comentarios_produtos', [
     {
       id: 1,
-      comentario: "comentário do produto 1 aqui",
+      comentario: `Sit nostrud voluptate occaecat quis veniam cillum.`,
       rating: 5,
       usuarios_id: 1,
       produtos_id: 3,
-      titulo: "comentário do titulo aqui",
+      titulo: "Não Gostei",
       
     },
     {
       id: 2,
-      comentario: "comentário do produto 2 aqui",
+      comentario: `Irure ea qui veniam eu mollit reprehenderit est dolore laboris ea ullamco nostrud veniam.`,
       rating: 3,
       usuarios_id: 3,
       produtos_id: 2,
-      titulo: "comentário do titulo aqui",
+      titulo: "Muito Bom!",
       
     },
     {
       id: 3,
-      comentario: "comentário do produto 3 aqui",
+      comentario: `Nulla excepteur sunt ea laboris nisi qui esse esse nostrud.`,
       rating: 9,
       usuarios_id: 2,
       produtos_id: 1,
-      titulo: "comentário do titulo aqui",
+      titulo: "Rapazzzz",
       
     }
     ], {});

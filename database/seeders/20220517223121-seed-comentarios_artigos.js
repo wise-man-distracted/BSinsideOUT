@@ -4,7 +4,7 @@ module.exports = {
      await queryInterface.bulkInsert('comentarios_artigos', [
     {
       id: 1,
-      titulo: "título do comentário artigo 1",
+      titulo: "Boa leitura",
       rating: 7,
       comentario: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       artigos_id: 2,
@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       id: 2,
-      titulo: "título do comentário artigo 2",
+      titulo: "Agora faz sentido",
       rating: 8,
       comentario: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       artigos_id: 1,
@@ -22,7 +22,7 @@ module.exports = {
     },
     {
       id: 3,
-      titulo: "título do comentário artigo 3",
+      titulo: "Muito longo, não li",
       rating: 5,
       comentario: "Eu fugiat proident voluptate laboris occaecat tempor ut commodo est ad cupidatat elit dolor.",
       artigos_id: 3,
