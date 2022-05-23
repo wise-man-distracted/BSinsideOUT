@@ -1,161 +1,117 @@
-@use "custom";
 
-// IMPORT THE COMPONENTS
-@use "components/buttons";
-@use "components/typography";
 
-// IMPORT THE SECTIONS
-@use "sections/navbar";
-@use "sections/footer";
+/* // FORM CADASTRO */
 
-$primary: #84c9fb;
+body {
+  background-color: #27282B;
 
-.primary-button {
-  background-color: $primary;
-  font-family: Montserrat, sans-serif;
-  color: white;
-  border: none;
 }
-
-.cadastro-container {
+.btns {
   display: flex;
-  align-items: center;
+  gap:15px;
   justify-content: space-between;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #323336;
-  padding: 10%;
-  gap: 10%;
 }
-
-.title {
-  max-width: 600px;
-  width: 100%;
-  margin: 20px auto;
-  padding: 30px;
-  // background-color: #47484b;
-}
-
-.cadastro-container h1 {
-  font-size: 47px;
-}
-
-.cadastro-container h3 {
-  padding-top: 30px;
-  display: flex;
-  font-size: 15px;
-  color: white;
-  opacity: 0.6;
-  line-height: 20px;
-}
-
-.cadastro-form {
-  max-width: 400px;
-  width: 100%;
-  margin: 20px auto;
-  padding: 30px;
-  background-color: #47484b;
-}
-
-.input-login {
-  width: 100%;
-  outline: none;
-  border: 1px solid black;
-  font-size: 15px;
-  padding: 8px 10px;
-  border-radius: 3px;
-  margin-bottom: 15px;
-}
-
-.lembrar-senha {
-  margin-top: 30px;
-}
-
-.cadastro-form p {
-  margin-top: 30px;
-  display: flex;
-  font-size: 12px;
-  color: white;
-  opacity: 0.6;
-}
-
-.cadastro-form a {
-  color: white;
-}
-
-.button-entrar {
-  background-color: $primary;
-  font-family: Montserrat, sans-serif;
-  color: white;
-  border: none;
-  border-radius: 2px;
-  width: 50%;
-  margin-top: 30px;
-}
-
-// FORM CADASTRO
 
 .btn-cadastrar {
-  background-color: $primary;
+font-family: Montserrat, sans-serif;
+color: rgb(255, 255, 255);
+border: none;
+border-radius: 5px;
+width: 35%;
+color: white;
+font-weight: bold;
+background-color: #84C9FB;
+height: 35px;
+font-size: 20px;
+margin-top: 20px;
+}
+
+.btn-login {
+  align-items: center;
   font-family: Montserrat, sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
-  border-radius: 2px;
-  width: 50%;
-  margin-top: 15px;
+  border-radius: 5px;
+  width: 20%;
+  color: #010b13;;
+  font-weight: bold;
+  background-color: white;
+  height: 25px;
+  font-size: 15px;
+  margin-top: 20px;
 }
 
 .wrapper {
-  max-width: 500px;
-  width: 100%;
-  background-color: #323336;
-  margin: 20px auto;
-  padding: 30px;
+max-width: 500px;
+width: 100%;
+background-color: #2F3033;
+margin: 20px auto;
+padding: 30px;
 }
 
 .wrapper .title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  text-align: center;
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 25px;
+text-transform: uppercase;
+text-align: center;
+color: white;
+}
+
+.wrapper .title span{
+  color:#84C9FB;
 }
 
 .wrapper .form {
-  // background-color: aqua;
-  width: 100%;
+/* background-color: aqua; */
+width: 100%;
+margin: auto auto;
 }
 
 .wrapper .form .input-field {
-  display: flex;
-  margin-bottom: 15px;
-  align-items: center;
+color:white;
+display: flex;
+margin-bottom: 15px;
+align-items: center;
+width: 100%;
 }
 
 .wrapper .form .input-field label {
-  width: 200px;
-  margin-right: 10px;
-  font-size: 14px;
+width: 200px;
+margin-right: 10px;
+font-size: 18px;
 }
 
 .wrapper .form .input-field input,
 .wrapper .form .input-field .textarea {
-  width: 100%;
-  outline: none;
-  border: 1px solid black;
-  font-size: 15px;
-  padding: 8px 10px;
-  border-radius: 3px;
+width: 100%;
+outline: none;
+border: 1px solid black;
+font-size: 15px;
+padding: 8px 10px;
+border-radius: 3px;
 }
 
 .wrapper .form .input-field .textarea {
-  resize: none;
-  height: 125px;
+resize: none;
+height: 125px;
 }
 
 .wrapper .form .input-field .custom-select {
-  position: relative;
-  width: 100%;
-  outline: none;
+position: relative;
+width: 100%;
+outline: none;
 }
+
+.check {
+  /* text-align: center; */
+  color:white;
+  /* gap:5px; */
+  display:flex;
+  /* background-color: aqua; */
+  text-align: center;
+}
+
+
+
+

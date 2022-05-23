@@ -4,7 +4,7 @@ module.exports = {
   },
   // Change the layouts of the following routes to reference the right css file
   showCadastro: (req, res) => {
-    res.render("cadastro"/* , { layout: './layouts/cadastro' } */);
+    res.render("cadastro", { layout: './layouts/cadastro' });
   },
   showProdutos: (req, res) => {
     res.render("produto"/* , { layout: './layouts/produto' } */);
