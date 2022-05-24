@@ -1,51 +1,89 @@
-          <div class="wrapper">
-            <div class="title">Cadastre-se na Inside<span>Out</span></div>
-            <div class="form">
-              <div class="input-field">
-                <label>Nome Completo</label>
-                <input type="text" class="input">
-              </div>
-              <div class="input-field">
-                <label>Nome de Usuário</label>
-                <input type="text" class="input" placeholder="exemplo.335">
-              </div>
-              <div class="input-field">
-                <label>Senha</label>
-                <input type="password" class="input">
-              </div>
-              <div class="input-field">
-                <label>Confirme a Senha</label>
-                <input type="password" class="input">
-              </div>
-              <div class="input-field">
-                <label>Gênero</label>
-                <div class="custom-select">
-                  <select>
-                    <option value="default" default  >Selecionar</option>
-                    <option value="">Masculino</option>
-                    <option value="">Feminino</option>
-                    <option value="">Outros</option>
-                  </select>
-                </div>
-              </div>
-              <div class="input-field">
-                <label>Email</label>
-                <input type="email" class="input">
-              </div>
-              <div class="input-field">
-                <label>Endereço Completo</label>
-                <textarea class="textarea" placeholder="Avenida Bahia, 304, ap 502, Bloco A"></textarea>
-              </div>
-              <div class="input-field-terms"></div>
-              <label class="check">
-                <input type="checkbox"> Concordo com os Termos e Condições          
-              </label>  
-              <label class="check">
-                <input type="checkbox"> Aceito receber notícias e promoções da InsideOUT      
-              </label>
-              <div class="btns">          
-              <button class="btn-cadastrar">Cadastrar-se</button>              
-              <button class="btn-login">Limpar</button>  
-            </div>            
-            </div>      
-          </div> 
+<section class="login-sec container-fluid shadow align-items-center justify-content-between d-flex py-3 my-3 mx-auto w-95">
+  <div class="mx-auto">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu e-mail aqui">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+      </div>
+    <div class="mb-3">
+      <label for="validationCustom01">Nome</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Nome completo" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class= "mb-1"for="exampleFormControlFile1">Foto</label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1" placeholder="" >
+    </div>
+    <div class="mb-3">
+    <label for="validationCustom01">Sexo: </label>
+    <select class="custom-select custom-select-lg mb-3">
+      <option selected>Escolha:</option>
+      <option value="1">Masculino</option>
+      <option value="2">Feminino</option>
+      <option value="3">Outros</option>
+    </select>
+  </div>
+    
+    
+  
+  <div class="form-row">
+    <div class="mb-3">
+      <label for="validationCustom01">Data de Nascimento</label>
+      <input id="date" type="date">
+    </div>    
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1"> Endereço</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  <div class="form-group col-md-6 mb-3">
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Concordo com os Termos e Condições
+      </label>
+    </div>
+    <div class="mb-3 form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+      <label class="form-check-label" for="defaultCheck2">
+        Aceito receber notícias da InsideOUT
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary mb-3 w-100 mx-auto" type="submit">Cadastrar-se</button>
+</form>
+
+  </div>
+  
+
+
+</section>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</section>
+
+    
