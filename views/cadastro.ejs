@@ -1,5 +1,8 @@
 <section class="login-sec container-fluid shadow align-items-center justify-content-between d-flex py-3 my-3 mx-auto w-95">
+  
+  
   <div class="mx-auto">
+    <div class="h1 mb-3">Cadastre-se na InsideOUT</span></div>
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1">Email</label>
@@ -12,9 +15,7 @@
     <div class="mb-3">
       <label for="validationCustom01">Nome</label>
       <input type="text" class="form-control" id="validationCustom01" placeholder="Nome completo" value="" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+      
     </div>
     <div class="mb-3">
       <label class= "mb-1"for="exampleFormControlFile1">Foto</label>
@@ -41,8 +42,8 @@
       <label for="exampleFormControlTextarea1"> Endereço</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
-  <div class="form-group col-md-6 mb-3">
-    <div class="mb-3 form-check">
+  <div class="form-group col-md-10 mb-3">
+    <div class="mb-1 form-check">
       <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
       <label class="form-check-label" for="defaultCheck1">
         Concordo com os Termos e Condições
@@ -55,7 +56,7 @@
       </label>
     </div>
   </div>
-  <button class="btn btn-primary mb-3 w-100 mx-auto" type="submit">Cadastrar-se</button>
+  <button class="btn primary-button mb-3 w-100 mx-auto" type="submit"> <strong> Cadastrar-se</strong></button>
 </form>
 
   </div>
@@ -63,27 +64,4 @@
 
 
 </section>
-
-<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
-</section>
-
     
