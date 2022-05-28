@@ -18,4 +18,7 @@ module.exports = {
   showInside: (req, res) => {
     res.render("inside", { layout: './layouts/inside' });
   },
+  showArticle: (req, res) => {
+    res.render("article", { layout: './layouts/inside' });
+  },
 };

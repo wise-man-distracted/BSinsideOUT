@@ -10,6 +10,7 @@ router.get('/produtos/:id', indexController.showProdutos);
 router.get('/login', indexController.showLogin);
 router.get('/theme', indexController.showThemingKit);
 router.get('/inside', indexController.showInside);
+router.get('/artigo/:id', indexController.showArticle);
 
 
 
