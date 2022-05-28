@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+
+section.login-sec {
+    gap: 2.5rem;
+    padding-left: 3rem; /* 48px */
+    padding-right: 3rem; /* 48px */
+    >div:first-of-type {
+        height: 100%;
+        width: 90%;
+        margin-top: 2.5rem;
+    }
+    >div:last-of-type {
+        padding: 1rem;
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 1.25rem; /* 20px */
+        margin-bottom: 1.25rem; /* 20px */
+        flex-basis: 70%;
+    }
+    article>h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1;
+        padding-bottom: 1.3rem;
+    }
+    article>h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1;
+        padding-bottom: 1.3rem;
+    }
+    article>div {
+        margin-top: 2.5rem; /* 40px */
+        margin-bottom: 0.5rem; /* 8px */
+    }
+}
+
+#loginHelp {
+    text-align: center;
+}

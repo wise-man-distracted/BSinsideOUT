@@ -1,0 +1,161 @@
+@use "custom";
+
+// IMPORT THE COMPONENTS
+@use "components/buttons";
+@use "components/typography";
+
+// IMPORT THE SECTIONS
+@use "sections/navbar";
+@use "sections/footer";
+
+$primary: #84c9fb;
+
+.primary-button {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+}
+
+.cadastro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #323336;
+  padding: 10%;
+  gap: 10%;
+}
+
+.title {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  // background-color: #47484b;
+}
+
+.cadastro-container h1 {
+  font-size: 47px;
+}
+
+.cadastro-container h3 {
+  padding-top: 30px;
+  display: flex;
+  font-size: 15px;
+  color: white;
+  opacity: 0.6;
+  line-height: 20px;
+}
+
+.cadastro-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #47484b;
+}
+
+.input-login {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.lembrar-senha {
+  margin-top: 30px;
+}
+
+.cadastro-form p {
+  margin-top: 30px;
+  display: flex;
+  font-size: 12px;
+  color: white;
+  opacity: 0.6;
+}
+
+.cadastro-form a {
+  color: white;
+}
+
+.button-entrar {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 50%;
+  margin-top: 30px;
+}
+
+// FORM CADASTRO
+
+.btn-cadastrar {
+  background-color: $primary;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background-color: #323336;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form {
+  // background-color: aqua;
+  width: 100%;
+}
+
+.wrapper .form .input-field {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.wrapper .form .input-field label {
+  width: 200px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .input-field input,
+.wrapper .form .input-field .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.wrapper .form .input-field .textarea {
+  resize: none;
+  height: 125px;
+}
+
+.wrapper .form .input-field .custom-select {
+  position: relative;
+  width: 100%;
+  outline: none;
+}

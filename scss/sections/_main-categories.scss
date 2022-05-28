@@ -1,0 +1,47 @@
+@use '../custom' as *;
+
+section.categories-sec {
+    gap: 2rem; /* 32px */
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+    padding-top: 2rem; /* 32px */
+    padding-bottom: 2rem; /* 32px */
+    margin-top: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem; /* 20px */
+    width: 96%;
+    >div:first-of-type {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 1.25rem; /* 20px */
+        gap: 1.25rem; /* 20px */ 
+        @media (max-width: 900px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        >div {
+            overflow: hidden;
+            border-radius: 0.25rem; /* 4px */
+            height: 9rem; /* 144px */
+            position: relative;
+            width: 100%;
+            min-width: 13.75rem;
+            >a {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+                color: white;
+                font-size: 2.5rem;
+                font-weight: 600;
+                line-height: 1;
+                z-index: 10;
+            }
+            >img {
+                object-fit: cover;
+                filter: brightness(0.5);
+                width: 100%;
+            }
+        }
+    }
+}
