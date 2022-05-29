@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let categoria_produto = sequelize.define(
-        'Categoria_produto',
+    let categoriaProduto = sequelize.define(
+        'Categoria_Produto',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -21,7 +21,7 @@ module.exports = (sequelize,DataTypes) => {
             timestamps: true,
         }
     )
-    categoria_produto.associate = (models) => {}
+    categoriaProduto.associate = (models) => {}
 
-    return categoria_produto;
+    return categoriaProduto;
 }

@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let usuario_in_mesa = sequelize.define(
-        'Usuario_in_mesa',
+    let itemPedido = sequelize.define(
+        'Item_Pedido',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -8,9 +8,20 @@ module.exports = (sequelize,DataTypes) => {
                 allowNull: false,
                 primaryKey: true
             },
-            status: {
-                type: DataTypes.TINYINT(1)
-            }, 
+            quantidade: {
+                type: DataTypes.TINYINT(1),
+                allowNull: true
+            },
+            pedidos_id: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+                references: {
+                  model:{
+                    tableName: "pedidos"
+                  },
+                  key:"id"
+                }
+            },    
             usuarios_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
@@ -21,23 +32,23 @@ module.exports = (sequelize,DataTypes) => {
                   key:"id"
                 }
             },
-            mesas_id: {
+            produtos_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
                 references: {
                   model:{
-                    tableName: "mesas"
+                    tableName: "produtos"
                   },
                   key:"id"
                 }
-            }   
+            }
         },
         {
-            tableName: 'usuarios_in_mesas',
+            tableName: 'itens_pedidos',
             timestamps: true,
         }
     )
-    usuario_in_mesa.associate = (models) => {}
+    itemPedido.associate = (models) => {}
 
-    return usuario_in_mesa;
+    return itemPedido;
 }

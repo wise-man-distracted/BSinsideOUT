@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let comentario_artigo = sequelize.define(
-        'Comentario_artigo',
+    let usuarioInMesa = sequelize.define(
+        'Usuario_in_Mesa',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -8,27 +8,9 @@ module.exports = (sequelize,DataTypes) => {
                 allowNull: false,
                 primaryKey: true
             },
-            titulo: {
-                type: DataTypes.STRING(50), 
-                allowNull: false 
-            },
-            rating: {
-                type: DataTypes.TINYINT(1),
-            },
-            comentario: {
-                type: DataTypes.STRING,
-                allowNull: false
-            },
-            artigos_id: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                  model:{
-                    tableName: "artigos"
-                  },
-                  key:"id"
-                }
-            },
+            status: {
+                type: DataTypes.TINYINT(1)
+            }, 
             usuarios_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
@@ -37,15 +19,25 @@ module.exports = (sequelize,DataTypes) => {
                     tableName: "usuarios"
                   },
                   key:"id"
-                },
-            }          
+                }
+            },
+            mesas_id: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+                references: {
+                  model:{
+                    tableName: "mesas"
+                  },
+                  key:"id"
+                }
+            }   
         },
         {
-            tableName: 'comentarios_artigos',
+            tableName: 'usuarios_in_mesas',
             timestamps: true,
         }
     )
-    comentario_artigo.associate = (models) => {}
+    usuarioInMesa.associate = (models) => {}
 
-    return comentario_artigo;
+    return usuarioInMesa;
 }

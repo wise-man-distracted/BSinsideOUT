@@ -16030,7 +16030,7 @@ section article > p {
 
 header.nav-bar {
   color: black;
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   width: 93%;
   margin-top: 1.25rem;
   /* 20px */
@@ -17747,10 +17747,6 @@ body {
 
 .clean-blog-post .info a:hover {
   text-decoration: underline;
-}
-
-.clean-block.clean-post {
-  padding-top: 100px;
 }
 
 .clean-block.clean-post .block-content {

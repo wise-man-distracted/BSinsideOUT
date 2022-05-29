@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let item_pedido = sequelize.define(
-        'Item_pedido',
+    let comentarioProduto = sequelize.define(
+        'Comentario_Produto',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -8,20 +8,16 @@ module.exports = (sequelize,DataTypes) => {
                 allowNull: false,
                 primaryKey: true
             },
-            quantidade: {
-                type: DataTypes.TINYINT(1),
-                allowNull: true
+            titulo: {
+                type: DataTypes.STRING(50),  
             },
-            pedidos_id: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                  model:{
-                    tableName: "pedidos"
-                  },
-                  key:"id"
-                }
-            },    
+            comentario: {
+                type: DataTypes.STRING,
+                allowNull: false
+            },
+            rating: {
+                type: DataTypes.TINYINT(1)
+            },
             usuarios_id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
@@ -41,14 +37,14 @@ module.exports = (sequelize,DataTypes) => {
                   },
                   key:"id"
                 }
-            }
+            }      
         },
         {
-            tableName: 'itens_pedidos',
+            tableName: 'comentarios_produtos',
             timestamps: true,
         }
     )
-    item_pedido.associate = (models) => {}
+    comentarioProduto.associate = (models) => {}
 
-    return item_pedido;
+    return comentarioProduto;
 }

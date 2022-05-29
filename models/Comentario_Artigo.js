@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let comentario_produto = sequelize.define(
-        'Comentario_produto',
+    let comentarioArtigo = sequelize.define(
+        'Comentario_Artigo',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -9,14 +9,25 @@ module.exports = (sequelize,DataTypes) => {
                 primaryKey: true
             },
             titulo: {
-                type: DataTypes.STRING(50),  
+                type: DataTypes.STRING(50), 
+                allowNull: false 
+            },
+            rating: {
+                type: DataTypes.TINYINT(1),
             },
             comentario: {
                 type: DataTypes.STRING,
                 allowNull: false
             },
-            rating: {
-                type: DataTypes.TINYINT(1)
+            artigos_id: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+                references: {
+                  model:{
+                    tableName: "artigos"
+                  },
+                  key:"id"
+                }
             },
             usuarios_id: {
                 type: DataTypes.INTEGER,
@@ -26,25 +37,15 @@ module.exports = (sequelize,DataTypes) => {
                     tableName: "usuarios"
                   },
                   key:"id"
-                }
-            },
-            produtos_id: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                  model:{
-                    tableName: "produtos"
-                  },
-                  key:"id"
-                }
-            }      
+                },
+            }          
         },
         {
-            tableName: 'comentarios_produtos',
+            tableName: 'comentarios_artigos',
             timestamps: true,
         }
     )
-    comentario_produto.associate = (models) => {}
+    comentarioArtigo.associate = (models) => {}
 
-    return comentario_produto;
+    return comentarioArtigo;
 }

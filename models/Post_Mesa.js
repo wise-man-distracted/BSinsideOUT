@@ -1,6 +1,6 @@
 module.exports = (sequelize,DataTypes) => {
-    let post_mesa = sequelize.define(
-        'Post_mesa',
+    let postMesa = sequelize.define(
+        'Post_Mesa',
         {
             id: {
                 type: DataTypes.INTEGER,
@@ -44,7 +44,7 @@ module.exports = (sequelize,DataTypes) => {
             timestamps: true,
         }
     )
-    post_mesa.associate = (models) => {}
+    postMesa.associate = (models) => {}
 
-    return post_mesa;
+    return postMesa;
 }
