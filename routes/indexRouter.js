@@ -7,6 +7,7 @@ const router = express.Router();
 router.get('/', indexController.showHomePage);
 router.get('/cadastro', indexController.showCadastro);
 router.get('/produtos/:id', indexController.showProdutos);
+router.get('/checkout', indexController.showCheckout);
 router.get('/login', indexController.showLogin);
 router.get('/theme', indexController.showThemingKit);
 router.get('/inside', indexController.showInside);

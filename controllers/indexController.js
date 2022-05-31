@@ -9,6 +9,9 @@ module.exports = {
   showProdutos: (req, res) => {
     res.render("produto"/* , { layout: './layouts/produto' } */);
   },
+  showCheckout: (req, res) => {
+    res.render("checkout"/* , { layout: './layouts/produto' } */);
+  },
   showLogin: (req, res) => {
     res.render("login"/* , { layout: './layouts/login' } */);
   },
