@@ -1,43 +1,61 @@
-    <div class="container">
-        <form id="contact" action="" method="post">
-            <h1>Cadastre-se na InsideOUT</h1>
-            
-            <div class="row">
-                <!-- first column -->
-                <div class="column">                        
-                        <input type="text" placeholder="Nome completo *" name="name" >
-                        <input type="email" placeholder="E-mail *" name="email">
-                        <input type="password" placeholder="Sua senha *" name="email" >
-                        <input type="password" placeholder="Confirme Sua senha *" name="email" >
-                        <input type="text" placeholder="Data de nascimento *" name="date" onfocus="(this.type = 'date')">
-                    <!-- adding all country code list -->
-                        <input type="text" placeholder="Número de telefone *" name="telefone" id="phone" required autofocus>
-                </div>
-                <!-- second column -->
-                <div class="column">
-                        <p>Qual o seu gênero?</p>
-                        <div class="radio">
-                            <input type="radio" id="male" name="gender" required>
-                            <label for="male">Masculino</label>
-                        </div>
-                        <div class="radio">
-                            <input type="radio" id="female" name="gender" required>
-                            <label for="female">Feminino</label>
-                        </div>
-                        <label for="cpf">CPF</label>
-                        
-                        <input type="text" placeholder="Digite aqui seu CPF, somente os números *" name="cpf">
-                            
-                        
-                        <p>Foto</p>
-                        <input type="file" id="file" required>
-                </div>
-            </div>
-            <!-- submit button -->
-                <button type="submit" id="button">Cadastrar</button>
-        </form>
-    </div>
- 
- 
-    
+<section>
 
+        <div class="form-container">
+            <div class="inner">
+                <form action="">
+                    <h2>Cadastre-se na Inside<span>OUT</span></h2>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-wrapper">
+
+                            <input type="text" class="form-control" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+
+                        <input type="text" class="form-control" placeholder="E-mail">
+                    </div>
+                    <div class="form-wrapper">
+
+                        <input type="password" class="form-control" placeholder="Senha">
+                    </div>
+                    <div class="form-wrapper">
+
+                        <input type="password" class="form-control" placeholder="Confirme a senha">
+                    </div>
+                    <div class="form-wrapper">
+
+                        <input type="text" placeholder="CPF (somente numeros)" class="form-control">
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Data de nascimento" class="form-control" name="date"
+                            onfocus="(this.type = 'date')">
+                    </div>
+                    <div class="form-wrapper">
+
+                        <input type="text" placeholder="Telefone (somente números)" class="form-control">
+                    </div>
+
+
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Aceito os termos e condições de uso.
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Aceito receber notícias e promoções.
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    
+</section>
