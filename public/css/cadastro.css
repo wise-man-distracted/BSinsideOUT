@@ -16095,12 +16095,6 @@ footer.footer > div:last-of-type > p {
   line-height: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 section {
   background-color: #333;
   font-family: Poppins, sans-serif;
@@ -16116,7 +16110,10 @@ section {
   margin: 0 auto;
 }
 
-input, textarea, select, button {
+main input,
+main textarea,
+main select,
+main button {
   font-family: Roboto, sans-serif;
   color: #080808;
   font-family: Poppins, sans-serif;
@@ -16124,7 +16121,14 @@ input, textarea, select, button {
   font-size: 13px;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul {
+main p,
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main ul {
   margin: 0;
 }
 
@@ -16132,16 +16136,16 @@ h2 span {
   color: #84C9FB;
 }
 
-img {
+main img {
   max-width: 100%;
 }
 
-ul {
+main ul {
   padding-left: 0;
   margin-bottom: 0;
 }
 
-a:hover {
+main a:hover {
   text-decoration: none;
 }
 
@@ -16150,7 +16154,7 @@ a:hover {
 }
 
 .form-container {
-  background-image: url("../public/img/b2.png");
+  background-image: url("/img/b2.png");
   min-height: 100vh;
   background-size: cover;
   display: flex;
@@ -16174,7 +16178,7 @@ a:hover {
   letter-spacing: 2px;
 }
 
-form {
+main form {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -16233,7 +16237,7 @@ select option[value=""][disabled] {
   display: none;
 }
 
-button {
+main button {
   border: none;
   width: 152px;
   height: 40px;
@@ -16261,7 +16265,7 @@ button {
   transition-duration: 0.5s;
 }
 
-button:before {
+main button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -16282,7 +16286,7 @@ button:before {
   transition-timing-function: ease-out;
 }
 
-button:hover:before {
+main button:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
