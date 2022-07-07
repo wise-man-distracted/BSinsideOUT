@@ -15,7 +15,7 @@ router.get('/inside', GetController.showInside);
 router.get('/artigo/:id', GetController.showArticle);
 
 router.post('/login', PostController.login)
-
+router.post('/cadastro', PostController.cadastrar)
 
 
 // Exportar o roteador

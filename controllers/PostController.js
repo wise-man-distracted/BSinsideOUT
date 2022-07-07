@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt')
 module.exports = {
     login : async (req, res) => {
         const loginFail = {error: "Falha no login"}
-        let {email, senha} = req.body
+        const { email, senha } = req.body
         let u
 
         try {
@@ -22,5 +22,15 @@ module.exports = {
             req.session.usuario = u;
             res.redirect("/");
         }
-    }
+    },
+    cadastrar : async (req, res) => {
+        const { nome, email, senha, classe, nascimento } = req.body
+        const hash = bcrypt.hashSync(senha, 10)
+        const verificarUsuarioCadastrado = await Usuario.findOne({where:{email:email}})
+
+        if (verificarUsuarioCadastrado) {
+            
+        }
+
+    },
 }
