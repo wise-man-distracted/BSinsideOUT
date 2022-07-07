@@ -24,4 +24,10 @@ module.exports = {
   showArticle: (req, res) => {
     res.render("article", { layout: './layouts/inside' });
   },
+  showError: (req, res) => {
+    res.render('error', {error: 'Você está visualizando uma mensagem de erro teste para desenvolvimento', status: 418})
+  },
+  showSuccess: (req, res) => {
+    res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
+  },
 };

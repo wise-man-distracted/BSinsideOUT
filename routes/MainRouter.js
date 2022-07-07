@@ -13,6 +13,8 @@ router.get('/login', GetController.showLogin);
 router.get('/theme', GetController.showThemingKit);
 router.get('/inside', GetController.showInside);
 router.get('/artigo/:id', GetController.showArticle);
+router.get('/error', GetController.showError);
+router.get('/success', GetController.showSuccess);
 
 router.post('/login', PostController.login)
 router.post('/cadastro', PostController.cadastrar)
