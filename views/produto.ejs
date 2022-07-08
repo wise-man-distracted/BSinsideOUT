@@ -8,33 +8,29 @@
                       <div class="zoomed-image"></div>
                       <div class="sidebar">
                         <img class="img-fluid d-block small-preview"
-                        src="/img/image 3.png">
+                        src="<%= produto.img_1 %>">
                         <img class="img-fluid d-block small-preview"
-                        src="/img/image 3.png">
+                        src="<%= produto.img_2 %>">
                         <img class="img-fluid d-block small-preview"
-                        src="/img/image 3.png">
+                        src="<%= produto.img_3 %>">
                         <img class="img-fluid d-block small-preview"
-                        src="/img/image 3.png">
+                        src="">
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info">
-                    <h3>Produto Exemplo</h3>
+                    <h3><%= produto.nome %> </h3>
                     <div class="rating"><img src="/img/star.svg"><img src="/img/star.svg"><img src="/img/star.svg"><img
                         src="/img/star-half-empty.svg"><img src="/img/star-empty.svg">
                     </div>
                     <div class="price">
-                      <h3>R$ 190,00</h3>
+                      <h3>R$ <%= preco %>,00</h3>
                     </div><button class="btn btn-primary" type="button"><i class="icon-basket"></i>Adicionar ao
                       Carrinho</button>
                     <div class="summary">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nunc,
-                        pretium at augue at, convallis pellentesque ipsum. Vestibulum diam risus,
-                        sagittis at fringilla at, pulvinar vel risus. Vestibulum dignissim eu nulla
-                        eu imperdiet. Morbi mollis tellus a nunc vestibulum consequat. Quisque
-                        tristique elit et nibh dapibus sodales. Nam sollicitudin a urna sed iaculis.
+                      <p><%= descricoes[0] %>
                       </p>
                     </div>
                   </div>
@@ -51,31 +47,23 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active description" role="tabpanel" id="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
-                      dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-                      elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum
-                      dolor sit amet, consectetur adipiscing elit.</p>
+                    <p><%= descricoes[2] %></p>
                     <div class="row">
                       <div class="col-md-5">
-                        <figure class="figure"><img class="img-fluid figure-img" src="/img/fizban.png"></figure>
+                        <figure class="figure"><img class="img-fluid figure-img" src="<%= produto.img_1 %>"></figure>
                       </div>
                       <div class="col-md-7">
                         <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
-                          dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit.</p>
+                        <p><%= descricoes[4] %></p>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-7 right">
                         <h4>Lorem Ipsum</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
-                          dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
-                          consectetur adipiscing elit.</p>
+                        <p><%= descricoes[6] %></p>
                       </div>
                       <div class="col-md-5">
-                        <figure class="figure"><img class="img-fluid figure-img" src="/img/fizban.png"></figure>
+                        <figure class="figure"><img class="img-fluid figure-img" src="<%= produto.img_2 %>"></figure>
                       </div>
                     </div>
                   </div>

@@ -9,7 +9,7 @@ module.exports = {
         try {
             u = await Usuario.findOne({where:{email}})
         } catch (error) {
-            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 500})
+            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
         }
 
         if(u === null) {

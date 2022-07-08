@@ -1,3 +1,5 @@
+const { Produto } = require('../models');
+
 module.exports = {
   showHomePage: (req, res) => {
     res.render("index");
@@ -6,8 +8,19 @@ module.exports = {
   showCadastro: (req, res) => {
     res.render("cadastro", { layout: './layouts/dev' });
   },
-  showProdutos: (req, res) => {
-    res.render("produto"/* , { layout: './layouts/produto' } */);
+  showProduto: async (req, res) => {
+    let id = req.params.id
+    let produto; let descricoes; let preco
+
+    try {
+      produto = await Produto.findOne({where:{id}})
+      produto = produto.dataValues
+      descricoes = produto.descricao.split('\n')
+      preco = String(produto.preco).slice(0, String(produto.preco).length-2)
+      res.render("produto", {produto, descricoes, preco})
+    } catch (error) {
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+    }
   },
   showCheckout: (req, res) => {
     res.render("checkout"/* , { layout: './layouts/produto' } */);
