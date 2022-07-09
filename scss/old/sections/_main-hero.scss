@@ -1,7 +1,6 @@
-@use '../custom' as *;
 
 
-section.inside-hero {
+section.hero-sec {
     gap: 2.5rem;
     padding-left: 3rem; /* 48px */
     padding-right: 3rem; /* 48px */
@@ -17,9 +16,10 @@ section.inside-hero {
        }
     }
     >div:last-of-type {
-        background-image: url('/img/inside-hero.png');
+        background-image: url('/img/gio.jpg');
         background-size: cover;
         height: 16rem; /* 256px */
+        border-radius: 9999px;
         width: 100%;
         margin-top: 1.25rem; /* 20px */
         margin-bottom: 1.25rem; /* 20px */

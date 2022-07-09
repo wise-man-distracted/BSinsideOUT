@@ -1,33 +1,20 @@
-@use '../custom' as *;
 
-
-section.hero-sec {
+section.login-sec {
     gap: 2.5rem;
     padding-left: 3rem; /* 48px */
     padding-right: 3rem; /* 48px */
     >div:first-of-type {
         height: 100%;
-        width: 60%;
+        width: 50%;
         margin-top: 2.5rem;
-       @media (max-width: 900px) {
-           text-align: center !important;
-           div {
-            justify-content: center !important;
-        }
-       }
     }
     >div:last-of-type {
-        background-image: url('/img/gio.jpg');
-        background-size: cover;
-        height: 16rem; /* 256px */
-        border-radius: 9999px;
+        padding: 1rem;
+        border-radius: 4px;
         width: 100%;
         margin-top: 1.25rem; /* 20px */
         margin-bottom: 1.25rem; /* 20px */
         flex-basis: 70%;
-        @media (max-width: 900px) {
-            display: none !important;
-        }
     }
     article>h1 {
         font-size: 3rem;
@@ -47,3 +34,6 @@ section.hero-sec {
     }
 }
 
+#loginHelp {
+    text-align: center;
+}

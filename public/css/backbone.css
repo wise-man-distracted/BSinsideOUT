@@ -13755,6 +13755,19 @@ td.hidden-print {
     display: none !important;
   }
 }
+footer {
+  color: #666 !important;
+}
+
+.sys-msg {
+  margin: 20px auto 50px auto;
+  padding: 10px;
+  font-size: 2rem !important;
+}
+.sys-msg p {
+  overflow: visible !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #2A2A2A;
@@ -15442,7 +15455,7 @@ h2.title {
 select, textarea {
   background: #F0F0E9;
   border: 0;
-  color: black;
+  color: white;
   padding: 5px;
   width: 100%;
   border-radius: 0;
@@ -15676,7 +15689,7 @@ select, textarea {
   margin-bottom: 30px;
 }
 .blog-post-area .single-blog-post p {
-  color: #363432;
+  color: white;
 }
 .blog-post-area .post-meta {
   display: block;
@@ -15809,7 +15822,7 @@ select, textarea {
   color: #CCCCCC;
 }
 .rating-area .rate-this {
-  color: #363432;
+  color: white;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -15855,7 +15868,7 @@ select, textarea {
 }
 
 .media-heading {
-  color: #363432;
+  color: white;
   font-size: 14px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -15905,7 +15918,7 @@ select, textarea {
 }
 
 .response-area h2 {
-  color: #363432;
+  color: white;
   font-size: 20px;
   font-weight: 700;
 }
@@ -15961,7 +15974,7 @@ select, textarea {
 .replay-box h2 {
   font-weight: 700;
   font-size: 20px;
-  color: #363432;
+  color: white;
   margin-top: 0;
   margin-bottom: 45px;
 }

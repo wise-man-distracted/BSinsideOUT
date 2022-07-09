@@ -5,8 +5,8 @@ module.exports = {
     res.render("index");
   },
   // Change the layouts of the following routes to reference the right css file
-  showCadastro: (req, res) => {
-    res.render("cadastro", { layout: './layouts/dev' });
+  showAbout: (req, res) => {
+    res.render("about", {});
   },
   showProduto: async (req, res) => {
     let id = req.params.id
@@ -28,17 +28,17 @@ module.exports = {
   showLogin: (req, res) => {
     res.render("login"/* , { layout: './layouts/login' } */);
   },
-  showThemingKit: (req, res) => {
-    res.render("theming-kit"/* , { layout: './layouts/no-header-footer' } */);
+  showCart: (req, res) => {
+    res.render("cart");
   },
   showInside: (req, res) => {
-    res.render("inside", { layout: './layouts/inside' });
+    res.render("inside", {});
   },
   showArticle: (req, res) => {
     let id = req.params.id
 
     
-    res.render("article", { layout: './layouts/inside' });
+    res.render("artigo", {});
   },
   showError: (req, res) => {
     res.render('error', {error: 'Você está visualizando uma mensagem de erro teste para desenvolvimento', status: 418})
@@ -47,6 +47,6 @@ module.exports = {
     res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
   },
   showProdutos: (req, res) => {
-    res.render('produtos', {layout: './layouts/backbone'})
+    res.render('loja', {})
   }
 };

@@ -17,6 +17,19 @@ $primary-inside: #FF5858;
 
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
+footer {
+  color: #666 !important
+}
+
+.sys-msg {
+  margin: 20px auto 50px auto;
+  padding: 10px;
+  font-size: 2rem !important;
+  p {
+    overflow: visible !important;
+  }
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: #2A2A2A;
@@ -1914,7 +1927,7 @@ h2.title {
 select, textarea {
   background: #F0F0E9;
   border: 0;
-  color: black;
+  color: white;
   padding: 5px;
   width: 100%;
   border-radius: 0;
@@ -2174,7 +2187,7 @@ select, textarea {
     }
 
     p {
-      color: #363432;
+      color: white;
     }
   }
 
@@ -2328,7 +2341,7 @@ select, textarea {
   }
 
   .rate-this {
-    color: #363432;
+    color: white;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2382,7 +2395,7 @@ select, textarea {
 }
 
 .media-heading {
-  color: #363432;
+  color: white;
   font-size: 14px;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
@@ -2438,7 +2451,7 @@ select, textarea {
 
 .response-area {
   h2 {
-    color: #363432;
+    color: white;
     font-size: 20px;
     font-weight: 700;
   }
@@ -2502,7 +2515,7 @@ select, textarea {
   h2 {
     font-weight: 700;
     font-size: 20px;
-    color: #363432;
+    color: white;
     margin-top: 0;
     margin-bottom: 45px;
   }
