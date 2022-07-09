@@ -47,6 +47,6 @@ module.exports = {
     res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
   },
   showProdutos: (req, res) => {
-    res.render('produtos')
+    res.render('produtos', {layout: './layouts/backbone'})
   }
 };
