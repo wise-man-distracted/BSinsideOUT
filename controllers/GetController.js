@@ -35,6 +35,9 @@ module.exports = {
     res.render("inside", { layout: './layouts/inside' });
   },
   showArticle: (req, res) => {
+    let id = req.params.id
+
+    
     res.render("article", { layout: './layouts/inside' });
   },
   showError: (req, res) => {
@@ -43,4 +46,7 @@ module.exports = {
   showSuccess: (req, res) => {
     res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
   },
+  showProdutos: (req, res) => {
+    res.render('produtos')
+  }
 };

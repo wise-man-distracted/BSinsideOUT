@@ -15,6 +15,8 @@ router.get('/inside', GetController.showInside);
 router.get('/artigo/:id', GetController.showArticle);
 router.get('/error', GetController.showError);
 router.get('/success', GetController.showSuccess);
+router.get('/produtos', GetController.showProdutos);
+
 
 router.post('/login', PostController.login)
 router.post('/cadastro', PostController.cadastrar)

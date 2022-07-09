@@ -16104,7 +16104,7 @@ section.hero-sec {
 }
 section.hero-sec > div:first-of-type {
   height: 100%;
-  width: 90%;
+  width: 60%;
   margin-top: 2.5rem;
 }
 @media (max-width: 900px) {
@@ -16314,7 +16314,7 @@ section.inside-hero {
 }
 section.inside-hero > div:first-of-type {
   height: 100%;
-  width: 90%;
+  width: 60%;
   margin-top: 2.5rem;
 }
 @media (max-width: 900px) {
@@ -16467,7 +16467,7 @@ section.login-sec {
 }
 section.login-sec > div:first-of-type {
   height: 100%;
-  width: 90%;
+  width: 50%;
   margin-top: 2.5rem;
 }
 section.login-sec > div:last-of-type {
