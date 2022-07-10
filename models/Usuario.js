@@ -45,7 +45,11 @@ module.exports = (sequelize,DataTypes) => {
             paranoid: true
         }
     )
-    usuario.associate = (models) => {}
+    usuario.associate = (models) => {
+        usuario.hasMany(models.Artigo, {foreignKey: "usuarios_id", as:"artigos"},)
+        usuario.hasMany(models.Pedido, {foreignKey: "usuarios_id", as:"pedidos"},)
+        usuario.belongsToMany(models.Produto, {foreignKey:"usuarios_id", as: "carrinho", through:"itens_pedidos", otherKey:"produtos_id", timestamps: false})
+    }
 
     return usuario;
 }

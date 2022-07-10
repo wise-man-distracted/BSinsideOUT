@@ -21,7 +21,9 @@ module.exports = (sequelize,DataTypes) => {
             timestamps: true,
         }
     )
-    categoriaProduto.associate = (models) => {}
+    categoriaProduto.associate = (models) => {
+        categoriaProduto.hasMany(models.Produto, {foreignKey: "categorias_id", as:"produtos"})
+    }
 
     return categoriaProduto;
 }

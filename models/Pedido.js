@@ -44,7 +44,10 @@ module.exports = (sequelize,DataTypes) => {
             paranoid: true
         }
     )
-    pedido.associate = (models) => {}
+    pedido.associate = (models) => {
+        pedido.belongsTo(models.Usuario, {foreignKey:"usuarios_id", as: "dono", timestamps: false})
+        pedido.belongsToMany(models.Produto, {foreignKey: "pedidos_id", as: "itens", through: "itens_pedidos", otherKey:"produtos_id", timestamps: false})
+    }
 
     return pedido;
 }

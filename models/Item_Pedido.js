@@ -48,7 +48,9 @@ module.exports = (sequelize,DataTypes) => {
             timestamps: true,
         }
     )
-    itemPedido.associate = (models) => {}
+    itemPedido.associate = (models) => {
+      itemPedido.belongsTo(models.Pedido, {foreignKey: "pedidos_id", as:"item"},)
+    }
 
     return itemPedido;
 }
