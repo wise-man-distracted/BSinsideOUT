@@ -1,113 +1,578 @@
-<!-- <nav class="d-flex container-fluid w-100 my-3 py-2 px-20 bg-black">
-  <div class="">
-    TESTE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-    labore earum ab, veritatis laboriosam in tempora nobis rerum,
-    perferendis maxime quam at commodi est harum sit, itaque vero sunt
-    assumenda!
-  </div>
-</nav>
- -->
-  <section
-    class="hero-sec container-fluid shadow align-items-center justify-content-between d-flex py-3 my-3 mx-auto w-95">
-    <div class="mx-auto">
-      <article class="lg:text-left">
-        <h1>Explore um novo mundo dentro de sua casa</h1>
-        <!--             <div
-            class="bg-c2 -mt-2 bg-cover h-48 block lg:hidden shadow-md w-full my-5"
-          ></div> -->
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Consequatur aliquam voluptatibus perferendis autem eligendi
-          voluptate quam id ex nemo, repellat, officia quibusdam soluta
-          consectetur ut nam animi magni? Nobis, laborum?
-        </p>
-        <div class="d-flex gap-2">
-          <button class="primary-button mr-2">Ir para a loja</button>
-          <button class="border border-white">Cadastrar-se</button>
-        </div>
-      </article>
-    </div>
-    <div class="shadow"></div>
-  </section>
-  <section
-    class="offers-sec container-fluid shadow align-items-center justify-content-between d-flex flex-column mx-auto">
-    <h2 class="text-center">Ofertas da Semana</h2>
-    <div class="">
-      <div class="shadow">
-        <div class="container mx-auto"></div>
-      </div>
-      <div class="shadow">
-        <div id="opaque-wrapper" class="shadow-md w-full mt-2 h-12"></div>
-        <div class="whitespace-normal text-center text-white h-48 -mt-10 break-all z-50">
-          <div>
-            texto de um trem doido demais que surpreendentemente tem 6 linha
-          </div>
-        </div>
-      </div>
-      <div class="shadow"></div>
-      <div class="shadow"></div>
-      <div class="shadow"></div>
-      <div class="shadow"></div>
-    </div>
-    <div class="d-flex align-items-center justify-content-center">
-      <a href=""><img src="/img/chevron.svg" alt="Ver mais" /></a>
-    </div>
-  </section>
-  <section class="sec2 container-fluid shadow align-items-center justify-content-between d-flex flex-column mx-auto">
-    <div class="">
-      <article class="text-center">
-        <h2 class="mb-2">
-          Conheça a <strong>inside</strong>, nossa comunidade de cultura
-          nerd!
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Consequatur aliquam voluptatibus perferendis autem eligendi
-          voluptate quam id ex nemo, repellat, officia quibusdam soluta
-          consectetur ut nam animi magni? Nobis, laborum?
-        </p>
-      </article>
-    </div>
-    <div class="shadow">
-      <img class="object-cover w-full" src="/img/section2.jpg" alt="Banner de Heróis" />
-    </div>
-    <div class="my-2">
-      <a href="/blog1.html">
-        <button class="primary-button">
-          Go <strong>inside</strong>
-        </button></a>
-    </div>
-  </section>
-  <section
-    class="categories-sec container-fluid shadow align-items-center justify-content-between d-flex flex-column mx-auto">
-    <h2 class="text-center">Categorias</h2>
-    <div class="">
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="" src="/img/category1.jpg" alt="Categoria" />
-      </div>
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="" src="/img/category2.jpg" alt="Categoria" />
-      </div>
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="w-full brightness-50" src="/img/category3.jpg" alt="Categoria" />
-      </div>
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="" src="/img/category4.jpg" alt="Categoria" />
-      </div>
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="" src="/img/category5.jpg" alt="Categoria" />
-      </div>
-      <div class="shadow">
-        <a href="" class="">Categoria</a>
-        <img class="" src="/img/category6.jpg" alt="Categoria" />
-      </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-center">
-      <a href=""><img src="/img/chevron.svg" alt="Ver mais" /></a>
-    </div>
-  </section>
+	<section id="slider"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1>Explore um novo mundo dentro da sua casa...</h1>
+									<button type="button" class="btn btn-default" id="indexbanner-bttn">Blog insideOUT</button>								
+								</div>
+								<div class="col-sm-6">
+									
+									<img src="images/home/box/slide1.png" class="banner1 img-responsive" alt="" style="height:285px; padding-right: 15px"/>
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6" id="banner-margin">
+									<h1>Encontre o item que você precisa para a sua coleção</h1>
+									
+									<button type="button" class="btn btn-default" id="indexbanner-bttn">Nossa loja</button>
+								</div>
+								<div class="col-sm-6">
+									<!-- banner img 430 x 335 px -->
+									<img src="images/home/box/slide2.png" class="banner1 img-responsive" alt="" style="height:285px; padding-right: 15px;"/>
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6" id="banner-margin">
+									<h1>Encontre o item que você precisa para a sua coleção</h1>
+									
+									<button type="button" class="btn btn-default" id="indexbanner-bttn"> 11111</button>
+								</div>
+								<div class="col-sm-6">
+									<!-- banner img 430 x 335 px -->
+									<img src="images/home/box/slide2.png" class="banner1 img-responsive" alt="" style="height:285px; padding-right: 15px;"/>
+									<!-- <img src="images/home/pricing.png"  class="pricing" alt="" /> -->
+								</div>
+							</div>
+							
+						</div>
+
+					
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+	
+	<!--category-products-->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					
+				</div>
+				
+				<div class="col-sm-12">
+					<!--features_items-->
+					<div class="features_items" >
+						<h2 class="title text-center" style="margin-top: 50px;">Itens em destaque</h2>
+						<div style="margin-top: 45px;" ></div>
+						
+						
+						<div class="col-sm-4"  >
+							<div class="product-image-wrapper" >
+								<div class="single-products">
+										<div class="productinfo text-center" >
+											<img src="images/home/box/box1.png" alt="" />
+											
+										</div>
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+										</div> -->
+								</div>
+								
+							</div>
+						</div>
+
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/box/box2.png" alt="" />
+											
+										</div>
+									
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/box/box3.png" alt="" />
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/box/box4.png" alt="" />
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/box/box5.png" alt="" />
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<img src="images/home/box/box6.png" alt="" />
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center">
+											<h2 style="font-weight: 300;">Conheça a <span style="font-weight:bold">Inside</span>, a nossa comunidade de cultura nerd</h2>
+											<img src="images/home/box/bannerindex.png" alt="" style="height: 100px;"/>
+											<button type="button" class="btn btn-default " id="goinside-bttn">Go inside</button>	
+										</div>
+											
+								</div>
+								
+							</div>
+						</div>
+						
+					</div><!--features_items-->
+					
+					<!--category-tab-->
+					<!-- <div class="category-tab">
+						<div class="col-sm-12 " >
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab1" data-toggle="tab">Pathfinder</a></li>
+								<li><a href="#tab2" data-toggle="tab">D&D</a></li>
+								<li><a href="#tab3" data-toggle="tab">Aventuras5E</a></li>
+								
+								
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id="tab1" >
+								<div class="col-sm-3">
+									<div class="product2-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center" >
+												<img src="images/home/p1.jpg" alt="" />
+												<h2>R$334</h2>
+												<p class="overflow-clip"> Sandpoint, Light of the Lost Coast</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product2-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/p2.jpg" alt="" />
+												<h2>R$295</h2>
+												<p class="overflow-clip">Pathfinder: Livro Básico</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product2-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/p3.jpg" alt="" />
+												<h2>R$350</h2>
+												<p class="overflow-clip">Pathfinder: Worldscape </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product2-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/p4.jpg" alt="" />
+												<h2>R$135</h2>
+												<p class="overflow-clip">Pathfinder: Bestiário </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								
+							</div>
+							
+							<div class="tab-pane fade" id="tab2" >
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>R$171</h2>
+												<p class="overflow-clip"> Fizban's Treasury of...</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>R$155</h2>
+												<p class="overflow-clip"> Ravenloft</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>R$213</h2>
+												<p class="overflow-clip"> Strixhaven</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$132</h2>
+												<p class="overflow-clip">Dungeon Tiles </p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery5.jpg" alt="" />
+												<h2>$249</h2>
+												<p class="overflow-clip">Curse of Strahd</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery6.jpg" alt="" />
+												<h2>$297</h2>
+												<p class="overflow-clip">Icewind Dale</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery7.jpg" alt="" />
+												<h2>$234</h2>
+												<p class="overflow-clip">Monster Manual</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery8.jpg" alt="" />
+												<h2>$231</h2>
+												<p class="overflow-clip">The Wild Beyond...</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+
+							</div>
+							
+							
+							<div class="tab-pane fade" id="tab3" >
+								
+							</div>
+							
+							
+							<div class="tab-pane fade" id="tab4" >
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="tab-pane fade" id="tab5" >
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery2.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery4.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery3.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="product-image-wrapper">
+										<div class="single-products">
+											<div class="productinfo text-center">
+												<img src="images/home/gallery1.jpg" alt="" />
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>				 -->
+						
+					
+					<!--categorias-->
+					
+					<div class="features_items">
+						<h2 class="title text-center">Categorias</h2>
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria1.png" alt="" /></a>
+											
+										</div>
+										<!-- <div class="product-overlay">
+											<div class="overlay-content">
+												<h2>$56</h2>
+												<p>Easy Polo Black Edition</p>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
+											</div>
+										</div> -->
+								</div>
+								
+							</div>
+						</div>
+
+						
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria2.png" alt="" /></a>
+											
+										</div>
+									
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria3.png" alt="" /></a>
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria4.png" alt="" /></a>
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria5.png" alt="" /></a>
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="product-image-wrapper">
+								<div class="single-products">
+										<div class="productinfo text-center" id="categoryinfo">
+											<a href="#"><img src="images/home/box/categoria6.png" alt="" /></a>
+											
+										</div>
+										
+								</div>
+								
+							</div>
+						</div>
+
+								
+				</div>
+			</div>
+		</div>
+	</section>

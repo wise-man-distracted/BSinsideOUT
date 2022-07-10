@@ -1,34 +1,74 @@
-<header class="nav-bar container shadow mx-auto d-flex justify-content-between">
-    <a id="logo" href="/inside">
-        inside<strong style="color: #84c9fb; font-weight: 700">OUT</strong>
-    </a>
-    <!-- <a href="" class="flex lg:hidden items-center justify-center">
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-10 w-10"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        >
-        <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-        />
-        </svg>
-    </a> -->
-    <nav class="d-flex align-items-center">
-        <ul class="d-flex align-items-center gap-4">
-            <li>
-                <button class="rounded-pill primary-button py-2 px-3">
-                Meu Carrinho
-                </button>
-            </li>
-            <li><a href="">Loja</a></li>
-            <li><a href="">Promoções</a></li>
-            <li><a href="">Categorias</a></li>
-            <li><a href="/login">Log In</a></li>
-        </ul>
-    </nav>
+<header id="header">
+
+
+    <div class="header-middle">
+        <!--header-middle-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo pull-left">
+                        <a href="/"><img src="/images/home/logo.png" alt="" /></a>
+                    </div>
+                    <div class="btn-group pull-right">
+
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="shop-menu pull-right">
+                        <ul class="nav navbar-nav text-center">
+                            <li><a href="/"><i class="fa fa-user"></i> Perfil</a></li>
+                            <li><a href="checkout"><i class="fa fa-star"></i> Checkout</a></li>
+
+                            <li><a href="cart"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
+                            <li><a href="login"><i class="fa fa-lock"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="mainmenu pull-left">
+                        <ul class="nav navbar-nav collapse navbar-collapse">
+                            <li><a href="/">Home</a></li>
+                            <li class="dropdown"><a href="#" class="active">Loja<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="loja" class="active">Produtos</a></li>
+                                    <li><a href="checkout">Checkout</a></li>
+                                    <li><a href="cart">Carrinho</a></li>
+                                    <li><a href="login">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
+                                <ul role="menu" class="sub-menu">
+                                    <li><a href="inside">Mais recentes</a></li>
+                                    <li><a href="artigo">Todas as postagens</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="about">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="search_box pull-right">
+                        <input type="text" placeholder="Pesquisar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>

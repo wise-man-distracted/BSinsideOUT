@@ -1,0 +1,22 @@
+
+$primary: #84C9FB;
+$primary-inside: #FF5858;
+.primary-button {
+    background-color: $primary;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    border: none;
+    >a {
+        color: white !important;
+    }
+}
+
+.inside-button {
+    background-color: $primary-inside;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    border: none;
+    >a {
+        color: white !important;
+    }
+}
