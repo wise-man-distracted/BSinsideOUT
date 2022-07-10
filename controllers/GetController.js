@@ -1,4 +1,4 @@
-const { Produto } = require('../models');
+const { Produto, Artigo } = require('../models');
 
 module.exports = {
   showHomePage: (req, res) => {
@@ -31,8 +31,19 @@ module.exports = {
   showCart: (req, res) => {
     res.render("cart");
   },
-  showInside: (req, res) => {
-    res.render("inside", {});
+  showInside: async (req, res) => {
+    let id = req.params.id
+    let artigos; let categorias
+    try {
+      artigos = await Artigo.findAll()
+      artigos = artigos.dataValues
+      categorias = await Categoria_Artigo.findAll()
+      categorias = categorias.dataValues
+      console.log(categorias)
+    } catch(error) {
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+    }
+    res.render("inside", {artigos, categorias});
   },
   showArticle: (req, res) => {
     let id = req.params.id
