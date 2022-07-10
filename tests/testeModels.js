@@ -1,7 +1,6 @@
-// Trocar o nome da model caso queira testar outra
-const {Usuario, sequelize} = require('../models');
+const {Artigo, sequelize} = require('../models');
 
-Usuario.findByPk().then(
+Artigo.findByPk(1, {include: ["autor", "comentadores"]}).then(
     data => {
         console.log(data.toJSON());
         sequelize.close();

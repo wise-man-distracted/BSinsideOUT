@@ -56,7 +56,11 @@ module.exports = (sequelize,DataTypes) => {
             timestamps: true,
         }
     )
-    artigo.associate = (models) => {}
+    artigo.associate = (models) => {
+        artigo.belongsTo(models.Usuario, {foreignKey: "usuarios_id", as:"autor"},)
+        artigo.belongsTo(models.Categoria_Artigo, {foreignKey: "categorias_id", as:"categoria"},)
+        artigo.belongsToMany(models.Usuario, {foreignKey:"artigos_id", as: "comentadores", through:"comentarios_artigos", otherKey:"usuarios_id", timestamps: false})
+    }
 
     return artigo;
 }
