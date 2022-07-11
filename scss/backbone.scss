@@ -519,7 +519,7 @@ ul.sub-menu {
 
 .single-widget {
   h2 {
-    color: white;
+    color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -908,6 +908,11 @@ h2.title {
 .product-image-wrapper {
   overflow: hidden;
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#container-margin {
+  margin-top: 100px;
 }
 
 .product2-image-wrapper {
@@ -933,7 +938,12 @@ h2.title {
   font-weight: 700;
 }
 
-.productinfo {
+
+
+.productinfo { 
+
+
+
   h2 {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -1010,6 +1020,8 @@ h2.title {
   display: block;
   height: 100%;
 }
+
+
 
 .product-overlay {
   .overlay-content {
@@ -1421,6 +1433,7 @@ h2.title {
   padding-bottom: 10px;
 
   .col-sm-12 {
+    margin-top: 20px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1651,7 +1664,13 @@ h2.title {
 }
 
 #do_action {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+
+  .container {
+    margin-bottom: 20px;
+    background-color: #323336;
+    margin-top:20px;    
+  }
 }
 
 .breadcrumbs {
@@ -1702,7 +1721,12 @@ h2.title {
   }
 
   .container {
+    margin-bottom: 20px;
     background-color: #323336;
+    margin-top:20px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 92%;
   }
 
   .cart_info {
@@ -1906,6 +1930,10 @@ h2.title {
       background: transparent;
       border: 1px solid #F0F0E9;
     }
+
+    select {
+      color:black;      
+    }
   }
 
   > li {
@@ -1964,12 +1992,11 @@ select, textarea {
 *******checkout CSS******
 **************************/
 
-#checkout-container {
-  background: #323336;
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+// #checkout-container {
+//   background: #323336;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
 
 .step-one {
   margin-bottom: -10px;
@@ -2133,9 +2160,9 @@ select, textarea {
   margin-bottom: 20px;
 }
 
-.payment-options {
-  margin-bottom: 125px;
-  margin-top: -25px;
+.payment-options  {
+  margin-bottom: 20px;
+  display:flex;
 
   span label {
     color: white;
@@ -2143,12 +2170,37 @@ select, textarea {
     font-weight: 300;
     margin-right: 30px;
   }
+
+  #btn-comprar {
+    display:flex;
+    margin-left: auto;
+    background-color: #84C9FB;
+    padding: 3px 7px;
+    font-weight: bold;
+    height: 35px;
+    align-items: center;
+    font-size:20px;
+
+    a{
+    color:#000;
+
+    }
+
+  }
+
+    
+    
+    
+
+
 }
 
 #cart_items .cart_info .table.table-condensed.total-result {
   margin-bottom: 10px;
   margin-top: 35px;
   color: black;
+
+
 
   tr {
     border-bottom: 0;
