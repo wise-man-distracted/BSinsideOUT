@@ -13755,6 +13755,10 @@ td.hidden-print {
     display: none !important;
   }
 }
+.img-artigo--gambiarra {
+  max-height: 500px;
+}
+
 footer {
   color: #666 !important;
 }
@@ -13890,6 +13894,10 @@ a#scrollUp i {
 #container-contato {
   background-color: #323336;
   margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #get-in-touch {
