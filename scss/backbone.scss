@@ -180,9 +180,8 @@ a#scrollUp {
   padding-bottom: 20px;
   padding-top: 20px;
 
-  .col-sm-4 {
-    padding-left: 0;
-  }
+  
+  
 
   .col-sm-8 {
     padding-right: 0;
@@ -892,6 +891,23 @@ h2.title:before {
   margin-bottom: 50px;
   overflow: hidden;
   background-color: #323336;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;  
+
+}
+
+#itens_destaque {
+  font-family: abel;
+  font-size: 35px;
+
+}
+
+#categorias-home {  
+  font-family: abel;
+  font-size: 30px;
+
 }
 
 h2.title {
@@ -902,7 +918,6 @@ h2.title {
   margin: 10 15px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .product-image-wrapper {
@@ -1224,7 +1239,6 @@ h2.title {
   display: inline-block;
   margin-bottom: 25px;
   margin-top: 0;
-  padding-left: 15px;
 
   li {
     &:first-child {
@@ -1669,7 +1683,11 @@ h2.title {
   .container {
     margin-bottom: 20px;
     background-color: #323336;
-    margin-top:20px;    
+    margin-top:20px;  
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;  
   }
 }
 
@@ -1724,9 +1742,10 @@ h2.title {
     margin-bottom: 20px;
     background-color: #323336;
     margin-top:20px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 92%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .cart_info {
@@ -1992,11 +2011,7 @@ select, textarea {
 *******checkout CSS******
 **************************/
 
-// #checkout-container {
-//   background: #323336;
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-// }
+
 
 .step-one {
   margin-bottom: -10px;
@@ -2220,16 +2235,45 @@ select, textarea {
 /*************************
 *******Blog CSS******
 **************************/
+.container-geral {
+  background-color: #2A2A2A;
+}
+
+#container-blog {
+  background-color: #323336; 
+}
 
 .blog-post-area {
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+  h2{ 
+      display:flex;
+      justify-content:center;
+      font-family: abel;
+      font-size: 38px;
+    span {
+      color: #84C9FB; 
+    }
+
+  }  
+
   .single-blog-post {
+    
     h3 {
-      color: #84C9FB;
+      color: #ffffff;
       font-size: 16px;
       font-family: 'Poppins',sans-serif;
       text-transform: uppercase;
       font-weight: 500;
       margin-bottom: 17px;
+
+      
     }
 
     a img {
@@ -2272,6 +2316,8 @@ select, textarea {
     }
   }
 }
+
+
 
 .sinlge-post-meta li i:after {
   content: "";
@@ -2321,8 +2367,9 @@ select, textarea {
 }
 
 .pagination-area {
-  margin-bottom: 45px;
-  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-right: 0;
 
   .pagination li {
     a {

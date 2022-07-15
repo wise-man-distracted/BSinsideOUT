@@ -13905,9 +13905,6 @@ a#scrollUp i {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-.header-middle .container .row .col-sm-4 {
-  padding-left: 0;
-}
 .header-middle .container .row .col-sm-8 {
   padding-right: 0;
 }
@@ -14555,6 +14552,20 @@ h2.title:before {
   margin-bottom: 50px;
   overflow: hidden;
   background-color: #323336;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#itens_destaque {
+  font-family: abel;
+  font-size: 35px;
+}
+
+#categorias-home {
+  font-family: abel;
+  font-size: 30px;
 }
 
 h2.title {
@@ -14565,7 +14576,6 @@ h2.title {
   margin: 10 15px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .product-image-wrapper {
@@ -14846,7 +14856,6 @@ h2.title {
   display: inline-block;
   margin-bottom: 25px;
   margin-top: 0;
-  padding-left: 15px;
 }
 .pagination li:first-child a, .pagination li:first-child span {
   border-bottom-left-radius: 0;
@@ -15238,6 +15247,10 @@ h2.title {
   margin-bottom: 20px;
   background-color: #323336;
   margin-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .breadcrumbs {
@@ -15282,6 +15295,10 @@ h2.title {
   margin-bottom: 20px;
   background-color: #323336;
   margin-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 #cart_items .cart_info .cart_menu {
   background: #bdc3c7;
@@ -15697,8 +15714,33 @@ select, textarea {
 /*************************
 *******Blog CSS******
 **************************/
-.blog-post-area .single-blog-post h3 {
+.container-geral {
+  background-color: #2A2A2A;
+}
+
+#container-blog {
+  background-color: #323336;
+}
+
+.blog-post-area {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.blog-post-area h2 {
+  display: flex;
+  justify-content: center;
+  font-family: abel;
+  font-size: 38px;
+}
+.blog-post-area h2 span {
   color: #84C9FB;
+}
+.blog-post-area .single-blog-post h3 {
+  color: #ffffff;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -15783,8 +15825,9 @@ select, textarea {
 }
 
 .pagination-area {
-  margin-bottom: 45px;
-  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-right: 0;
 }
 .pagination-area .pagination li a {
   background: #F0F0E9;
