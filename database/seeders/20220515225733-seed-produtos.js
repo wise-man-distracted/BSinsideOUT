@@ -10,10 +10,10 @@ module.exports = {
       distribuidor: "Devir Brasil",
       preco: 190.79,
       rating: 4,
-      img_1: "/public/images/shop/product1.jpg",
-      img_2: "/public/images/shop/product1.jpg",
-      img_3: "/public/images/shop/product1.jpg",
-      img_4: "/public/images/shop/product1.jpg",
+      img_1: "/images/shop/product1.jpg",
+      img_2: "/images/shop/product1.jpg",
+      img_3: "/images/shop/product1.jpg",
+      img_4: "/images/shop/product1.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -34,10 +34,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 350.23,
       rating: 4,
-      img_1: "/public/images/shop/product2.jpg",
-      img_2: "/public/images/shop/product2.jpg",
-      img_3: "/public/images/shop/product2.jpg",
-      img_4: "/public/images/shop/product2.jpg",
+      img_1: "/images/shop/product2.jpg",
+      img_2: "/images/shop/product2.jpg",
+      img_3: "/images/shop/product2.jpg",
+      img_4: "/images/shop/product2.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -58,10 +58,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 190.71,
       rating: 4,
-      img_1: "/public/images/shop/product3.jpg",
-      img_2: "/public/images/shop/product3.jpg",
-      img_3: "/public/images/shop/product3.jpg",
-      img_4: "/public/images/shop/product3.jpg",
+      img_1: "/images/shop/product3.jpg",
+      img_2: "/images/shop/product3.jpg",
+      img_3: "/images/shop/product3.jpg",
+      img_4: "/images/shop/product3.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -82,10 +82,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 156.17,
       rating: 4,
-      img_1: "/public/images/shop/product4.jpg",
-      img_2: "/public/images/shop/product4.jpg",
-      img_3: "/public/images/shop/product4.jpg",
-      img_4: "/public/images/shop/product4.jpg",
+      img_1: "/images/shop/product4.jpg",
+      img_2: "/images/shop/product4.jpg",
+      img_3: "/images/shop/product4.jpg",
+      img_4: "/images/shop/product4.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -106,10 +106,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 228.69,
       rating: 4,
-      img_1: "/public/images/shop/product5.jpg",
-      img_2: "/public/images/shop/product5.jpg",
-      img_3: "/public/images/shop/product5.jpg",
-      img_4: "/public/images/shop/product5.jpg",
+      img_1: "/images/shop/product5.jpg",
+      img_2: "/images/shop/product5.jpg",
+      img_3: "/images/shop/product5.jpg",
+      img_4: "/images/shop/product5.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -130,10 +130,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 26.00,
       rating: 4,
-      img_1: "/public/images/shop/product6.jpg",
-      img_2: "/public/images/shop/product6.jpg",
-      img_3: "/public/images/shop/product6.jpg",
-      img_4: "/public/images/shop/product6.jpg",
+      img_1: "/images/shop/product6.jpg",
+      img_2: "/images/shop/product6.jpg",
+      img_3: "/images/shop/product6.jpg",
+      img_4: "/images/shop/product6.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -154,10 +154,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 89.60,
       rating: 4,
-      img_1: "/public/images/shop/product7.jpg",
-      img_2: "/public/images/shop/product7.jpg",
-      img_3: "/public/images/shop/product7.jpg",
-      img_4: "/public/images/shop/product7.jpg",
+      img_1: "/images/shop/product7.jpg",
+      img_2: "/images/shop/product7.jpg",
+      img_3: "/images/shop/product7.jpg",
+      img_4: "/images/shop/product7.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -178,10 +178,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 59.82,
       rating: 4,
-      img_1: "/public/images/shop/product8.jpg",
-      img_2: "/public/images/shop/product8.jpg",
-      img_3: "/public/images/shop/product8.jpg",
-      img_4: "/public/images/shop/product8.jpg",
+      img_1: "/images/shop/product8.jpg",
+      img_2: "/images/shop/product8.jpg",
+      img_3: "/images/shop/product8.jpg",
+      img_4: "/images/shop/product8.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -202,10 +202,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 383.00,
       rating: 4,
-      img_1: "/public/images/shop/product9.jpg",
-      img_2: "/public/images/shop/product9.jpg",
-      img_3: "/public/images/shop/product9.jpg",
-      img_4: "/public/images/shop/product9.jpg",
+      img_1: "/images/shop/product9.jpg",
+      img_2: "/images/shop/product9.jpg",
+      img_3: "/images/shop/product9.jpg",
+      img_4: "/images/shop/product9.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -226,10 +226,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 774.90,
       rating: 4,
-      img_1: "/public/images/shop/product10.jpg",
-      img_2: "/public/images/shop/product10.jpg",
-      img_3: "/public/images/shop/product10.jpg",
-      img_4: "/public/images/shop/product10.jpg",
+      img_1: "/images/shop/product10.jpg",
+      img_2: "/images/shop/product10.jpg",
+      img_3: "/images/shop/product10.jpg",
+      img_4: "/images/shop/product10.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -250,10 +250,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 339.58,
       rating: 4,
-      img_1: "/public/images/shop/product11.jpg",
-      img_2: "/public/images/shop/product11.jpg",
-      img_3: "/public/images/shop/product11.jpg",
-      img_4: "/public/images/shop/product11.jpg",
+      img_1: "/images/shop/product11.jpg",
+      img_2: "/images/shop/product11.jpg",
+      img_3: "/images/shop/product11.jpg",
+      img_4: "/images/shop/product11.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 
@@ -274,10 +274,10 @@ Exercitation ad irure nostrud deserunt aliqua. Do consequat ut deserunt culpa. S
       distribuidor: "Devir Brasil",
       preco: 449.96,
       rating: 4,
-      img_1: "/public/images/shop/product12.jpg",
-      img_2: "/public/images/shop/product12.jpg",
-      img_3: "/public/images/shop/product12.jpg",
-      img_4: "/public/images/shop/product12.jpg",
+      img_1: "/images/shop/product12.jpg",
+      img_2: "/images/shop/product12.jpg",
+      img_3: "/images/shop/product12.jpg",
+      img_4: "/images/shop/product12.jpg",
       estoque: 5,
       descricao: `Ex nostrud reprehenderit mollit commodo consectetur in nisi eu do anim consequat qui nulla incididunt. Et consectetur culpa dolore aliqua enim aute mollit. Amet et officia nisi esse excepteur labore ex occaecat aliquip.
 

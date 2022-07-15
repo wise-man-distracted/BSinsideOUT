@@ -91,186 +91,21 @@
 				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Itens em destaque</h2>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product1.jpg" alt="" />
-										<h2>R$ 190,79</h2>
-										<p>Strixhaven: Curriculum of Chaos</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								<!-- <div class="choose">
-									<ul class="nav nav-pills nav-justified">
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
-										<li><a href=""><i class="fa fa-plus-square"></i>Add to compare</a></li>
-									</ul>
-								</div> -->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product2.jpg" alt="" />
-										<h2>R$ 350,23</h2>
-										<p>Pathfinder: Worldscape</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-								
-								</div>
-
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product3.jpg" alt="" />
-										<h2>R$ 190,71</h2>
-										<p>Fizban's Treasury of Dragons</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product4.jpg" alt="" />
-										<h2>R$ 156,17</h2>
-										<p>Tormenta20 — Livro Básico</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product5.jpg" alt="" />
-										<h2>R$ 228,69</h2>
-										<p>MTG - Modern Horizons 2 x3 </p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-																		
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product6.jpg" alt="" />
-										<h2>R$ 26,00</h2>
-										<p>Tormenta Rpg - Só Aventuras Vol. 1</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
 						
+						<% produtos.forEach(p => { %>
 						<div class="col-sm-4">
 							<div class="product2-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo2 text-center">
-										<img src="images/shop/product7.jpg" alt="" />
-										<h2>R$ 89,60</h2>
-										<p>MTG - Nova Capenna x3</p>
+										<img src= <%= p.img_1 %>   alt="" />
+										<h2>R$ <%= parseFloat(p.preco).toFixed(2) %> </h2>
+										<p> <%= p.nome %> </p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
 									</div>
-									
 								</div>
-								
 							</div>
 						</div>
-						
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product8.jpg" alt="" />
-										<h2>R$ 59,82</h2>
-										<p>Tormenta20 — Coração de Rubi</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product9.jpg" alt="" />
-										<h2>R$ 383,00</h2>
-										<p>Pathfinder: Horror Adventures </p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product10.jpg" alt="" />
-										<h2>R$ 774,90</h2>
-										<p>Bloodborne: The Board Game</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-						
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product11.jpg" alt="" />
-										<h2>R$ 339,58</h2>
-										<p>Pathfinder: Sandpoint</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						
-						<div class="col-sm-4">
-							<div class="product2-image-wrapper">
-								<div class="single-products">
-									<div class="productinfo2 text-center">
-										<img src="images/shop/product12.jpg" alt="" />
-										<h2>$449,96</h2>
-										<p>World of Warcraft - WoLK</p>
-										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
+						<% }) %>
 						
 						<ul class="pagination">
 							<li class="active"><a href="">1</a></li>

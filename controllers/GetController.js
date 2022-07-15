@@ -54,7 +54,16 @@ module.exports = {
   showSuccess: (req, res) => {
     res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
   },
-  showProdutos: (req, res) => {
-    res.render('loja', {})
+  showProdutos: async (req, res) => {
+    
+    let produto; let descricoes; let preco
+    
+    try {
+      produtos = await Produto.findAll({include: "categoria", raw: true, nest: true})
+      res.render("loja", {produtos})
+    } catch (error) {
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+    }
+  
   }
 };
