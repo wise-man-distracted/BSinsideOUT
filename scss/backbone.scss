@@ -165,6 +165,10 @@ a#scrollUp {
 #container-contato {
   background-color: #323336;
   margin-bottom: 30px;
+  padding-right:30px;
+  padding-left:30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #get-in-touch {
@@ -2700,6 +2704,8 @@ select, textarea {
 }
 
 .contact-form {
+
+  
   .heading {
     text-transform: capitalize;
   }
