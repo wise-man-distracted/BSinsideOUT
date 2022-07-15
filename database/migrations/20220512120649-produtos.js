@@ -19,7 +19,7 @@ module.exports = {
         allowNull: false
       },            
       preco: {
-        type: Sequelize.DataTypes.INTEGER,
+        type: Sequelize.DataTypes.DECIMAL(10,2),
         allowNull: false
       },
       rating: {
