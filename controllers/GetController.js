@@ -10,14 +10,12 @@ module.exports = {
   },
   showProduto: async (req, res) => {
     let id = req.params.id
-    let produto; let descricoes; let preco
+    let produto;
 
     try {
       produto = await Produto.findOne({where:{id}, raw: true, nest: true})
-      descricoes = produto.descricao.split('\n')
-      //preco = String(produto.preco).slice(0, String(produto.preco).length-2)
-      preco = produto.preco
-      res.render("produto", {produto, descricoes, preco})
+      produtos = await Produto.findAll({raw: true, nest: true})
+      res.render("produto", {produto, produtos})
     } catch (error) {
       return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
     }

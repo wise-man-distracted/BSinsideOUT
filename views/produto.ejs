@@ -137,17 +137,17 @@
 						<div class="product-details">
 							<div class="col-sm-5">
 								<div class="view-product">
-									<img src="/images/product-details/1.jpg" alt="" />
-									<h3>ZOOM</h3>
+									<img src=<%= produto.img_1 %>  alt="" />
+									<h3></h3>
 								</div>
 								<div id="similar-product" class="carousel slide" data-ride="carousel">
 
 
 									<div class="carousel-inner">
 										<div class="item active">
-											<a href=""><img src="/images/product-details/similar1.jpg" alt=""></a>
-											<a href=""><img src="/images/product-details/similar2.jpg" alt=""></a>
-											<a href=""><img src="/images/product-details/similar3.jpg" alt=""></a>
+											<a href=""><img src=<%= produto.img_2 %> alt=""></a>
+											<a href=""><img src=<%= produto.img_3 %> alt=""></a>
+											<a href=""><img src=<%= produto.img_4 %> alt=""></a>
 										</div>
 										<div class="item">
 											<a href=""><img src="/images/product-details/similar1.jpg" alt=""></a>
@@ -175,21 +175,21 @@
 							<div class="col-sm-7">
 								<div class="product-information">
 									<img src="/images/product-details/new.jpg" class="newarrival" alt="" />
-									<h2>Anne Klein Sleeveless Colorblock Scuba</h2>
-									<p>Web ID: 1089772</p>
+									<h2><%= produto.nome %></h2>
+									<p><%= produto.distribuidor %></p>
 									<img src="/images/product-details/rating.png" alt="" />
 									<span>
-										<span>US $59</span>
-										<label>Quantity:</label>
+										<span><%= parseFloat(produto.preco).toFixed(2) %></span>
+										<label>Quantidade:</label>
 										<input type="text" value="3" />
 										<button type="button" class="btn btn-fefault cart">
 											<i class="fa fa-shopping-cart"></i>
 											Add to cart
 										</button>
 									</span>
-									<p><b>Availability:</b> In Stock</p>
+									<p><b>Availability:</b> <%= produto.estoque %> </p>
 									<p><b>Condition:</b> New</p>
-									<p><b>Brand:</b> E-SHOPPER</p>
+									<p><b>Brand:</b> <%= produto.distribuidor %>  </p>
 									<a href=""><img src="/images/product-details/share.png" class="share img-responsive"
 											alt="" /></a>
 								</div>
@@ -480,7 +480,7 @@
 													<div class="productinfo text-center">
 														<img src="/images/home/recommend3.jpg" alt="" />
 														<h2>$56</h2>
-														<p>Easy Polo Black Edition</p>
+														<p><%= produtos[0].nome %></p>
 														<button type="button" class="btn btn-default add-to-cart"><i
 																class="fa fa-shopping-cart"></i>Add to cart</button>
 													</div>
