@@ -7,7 +7,7 @@ module.exports = {
         let u
 
         try {
-            u = await Usuario.findOne({where:{email}})
+            u = await Usuario.findOne({where:{email}, raw: true, nest: true})
         } catch (error) {
             return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
         }
@@ -19,7 +19,10 @@ module.exports = {
         let senhaOk = bcrypt.compareSync(senha, u.senha)
         if(senhaOk) {
             req.session.usuario = u;
-            res.redirect("/");
+            res.render('index', {
+                logado: true,
+                usuario: req.session.usuario
+            })
         }
     },
     cadastrar : async (req, res) => {

@@ -2,11 +2,10 @@ const { Produto, Artigo } = require('../models');
 
 module.exports = {
   showHomePage: (req, res) => {
-    res.render("index");
+    res.render("index", {usuario: req.usuario});
   },
-  // Change the layouts of the following routes to reference the right css file
   showAbout: (req, res) => {
-    res.render("about", {});
+    res.render("about", {usuario : req.usuario});
   },
   showProduto: async (req, res) => {
     let id = req.params.id
@@ -15,42 +14,42 @@ module.exports = {
     try {
       produto = await Produto.findOne({where:{id}, raw: true, nest: true})
       produtos = await Produto.findAll({raw: true, nest: true})
-      res.render("produto", {produto, produtos})
+      res.render("produto", {produto, produtos, usuario : req.usuario})
     } catch (error) {
-      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario : req.usuario})
     }
   },
   showCheckout: (req, res) => {
-    res.render("checkout"/* , { layout: './layouts/produto' } */);
+    res.render("checkout", {usuario : req.usuario});
   },
   showLogin: (req, res) => {
-    res.render("login"/* , { layout: './layouts/login' } */);
+    res.render("login", {usuario : req.usuario});
   },
   showCart: (req, res) => {
-    res.render("cart");
+    res.render("cart", {usuario : req.usuario});
   },
   showInside: async (req, res) => {
     let id = req.params.id
-    let artigos; let categorias
+    let artigos
     try {
       artigos = await Artigo.findAll({include: ['categoria', 'autor'], raw: true, nest: true})
       console.log(artigos[0].autor)
     } catch(error) {
-      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario : req.usuario})
     }
-    res.render("inside", {artigos});
+    res.render("inside", {artigos, usuario : req.usuario});
   },
   showArticle: (req, res) => {
     let id = req.params.id
 
     
-    res.render("artigo", {});
+    res.render("artigo", {usuario : req.usuario});
   },
   showError: (req, res) => {
-    res.render('error', {error: 'Você está visualizando uma mensagem de erro teste para desenvolvimento', status: 418})
+    res.render('error', {error: 'Você está visualizando uma mensagem de erro teste para desenvolvimento', status: 418, usuario : req.usuario})
   },
   showSuccess: (req, res) => {
-    res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento"})
+    res.render('success', {header: 'DEU CERTO!', msg: "Você está visualizando uma mensagem de sucesso teste para desenvolvimento", usuario : req.usuario})
   },
   showProdutos: async (req, res) => {
     
@@ -58,9 +57,9 @@ module.exports = {
     
     try {
       produtos = await Produto.findAll({include: "categoria", raw: true, nest: true})
-      res.render("loja", {produtos})
+      res.render("loja", {produtos, usuario : req.usuario})
     } catch (error) {
-      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+      return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario : req.usuario})
     }
   
   }

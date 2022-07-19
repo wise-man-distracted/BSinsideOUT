@@ -16,11 +16,12 @@
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
                         <ul class="nav navbar-nav text-center">
-                            <li><a href="/"><i class="fa fa-user"></i> Perfil</a></li>
-                            <li><a href="checkout"><i class="fa fa-star"></i> Checkout</a></li>
-
+                            <li><a><p><i class="fa fa-user"></i> <%= usuario.nome %></p></a></li>
                             <li><a href="cart"><i class="fa fa-shopping-cart"></i> Carrinho</a></li>
                             <li><a href="login"><i class="fa fa-lock"></i> Login</a></li>
+                            <% if (usuario != "") { %>
+                                <li><a href="/sair"><i class="fa fa-sign-out"></i> Sair</a></li>
+                            <% } %>
                         </ul>
                     </div>
                 </div>
