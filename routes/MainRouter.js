@@ -17,12 +17,8 @@ router.get('/error', GetController.showError);
 router.get('/success', GetController.showSuccess);
 router.get('/loja', GetController.showProdutos);
 
-
-
-
 router.post('/login', PostController.login)
 router.post('/cadastro', PostController.cadastrar)
 
 
-// Exportar o roteador
 module.exports = router;

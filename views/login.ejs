@@ -4,9 +4,9 @@
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--login form-->
 						<h2>Entrar na conta</h2>
-						<form action="#">
-							<input type="text" placeholder="Nome" />
-							<input type="email" placeholder="Email" />
+						<form action="/login" method="post">
+							<input type="email" name="email" placeholder="Email" />
+							<input type="password" name="senha" placeholder="Senha"/>
 							<span>
 								<input type="checkbox" class="checkbox" id="lembrarSenha"> 
 								Lembrar senha
@@ -21,10 +21,13 @@
 				<div class="col-sm-4">
 					<div class="signup-form"><!--sign up form-->
 						<h2>Cadastre-se na InsideOUT!</h2>
-						<form action="#">
-							<input type="text" placeholder="Nome"/>
-							<input type="email" placeholder="Email"/>
-							<input type="password" placeholder="Senha"/>
+						<form action="/cadastro" method="post">
+							<input type="text" name="nome" placeholder="Nome"/>
+							<input type="text" name="sexo" placeholder="Sexo"/>
+							<input type="date" name="nascimento"/>
+							<input type="text" name="endereco" placeholder="Endereço"/>
+							<input type="email" name="email" placeholder="Email"/>
+							<input type="password" name="senha" placeholder="Senha"/>
 							<input type="password" placeholder="Confirmar Senha"/>
 							<button type="submit" class="btn btn-default">Cadastrar</button>
 						</form>
