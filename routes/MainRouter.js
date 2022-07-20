@@ -2,7 +2,9 @@ const express = require("express");
 
 const GetController = require('../controllers/GetController');
 const PostController = require("../controllers/PostController");
+const cadastrador = require("../middlewares/cadastrador");
 const loginCheck = require("../middlewares/loginCheck");
+const allowLogin = require("../middlewares/allowLogin");
 
 const router = express.Router();
 
@@ -10,7 +12,7 @@ router.get('/', loginCheck, GetController.showHomePage);
 router.get('/about', loginCheck, GetController.showAbout);
 router.get('/produto/:id', loginCheck, GetController.showProduto);
 router.get('/checkout', loginCheck, GetController.showCheckout);
-router.get('/login', loginCheck, GetController.showLogin);
+router.get('/login', allowLogin, loginCheck, GetController.showLogin);
 router.get('/cart', loginCheck, GetController.showCart);
 router.get('/inside', loginCheck, GetController.showInside);
 router.get('/artigo/:id', loginCheck, GetController.showArticle);
@@ -24,7 +26,7 @@ router.get('/sair', (req, res) => {
 })
 
 router.post('/login', PostController.login)
-router.post('/cadastro', PostController.cadastrar)
+router.post('/cadastro', cadastrador, PostController.cadastrar)
 
 
 module.exports = router;

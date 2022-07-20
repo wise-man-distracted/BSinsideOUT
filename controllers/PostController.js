@@ -19,6 +19,8 @@ module.exports = {
         let senhaOk = bcrypt.compareSync(senha, u.senha)
         if(senhaOk) {
             req.session.usuario = u;
+
+            console.log(req.session.usuario)
             res.render('index', {
                 logado: true,
                 usuario: req.session.usuario
@@ -36,9 +38,9 @@ module.exports = {
             }
 
             await Usuario.create({nome, nascimento, endereco, sexo, email, senha:hash})
-            return res.render('success', {header: "USUÁRIO CADASTRADO COM SUCESSO", msg: "Seja bem-vindo a insideOUT!"})
+            return res.render('success', {header: "USUÁRIO CADASTRADO COM SUCESSO", msg: "Seja bem-vindo a insideOUT!", usuario: req.usuario})
         } catch (error) {
-            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 500})
+            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", usuario: req.usuario, status: 500})
         }
 
     },
