@@ -9,12 +9,13 @@ module.exports = {
   },
   showProduto: async (req, res) => {
     let id = req.params.id
-    let produto;
+    let produto; let comentarios;
 
     try {
-      produto = await Produto.findOne({where:{id}, raw: true, nest: true})
-      produtos = await Produto.findAll({raw: true, nest: true})
-      res.render("produto", {produto, produtos, usuario : req.usuario})
+      produto = await Produto.findOne({where:{id}, include: 'comentarios', raw: true, nest: true})
+      comentarios = produto.comentarios
+      console.log(comentarios)
+      res.render("produto", {produto, comentarios, usuario : req.usuario})
     } catch (error) {
       return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario : req.usuario})
     }
@@ -56,7 +57,7 @@ module.exports = {
     let produto; let descricoes; let preco
     
     try {
-      produtos = await Produto.findAll({include: "categoria", raw: true, nest: true})
+      produtos = await Produto.findAll({include: 'categoria', raw: true, nest: true})
       res.render("loja", {produtos, usuario : req.usuario})
     } catch (error) {
       return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario : req.usuario})

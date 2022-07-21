@@ -13759,6 +13759,11 @@ td.hidden-print {
   max-height: 500px;
 }
 
+.carousel-inner > div > a > img {
+  height: 100px;
+  width: 50px;
+}
+
 footer {
   color: #666 !important;
 }
