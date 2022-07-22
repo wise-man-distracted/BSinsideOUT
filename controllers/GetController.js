@@ -1,4 +1,4 @@
-const { Produto, Artigo } = require('../models');
+const { Produto, Artigo, Comentario_Produto } = require('../models');
 
 module.exports = {
   showHomePage: (req, res) => {
@@ -12,8 +12,8 @@ module.exports = {
     let produto; let comentarios;
 
     try {
-      produto = await Produto.findOne({where:{id}, include: ['comentarios'], raw: true, nest: true})
-      comentarios = produto.comentarios
+      produto = await Produto.findOne({where:{id}, raw: true, nest: true})
+      comentarios = await Comentario_Produto.findAll({where: {produtos_id: id}, raw: true, nest: true})
       console.log(comentarios)
       res.render("produto", {produto, comentarios, usuario : req.usuario})
     } catch (error) {

@@ -13764,6 +13764,10 @@ td.hidden-print {
   width: 50px;
 }
 
+.invisible-field {
+  display: none;
+}
+
 footer {
   color: #666 !important;
 }

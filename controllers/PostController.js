@@ -1,4 +1,4 @@
-const { Usuario } = require('../models');
+const { Usuario, Comentario_Produto, Produto } = require('../models');
 const bcrypt = require('bcrypt')
 
 module.exports = {
@@ -44,4 +44,16 @@ module.exports = {
         }
 
     },
+    comentar: async (req, res) => {
+        try {
+            const { titulo, comentario, idUsuario, idProduto } = req.body
+            const produto = await Produto.findOne({where:{id:idProduto}})
+            const comentador = await Usuario.findOne({where:{id:idUsuario}})
+            await Comentario_Produto.create({titulo, comentario, rating: 9, usuarios_id: idUsuario, produtos_id: idProduto})
+
+            res.redirect("back")
+        } catch (error) {
+            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", usuario: req.usuario, status: 500})
+        }
+    }
 }

@@ -27,6 +27,7 @@ router.get('/sair', (req, res) => {
 
 router.post('/login', PostController.login)
 router.post('/cadastro', cadastrador, PostController.cadastrar)
+router.post('/comentar', loginCheck, PostController.comentar)
 
 
 module.exports = router;
