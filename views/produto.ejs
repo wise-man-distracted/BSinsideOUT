@@ -112,11 +112,12 @@
 							</div>
 							<div class="col-sm-7">
 								<div class="product-information">
-									<form method="post" action="/produto/{{id}}?_method=DELETE">
+									<div>
+									<form method="post" action="/produto?_method=DELETE">
 										<input type="hidden" name="_method" value="DELETE">
-										<button type="submit" class="btn btn-default pull-right">
+										<button type="submit" class="btn btn-default newarrival">
 									</form>
-																				
+								</div>								
 									<h2><%= produto.nome %></h2>
 									<p><%= produto.distribuidor %></p>
 									<img src="/images/product-details/rating.png" alt="" />

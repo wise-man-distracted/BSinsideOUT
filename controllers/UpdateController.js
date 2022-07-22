@@ -1,5 +1,5 @@
 module.exports = {
-    deletarProduto: async (req, res) => {
-        
+    deletarProduto: (req, res) => {
+        res.send('rota delete funfanfo')
     }
 }

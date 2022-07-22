@@ -31,6 +31,6 @@ router.post('/cadastro', cadastrador, PostController.cadastrar)
 router.post('/comentar', loginCheck, PostController.comentar)
 
 
-router.post('/produto/:id', UpdateController.deletarProduto)
+router.delete('/produto', loginCheck, UpdateController.deletarProduto)
 
 module.exports = router;
