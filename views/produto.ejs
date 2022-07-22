@@ -116,7 +116,7 @@
 									<form method="post" action="/produto?_method=DELETE">
 										<input type="hidden" name="_method" value="DELETE">
 										<input type="hidden" name="id" value=<%= produto.id %> >
-										<button type="submit" class="btn btn-default newarrival">
+										<button type="submit" class="btn btn-danger newarrival">
 									</form>
 								</div>								
 									<h2><%= produto.nome %></h2>
@@ -143,64 +143,23 @@
 						<div class="category-tab shop-details-tab">
 							<div class="col-sm-12">
 								<ul class="nav nav-tabs">
-									<li><a href="#details" data-toggle="tab">Detalhes</a></li>
+									<li><a href="#details" data-toggle="tab">Atualizar</a></li>
 									<li class="active"><a href="#reviews" data-toggle="tab">Avaliações (5)</a></li>
 								</ul>
 							</div>
 							<div class="tab-content">
-								<div class="tab-pane fade" id="details">
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="/images/home/gallery1.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
-													<button type="button" class="btn btn-default add-to-cart"><i
-															class="fa fa-shopping-cart"></i>Add to cart</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="/images/home/gallery2.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
-													<button type="button" class="btn btn-default add-to-cart"><i
-															class="fa fa-shopping-cart"></i>Add to cart</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="/images/home/gallery3.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
-													<button type="button" class="btn btn-default add-to-cart"><i
-															class="fa fa-shopping-cart"></i>Add to cart</button>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="product-image-wrapper">
-											<div class="single-products">
-												<div class="productinfo text-center">
-													<img src="/images/home/gallery4.jpg" alt="" />
-													<h2>$56</h2>
-													<p>Easy Polo Black Edition</p>
-													<button type="button" class="btn btn-default add-to-cart"><i
-															class="fa fa-shopping-cart"></i>Add to cart</button>
-												</div>
-											</div>
-										</div>
-									</div>
+								<div class="tab-pane fade in" id="details">
+									<form method="post" action="/produto?_method=DELETE">
+										<input type="hidden" name="_method" value="DELETE">
+										<input type="hidden" name="id" value=<%= produto.id %> >
+										<input type="text" name="nome" placeholder="Titulo" >
+										<input type="text" name="categorias_id" placeholder="ID da Categoria" >
+										<textarea name="descricao" placeholder="Descrição"></textarea>
+										<input name="distribuidor" placeholder="Distribuidor"></input>
+										<input name="preco" placeholder="Preço"></input>
+										<textarea name="descricao_curta" placeholder="Descrição curta"></textarea>
+										<button type="submit" class="btn btn-success">
+									</form>
 								</div>
 
 								<div class="tab-pane fade" id="companyprofile">

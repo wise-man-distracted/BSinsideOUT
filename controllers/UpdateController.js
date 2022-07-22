@@ -11,5 +11,9 @@ module.exports = {
             res.send(error)
         }
     },
-    
+    atualizarProduto: (req, res) => {
+        const { id, nome, distribuidor, preco, descricao, descricao_curta, categorias_id } = req.body
+        res.send([id, nome, distribuidor, preco, descricao, descricao_curta, categorias_id])
+    }
+
 }
