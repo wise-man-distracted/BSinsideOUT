@@ -5,6 +5,7 @@ const PostController = require("../controllers/PostController");
 const cadastrador = require("../middlewares/cadastrador");
 const loginCheck = require("../middlewares/loginCheck");
 const allowLogin = require("../middlewares/allowLogin");
+const UpdateController = require("../controllers/UpdateController");
 
 const router = express.Router();
 
@@ -29,5 +30,7 @@ router.post('/login', PostController.login)
 router.post('/cadastro', cadastrador, PostController.cadastrar)
 router.post('/comentar', loginCheck, PostController.comentar)
 
+
+router.post('/produto/:id', UpdateController.deletarProduto)
 
 module.exports = router;
