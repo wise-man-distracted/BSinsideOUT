@@ -12,7 +12,7 @@ module.exports = {
     let produto; let comentarios;
 
     try {
-      produto = await Produto.findOne({where:{id}, include: 'comentarios', raw: true, nest: true})
+      produto = await Produto.findOne({where:{id}, include: ['comentarios'], raw: true, nest: true})
       comentarios = produto.comentarios
       console.log(comentarios)
       res.render("produto", {produto, comentarios, usuario : req.usuario})
