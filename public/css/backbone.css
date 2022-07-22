@@ -14460,6 +14460,7 @@ h2.title:before {
   border-radius: 0px;
   box-shadow: none;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 .category-products .panel-default .panel-heading {
   background-color: #359de880;

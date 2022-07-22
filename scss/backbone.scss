@@ -785,6 +785,7 @@ h2.title:before {
     border-radius: 0px;
     box-shadow: none;
     margin-bottom: 0px;
+    cursor:pointer;
   }
 
   .panel-default .panel-heading {
@@ -792,6 +793,7 @@ h2.title:before {
     border: 0 none;
     color: #2A2A2A;
     padding: 5px 20px;
+    // cursor:pointer;
 
     .panel-title a {
       color: #FFF;
@@ -2818,3 +2820,6 @@ p {
 .overflow-clip {
   text-overflow: ellipsis;
 }
+
+//ARTIGO / ARTICLE
+
