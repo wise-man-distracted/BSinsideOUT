@@ -1577,9 +1577,11 @@ h2.title {
 /*************************
 *******login page CSS******
 **************************/
-
+.nascimento-input {
+  color:black;
+}
 #form {
-  background-image: url("/images/login/bgdark-dragon.jpg");
+  background-image: url("https://wallpaperaccess.com/full/636609.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -1597,12 +1599,13 @@ h2.title {
   font-weight: 300;
   margin-bottom: 30px;
   font-weight: bolder;
+
 }
 
 .login-form form input, .signup-form form input {
   background: #F0F0E9;
   border: medium none;
-  color: #84C9FB;
+  // color: black;
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -1612,6 +1615,8 @@ h2.title {
   outline: medium none;
   padding-left: 10px;
   width: 100%;
+  opacity:0.9;
+
 }
 
 .login-form form {
