@@ -33,4 +33,6 @@ router.post('/comentar', loginCheck, PostController.comentar)
 
 router.delete('/produto', loginCheck, UpdateController.deletarProduto)
 
+router.put('/produto', loginCheck, UpdateController.atualizarProduto )
+
 module.exports = router;

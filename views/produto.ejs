@@ -149,8 +149,8 @@
 							</div>
 							<div class="tab-content">
 								<div class="tab-pane fade in" id="details">
-									<form method="post" action="/produto?_method=DELETE">
-										<input type="hidden" name="_method" value="DELETE">
+									<form method="post" action="/produto?_method=PUT">
+										<input type="hidden" name="_method" value="PUT">
 										<input type="hidden" name="id" value=<%= produto.id %> >
 										<input type="text" name="nome" placeholder="Titulo" >
 										<input type="text" name="categorias_id" placeholder="ID da Categoria" >
