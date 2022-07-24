@@ -778,7 +778,7 @@ ul.sub-menu {
 .left-sidebar h2:after, h2.title:after {
   content: " ";
   position: absolute;
-  border: 1px solid #275c82;
+  
   bottom: 8px;
   left: 0;
   width: 100%;
@@ -1820,7 +1820,7 @@ h2.title {
 .cart_info table tr td {
   border-top: 0 none;
   vertical-align: inherit;
-  color: black;
+  color:white;
   font-weight: bold;
 }
 
@@ -1865,8 +1865,8 @@ h2.title {
 }
 
 .cart_quantity_button a {
-  background: #ffffff;
-  color: black;
+  background:  #323336;
+  color: #ffffff;
   display: inline-block;
   font-size: 16px;
   height: 28px;
@@ -1969,8 +1969,11 @@ h2.title {
   margin-left: 10px;
 }
 
+#title_checkout{
+  color:#323336;
+}
 #price {
-  color: black;
+  color: white;
 }
 
 .user_info {
