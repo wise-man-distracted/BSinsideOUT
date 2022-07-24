@@ -67,6 +67,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
 
+#bannerh1 {
+ padding-top:50px;
+ padding-left: 25px;
+
+}
+
 .btn {
   &:hover, &:focus {
     outline: none;
@@ -97,7 +103,7 @@ a#scrollUp {
 **************************/
 
 .header_top {
-  background: none repeat scroll 0 0 #F0F0E9;
+  background: none repeat scroll 0 0 #ffffff;
 }
 
 .contactinfo ul li {
@@ -177,15 +183,19 @@ a#scrollUp {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.header-middle{
+  background-color:#141414;
+}
 
-.header-middle .container .row {
+.header-middle .container {
+  width: 100%;
   border-bottom: 1px solid #f5f5f5;
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 20px;
   padding-top: 20px;
-
-  
+  padding-right: 50px;
+  padding-left: 50px;
   
 
   .col-sm-8 {
@@ -236,7 +246,7 @@ a#scrollUp {
   }
 
   a {
-    background: #2A2A2A;
+    background: #141414;
     color: #FFF;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -251,7 +261,7 @@ a#scrollUp {
 
     &:hover {
       color: #84C9FB;
-      background: #2A2A2A;
+      background: #141414;
     }
   }
 }
@@ -259,6 +269,7 @@ a#scrollUp {
 .header-bottom {
   padding-bottom: 30px;
   padding-top: 30px;
+  background-color: #2A2A2A;
 }
 
 .navbar-collapse.collapse {
@@ -294,7 +305,7 @@ a#scrollUp {
 }
 
 .search_box input {
-  background: #F0F0E9;
+  background: #ffffff;
   border: medium none;
   color: #5c5a5a;
   font-family: 'Poppins';
@@ -383,7 +394,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  background: #F0F0E9;
+  background: #ffffff;
 }
 
 .footer-top .container {
@@ -396,7 +407,7 @@ ul.sub-menu {
 
   h2 {
     color: #84C9FB;
-    font-family: abel;
+    font-family: 'Poppins', sans-serif;
     font-size: 27px;
     text-transform: uppercase;
 
@@ -612,6 +623,17 @@ ul.sub-menu {
 
 #slider {
   padding-bottom: 45px;
+  
+}
+
+
+.carousel-inner {
+  height: 350px;
+  background-image: url('https://wallpaperaccess.com/full/378013.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  
 }
 
 .carousel-indicators li {
@@ -623,7 +645,11 @@ ul.sub-menu {
 }
 
 .item {
-  padding-left: 100px;
+  
+  background-size: cover;
+  display: flex;
+
+
 }
 
 .pricing {
@@ -633,11 +659,14 @@ ul.sub-menu {
 }
 
 .item {
+  
+
   h1 {
     color: #FFF;
-    font-family: abel;
-    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
     margin-top: 25px;
+    text-shadow: #000 2px 3px 2px;
 
     span {
       color: #84C9FB;
@@ -698,7 +727,8 @@ ul.sub-menu {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 85px;
+  margin-top: 100px;
+  margin-left: 15px;
 
   &:hover {
     background: #ffffff;
@@ -906,13 +936,13 @@ h2.title:before {
 }
 
 #itens_destaque {
-  font-family: abel;
-  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
 
 }
 
 #categorias-home {  
-  font-family: abel;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
 
 }
@@ -1276,7 +1306,7 @@ h2.title {
 
   li {
     a, span {
-      background-color: #f0f0e9;
+      background-color: #ffffff;
       border: 0;
       float: left;
       line-height: 1.42857;
@@ -1495,7 +1525,7 @@ h2.title {
     display: block;
 
     input {
-      background: #F0F0E9;
+      background: #ffffff;
       border: 0 none;
       color: #A6A6A1;
       font-family: 'Poppins', sans-serif;
@@ -1511,7 +1541,7 @@ h2.title {
   }
 
   textarea {
-    background: #F0F0E9;
+    background: #ffffff;
     border: medium none;
     color: #A6A6A1;
     height: 195px;
@@ -1603,7 +1633,7 @@ h2.title {
 }
 
 .login-form form input, .signup-form form input {
-  background: #F0F0E9;
+  background: #ffffff;
   border: medium none;
   // color: black;
   display: block;
@@ -1833,7 +1863,7 @@ h2.title {
 }
 
 .cart_quantity_button a {
-  background: #F0F0E9;
+  background: #ffffff;
   color: black;
   display: inline-block;
   font-size: 16px;
@@ -1859,7 +1889,7 @@ h2.title {
   overflow: hidden;
 
   a {
-    background: #F0F0E9;
+    background: #ffffff;
     color: #2A2A2A;
     padding: 5px 7px;
     font-size: 16px;
@@ -1959,7 +1989,7 @@ h2.title {
 
     &.zip-field input {
       background: transparent;
-      border: 1px solid #F0F0E9;
+      border: 1px solid #ffffff;
     }
 
     select {
@@ -1973,7 +2003,7 @@ h2.title {
   }
 
   input {
-    background: #F0F0E9;
+    background: #ffffff;
     border: 0;
     color: black;
     padding: 5px;
@@ -1984,7 +2014,7 @@ h2.title {
 }
 
 select, textarea {
-  background: #F0F0E9;
+  background: #ffffff;
   border: 0;
   color: white;
   padding: 5px;
@@ -2031,7 +2061,7 @@ select, textarea {
 
 .register-req, .step-one .heading {
   display: none;
-  background: none repeat scroll 0 0 #F0F0E9;
+  background: none repeat scroll 0 0 #ffffff;
   color: #363432;
   font-size: 20px;
   margin-bottom: 35px;
@@ -2126,7 +2156,7 @@ select, textarea {
 }
 
 .shopper-info > form > input {
-  background: #F0F0E9;
+  background: #ffffff;
   border: 0 none;
   margin-bottom: 10px;
   padding: 10px;
@@ -2136,7 +2166,7 @@ select, textarea {
 
 .form-two > form > {
   select, input {
-    background: #F0F0E9;
+    background: #ffffff;
     border: 0 none;
     margin-bottom: 10px;
     padding: 10px;
@@ -2146,7 +2176,7 @@ select, textarea {
 }
 
 .form-one > form > input {
-  background: #F0F0E9;
+  background: #ffffff;
   border: 0 none;
   margin-bottom: 10px;
   padding: 10px;
@@ -2267,7 +2297,7 @@ select, textarea {
   h2{ 
       display:flex;
       justify-content:center;
-      font-family: abel;
+      font-family: 'Poppins', sans-serif;
       font-size: 38px;
     span {
       color: #84C9FB; 
@@ -2309,7 +2339,7 @@ select, textarea {
       display: inline;
 
       li {
-        background: #F0F0E9;
+        background: #ffffff;
         float: left;
         margin-right: 10px;
         padding: 0 5px;
@@ -2385,7 +2415,7 @@ select, textarea {
 
   .pagination li {
     a {
-      background: #F0F0E9;
+      background: #ffffff;
       border: 0 none;
       border-radius: 0;
       color: #84C9FB;
@@ -2413,7 +2443,7 @@ select, textarea {
   overflow: hidden;
 
   .pager li a {
-    background: #F0F0E9;
+    background: #ffffff;
     border: 0 none;
     border-radius: 0;
     color: #84C9FB;
@@ -2539,7 +2569,7 @@ select, textarea {
       display: block;
       font-size: 10px;
       padding: 1px;
-      background: #F0F0E9;
+      background: #ffffff;
 
       &:hover {
         color: #fff;
@@ -2594,7 +2624,7 @@ select, textarea {
   margin-bottom: 15px;
 
   li {
-    background: #F0F0E9;
+    background: #ffffff;
     color: #363432;
     float: left;
     font-size: 10px;
@@ -2726,7 +2756,7 @@ select, textarea {
 #contact-page {
   .form-control {
     &::-moz-placeholder {
-      color: #8D8D8D;
+      color: #292929;
     }
 
     background-color: #fff;
