@@ -3424,7 +3424,6 @@
     top: 5px;
   }
 }
-/* xs */
 @media (max-width: 767px) {
   .header_top .col-sm-6:first-child {
     display: inline-block;
@@ -13997,7 +13996,6 @@ a#scrollUp i {
 .header-bottom {
   padding-bottom: 30px;
   padding-top: 30px;
-  background-color: #2A2A2A;
 }
 
 .navbar-collapse.collapse {
@@ -14111,6 +14109,11 @@ ul.sub-menu {
 /*************************
 *******Footer CSS******
 **************************/
+@media (max-width: 700px) {
+  .footer-top .container {
+    display: none;
+  }
+}
 #footer {
   background: #ffffff;
 }
@@ -14118,6 +14121,7 @@ ul.sub-menu {
 .footer-top .container {
   border-bottom: 1px solid #E0E0DA;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .companyinfo {
@@ -15280,10 +15284,6 @@ h2.title {
   height: 200px;
 }
 
-.shopper-informations {
-  display: none;
-}
-
 #do_action {
   margin-bottom: 20px;
 }
@@ -15336,16 +15336,14 @@ h2.title {
   margin-bottom: 50px;
 }
 #cart_items .container {
-  margin-bottom: 20px;
   background-color: #323336;
-  margin-top: 20px;
   padding-right: 30px;
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
 #cart_items .cart_info .cart_menu {
-  background: #bdc3c7;
+  background: white;
   color: #fff;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -15364,7 +15362,7 @@ h2.title {
 .cart_info table tr td {
   border-top: 0 none;
   vertical-align: inherit;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -15397,6 +15395,10 @@ h2.title {
 .cart_product {
   display: block;
   margin: 15px -70px 10px 25px;
+}
+.cart_product img {
+  height: 100px;
+  width: 110px;
 }
 
 .cart_quantity_button a {
@@ -15572,6 +15574,79 @@ select, textarea {
 /*************************
 *******checkout CSS******
 **************************/
+@media (max-width: 700px) {
+  #cart_items .cart_info .image {
+    padding-left: 30px;
+  }
+  #cart_items .cart_info .cart_description p {
+    font-size: 10px;
+  }
+  #cart_items .cart_info .cart_description h4 {
+    margin-bottom: 0;
+  }
+  #cart_items .cart_info .cart_description h4 a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  #cart_items .cart_info .cart_description p {
+    color: white;
+    margin-left: 12px;
+  }
+  #cart_items .cart_info .cart_price p {
+    color: white;
+    font-size: 15px;
+  }
+  #cart_items .cart_info .cart_total_price {
+    color: white;
+    font-size: 15px;
+  }
+
+  .cart_product {
+    display: block;
+    margin: 15px -70px 10px 25px;
+  }
+  .cart_product img {
+    height: 50px;
+    width: 55px;
+  }
+
+  .cart_quantity_button a {
+    background: #323336;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    height: 28px;
+    overflow: hidden;
+    text-align: center;
+    width: 35px;
+  }
+
+  .cart_quantity_input {
+    color: black;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .cart_delete {
+    display: block;
+    margin-right: -12px;
+    overflow: hidden;
+  }
+  .cart_delete a {
+    background: #ffffff;
+    color: #2A2A2A;
+    padding: 5px 7px;
+    font-size: 16px;
+  }
+  .cart_delete a:hover {
+    background: #84C9FB;
+  }
+}
 .step-one {
   margin-bottom: -10px;
 }
@@ -15587,7 +15662,6 @@ select, textarea {
 }
 
 .checkout-options {
-  display: none;
   padding-left: 20px;
 }
 .checkout-options h3 {

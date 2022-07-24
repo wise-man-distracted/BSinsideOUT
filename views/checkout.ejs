@@ -1,146 +1,205 @@
-	<section id="cart_items">
-		<div class="container" id="checkout-container">
-			<div class="breadcrumbs">
-				<ol class="breadcrumb">
-				  <li><a href="/">Home</a></li>
-				  <li class="active">Check out</li>
-				</ol>
-			</div><!--/breadcrums-->
+<section id="cart_items">
+	<div class="container">
+		<div class="breadcrumbs">
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li class="active">Check out</li>
+			</ol>
+		</div><!--/breadcrums-->
 
-			
-			<div class="checkout-options">				
-			</div><!--/checkout-options-->
+		<div class="step-one">
+			<h2 class="heading">Step1</h2>
+		</div>
+		<div class="checkout-options">			
+		</div><!--/checkout-options-->
 
-			<div class="register-req">
-				<p>Por favor, confira o seu carrinho antes de efetuar a compra.</p>
-			</div><!--/register-req-->
+		<div class="register-req">
+			<p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
+		</div><!--/register-req-->
 
-			
-			<div class="review-payment">
-				<!-- <h2>Revisar e Pagamento</h2> -->
-			</div>
-
-			<div class="table-responsive cart_info">
-				<table class="table table-condensed">
-					<thead>
-						<tr class="cart_menu " style="background-color: #84c9fb;">
-							<td class="image">Produto</td>
-							<td class="description"></td>
-							<td class="price">Preço</td>
-							<td class="quantity">Quantidade</td>
-							<td class="total">Total</td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/shop/product4.jpg" alt="" class="foto-checkout"></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">TORMENTA 20</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/shop/product2.jpg" alt="" class="foto-checkout"></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">PATHFINDER</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="images/shop/product6.jpg" alt="" class="foto-checkout"></a>
-							</td>
-							<td class="cart_description">
-								<h4><a href="">TORMENTA RPG</a></h4>
-								<p>Web ID: 1089772</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">&nbsp;</td>
-							<td colspan="2">
-								<table class="table table-condensed total-result" style="background-color:#323336">
-									<tr>
-										<td>Carrinho Sub Total</td>
-										<td>$59</td>
-									</tr>
-									<tr>
-										<td>Taxa</td>
-										<td>$2</td>
-									</tr>
-									<tr class="shipping-cost">
-										<td>Custo do frete</td>
-										<td>Grátis</td>										
-									</tr>
-									<tr>
-										<td>Total</td>
-										<td class="price">$61</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="payment-options">
-				
-					<div id="btn-comprar">
-					<a href="#">Comprar</a>
+		<div class="shopper-informations">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="shopper-info">
+						<p>Entrar na conta</p>
+						<form>
+							<input type="email" placeholder="E-mail">
+							<input type="password" placeholder="Password">
+						</form>
+						<a class="btn btn-primary" href="">Cadastrar</a>
+						<a class="btn btn-primary" href="">Entrar</a>
 					</div>
 				</div>
+				<div class="col-sm-5 clearfix">
+					<div class="bill-to">
+						<p>Informações de pagamento e Endereço</p>
+						<div class="form-one">
+							<form>
+								<input type="text" placeholder="Nome Completo *">
+								<input type="email" placeholder="Email*">
+								<input type="text" placeholder="CPF *">
+								<input type="text" placeholder="Número do Cartão *">
+								<input type="text" placeholder="Nome no Cartão *">
+								<input type="text" placeholder="CVC *">
+								<input type="text" placeholder="Endereço *">
+								<input type="text" placeholder="Complemento 1 *">
+							</form>
+						</div>
+						<div class="form-two">
+							<form>
+								<input type="text" placeholder="Código Postal*">
+								<input type="text" placeholder="País">
+								<input type="text" placeholder="Cidade*">
+								<input type="text" placeholder="Estado*">
+								<input type="text" placeholder="Endereço *">
+								<input type="text" placeholder="Complemento  *">
+								<input type="text" placeholder="Referências *">
+								<input type="text" placeholder="Número para contato">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="shopper-info">							
+						<a class="btn btn-primary" href="">PAGAR AGORA</a>
+						<a class="btn btn-primary" href="">REVISAR PEDIDO</a>
+					</div>
+				</div>	
+				<div class="col-sm-4">	
+									
+				</div>					
 			</div>
 		</div>
-	</section>
+		<div class="review-payment">
+			
+			<h2>Revisar o pedido e Pagar</h2>
+		</div>
+
+		<div class="table-responsive cart_info">
+			<table class="table table-condensed">
+				<thead>
+					<tr class="cart_menu">
+						<td class="image">Produto</td>
+						<td class="description">Nome</td>
+						<td class="price">Preço</td>
+						<td class="quantity">Quantidade</td>
+						<td class="total">Total</td>
+						<td></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="cart_product">
+							<a href=""><img src="images/shop/product2.jpg" alt=""></a>
+						</td>
+						<td class="cart_description">
+							<h4><a href="">PATHFINDER</a></h4>
+							<p>Web ID: 1089772</p>
+						</td>
+						<td class="cart_price">
+							<p>$59</p>
+						</td>
+						<td class="cart_quantity">
+							<div class="cart_quantity_button">
+								<a class="cart_quantity_up" href=""> + </a>
+								<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+								<a class="cart_quantity_down" href=""> - </a>
+							</div>
+						</td>
+						<td class="cart_total">
+							<p class="cart_total_price">$59</p>
+						</td>
+						<td class="cart_delete">
+							<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="cart_product">
+							<a href=""><img src="images/shop/product7.jpg" alt=""></a>
+						</td>
+						<td class="cart_description">
+							<h4><a href="">MAGIC CARDS</a></h4>
+							<p>Web ID: 1089772</p>
+						</td>
+						<td class="cart_price">
+							<p>$59</p>
+						</td>
+						<td class="cart_quantity">
+							<div class="cart_quantity_button">
+								<a class="cart_quantity_up" href=""> + </a>
+								<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+								<a class="cart_quantity_down" href=""> - </a>
+							</div>
+						</td>
+						<td class="cart_total">
+							<p class="cart_total_price">$59</p>
+						</td>
+						<td class="cart_delete">
+							<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart_product">
+							<a href=""><img src="images/shop/product12.jpg" alt=""></a>
+						</td>
+						<td class="cart_description">
+							<h4><a href="">WARCRAFT</a></h4>
+							<p>Web ID: 1089772</p>
+						</td>
+						<td class="cart_price">
+							<p>$59</p>
+						</td>
+						<td class="cart_quantity">
+							<div class="cart_quantity_button">
+								<a class="cart_quantity_up" href=""> + </a>
+								<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+								<a class="cart_quantity_down" href=""> - </a>
+							</div>
+						</td>
+						<td class="cart_total">
+							<p class="cart_total_price">$59</p>
+						</td>
+						<td class="cart_delete">
+							<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">&nbsp;</td>
+						<td colspan="2">
+							<table class="table table-condensed total-result">
+								<tr>
+									<td>Cart Sub Total</td>
+									<td>$59</td>
+								</tr>
+								<tr>
+									<td>Exo Tax</td>
+									<td>$2</td>
+								</tr>
+								<tr class="shipping-cost">
+									<td>Shipping Cost</td>
+									<td>Free</td>										
+								</tr>
+								<tr>
+									<td>Total</td>
+									<td><span>$61</span></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="payment-options">
+				<span>
+					<label><input type="checkbox"> Direct Bank Transfer</label>
+				</span>
+				<span>
+					<label><input type="checkbox"> Check Payment</label>
+				</span>
+				<span>
+					<label><input type="checkbox"> Paypal</label>
+				</span>
+			</div>
+	</div>
+</section>

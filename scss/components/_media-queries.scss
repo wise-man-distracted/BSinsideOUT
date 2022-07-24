@@ -64,6 +64,7 @@
     width: 50%;
   }
 
+
   .footer-widget {
     .col-sm-2 {
       width: 33%;
@@ -120,7 +121,7 @@
   }
 }
 
-/* xs */
+// media query
 @media (max-width: 767px) {
   .header_top .col-sm-6 {
     &:first-child {
@@ -242,6 +243,8 @@
   .pricing {
     width: 100px;
   }
+
+  
 
   .footer-top .col-sm-7 .col-sm-3 {
     width: 50%;
