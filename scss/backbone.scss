@@ -188,7 +188,7 @@ a#scrollUp {
 }
 
 .header-middle {
-  border-bottom: 1px solid #f5f5f5;
+border-bottom: 1px solid #f5f5f5;
  .container .row {
   
   
@@ -394,25 +394,6 @@ ul.sub-menu {
 /*************************
 *******Footer CSS******
 **************************/
-
-// MEDIA QUERIES -700PX FOOTER
-
-@media (max-width: 700px) { 
-  .footer-top{
-   display:none
- }
-
-}
-
-
-
-
-
-
-
-    
-    
-
 
 #footer {
   background: #ffffff;
@@ -680,15 +661,8 @@ ul.sub-menu {
 }
 
 .item {
-<<<<<<< HEAD
   
 
-=======
-
-  
-
-  
->>>>>>> 50ba2638e326a0ac2525d60bb996d84fd5b4154f
   h1 {
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -776,11 +750,8 @@ ul.sub-menu {
 
   &:hover {
     color: #84C9FB;
-
   }
 }
-
-
 
 .right {
   right: 0;
@@ -1405,7 +1376,6 @@ h2.title {
 #similar-product .carousel-inner .item {
   padding-left: 0px;
 
-
   img {
     display: inline-block;
     margin-left: 15px;
@@ -1639,7 +1609,6 @@ h2.title {
 /*************************
 *******login page CSS******
 **************************/
-
 .nascimento-input {
   color:black;
 }
@@ -1648,38 +1617,31 @@ h2.title {
   background-size: cover;
   display: flex;
   align-items: center;
+
+  /* margin-bottom:20px; */
   margin-right: auto;
   margin-left: auto;
-  height: 900px ;
+  height: 800px;
 }
 
 .login-form h2, .signup-form h2 {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
-  // font-weight: 500;
+  font-weight: 300;
   margin-bottom: 30px;
   font-weight: bolder;
 
 }
 
-
-
-
-
 .login-form form input, .signup-form form input {
-<<<<<<< HEAD
   background: #ffffff;
-=======
-
-
-  background: #e8f0fe;
->>>>>>> 50ba2638e326a0ac2525d60bb996d84fd5b4154f
   border: medium none;
+  // color: black;
   display: block;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   height: 40px;
   margin-bottom: 10px;
   outline: medium none;
@@ -1695,7 +1657,6 @@ h2.title {
     color: white;
 
     input {
-      font-size:15px;
       width: 15px;
       float: left;
       height: 15px;
@@ -1747,12 +1708,6 @@ h2.title {
   width: 50px;
 }
 
-
-
-
-
-
-
 /*************************
 *******Cart CSS******
 **************************/
@@ -1763,7 +1718,7 @@ h2.title {
 }
 
 .shopper-informations {
-  // display: none;
+  display: none;
 }
 
 #do_action {
@@ -1772,6 +1727,7 @@ h2.title {
   .container {
     margin-bottom: 20px;
     background-color: #323336;
+    margin-top:20px;  
     padding-right: 30px;
     padding-left: 30px;
     margin-right: auto;
@@ -1824,11 +1780,12 @@ h2.title {
   .cart_info {
     border: 1px solid #E6E4DF;
     margin-bottom: 50px;
-    // background: aqua;
   }
 
   .container {
+    margin-bottom: 20px;
     background-color: #323336;
+    margin-top:20px;
     padding-right: 30px;
     padding-left: 30px;
     margin-right: auto;
@@ -1860,8 +1817,6 @@ h2.title {
   }
 }
 
-
-
 .cart_info table tr td {
   border-top: 0 none;
   vertical-align: inherit;
@@ -1883,13 +1838,13 @@ h2.title {
         font-family: 'Poppins',sans-serif;
         font-size: 20px;
         font-weight: normal;
-        margin-left: 30px;
+        margin-left: 10px;
       }
     }
 
     p {
       color: white;
-      margin-left: 30px;
+      margin-left: 10px;
     }
   }
 
@@ -1912,23 +1867,15 @@ h2.title {
 .cart_quantity_button a {
   background: #ffffff;
   color: black;
-  display: inline-flex;
-  font-size: 20px;
+  display: inline-block;
+  font-size: 16px;
   height: 28px;
   overflow: hidden;
   text-align: center;
-  width: 30px;
-
-
+  width: 35px;
 
   //float: left;
 }
-
-.cart_quantity_up {
-  text-align: center;
-  margin-left: 100px;
-}
-
 
 .cart_quantity_input {
   color: black;
@@ -1936,7 +1883,6 @@ h2.title {
   font-size: 16px;
   text-align: center;
   font-family: 'Poppins',sans-serif;
-  text-align: center;
 }
 
 .cart_delete {
@@ -2110,23 +2056,14 @@ select, textarea {
 **************************/
 
 
-#checkout-container{
-  margin-bottom:20px;
-}
 
 .step-one {
   margin-bottom: -10px;
 }
 
-
 .register-req, .step-one .heading {
-<<<<<<< HEAD
   display: none;
   background: none repeat scroll 0 0 #ffffff;
-=======
-  // display: none;
-  background: none repeat scroll 0 0 #F0F0E9;
->>>>>>> 50ba2638e326a0ac2525d60bb996d84fd5b4154f
   color: #363432;
   font-size: 20px;
   margin-bottom: 35px;
@@ -2135,7 +2072,7 @@ select, textarea {
 }
 
 .checkout-options {
-  // display: none;
+  display: none;
   padding-left: 20px;
 
   h3 {
@@ -2808,7 +2745,6 @@ select, textarea {
 
 .contact-form {
 
-
   
   .heading {
     text-transform: capitalize;
@@ -2827,7 +2763,7 @@ select, textarea {
 
     background-color: #fff;
     border: 1px solid #ddd;
-    color: black;
+    color: #84C9FB;
     height: 46px;
     padding: 6px 12px;
     width: 100%;
