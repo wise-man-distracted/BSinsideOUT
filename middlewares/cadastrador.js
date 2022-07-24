@@ -3,7 +3,7 @@ module.exports = (req, res, next) => {
         req.usuario = ""
         next()
     } else {
-        req.usuario = req.session.usuario;
+        req.usuario = "";
         next();
     }
 }

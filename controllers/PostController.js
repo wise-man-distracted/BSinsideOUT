@@ -34,7 +34,7 @@ module.exports = {
             
             const verificarUsuarioCadastrado = await Usuario.findOne({where:{email:email}})
             if (verificarUsuarioCadastrado) {
-                return res.render('error', {error: "Parece que sua identidade já está sendo usada por outro cavaleiro. Redefina seu email.", status: 409})
+                return res.render('error', {error: "Parece que sua identidade já está sendo usada por outro cavaleiro. Redefina seu email.", status: 409, usuario: req.usuario})
             }
 
             await Usuario.create({nome, nascimento, endereco, sexo, email, senha:hash})
