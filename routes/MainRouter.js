@@ -6,6 +6,7 @@ const cadastrador = require("../middlewares/cadastrador");
 const loginCheck = require("../middlewares/loginCheck");
 const allowLogin = require("../middlewares/allowLogin");
 const UpdateController = require("../controllers/UpdateController");
+const checkAdmin = require("../middlewares/checkAdmin");
 
 const router = express.Router();
 
@@ -31,8 +32,7 @@ router.post('/cadastro', cadastrador, PostController.cadastrar)
 router.post('/comentar', loginCheck, PostController.comentar)
 
 
-router.delete('/produto', loginCheck, UpdateController.deletarProduto)
-
-router.put('/produto', loginCheck, UpdateController.atualizarProduto )
+router.delete('/produto', loginCheck, checkAdmin, UpdateController.deletarProduto)
+router.put('/produto', loginCheck, checkAdmin, UpdateController.atualizarProduto)
 
 module.exports = router;

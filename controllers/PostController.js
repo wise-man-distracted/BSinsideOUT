@@ -9,11 +9,11 @@ module.exports = {
         try {
             u = await Usuario.findOne({where:{email}, raw: true, nest: true})
         } catch (error) {
-            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503})
+            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", status: 503, usuario: ""})
         }
 
         if(u === null) {
-            return res.render('error', {error: "Você precisa da permissão do cléro para acessar esse ambiente", status: 403})
+            return res.render('error', {error: "Você precisa da permissão do cléro para acessar esse ambiente", status: 403, usuario: ""})
         }
 
         let senhaOk = bcrypt.compareSync(senha, u.senha)
