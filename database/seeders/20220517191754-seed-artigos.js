@@ -6,11 +6,11 @@ module.exports = {
      await queryInterface.bulkInsert('artigos', [
     {
       id: 1,
-      titulo: "D&D: Unearthed Arcana: Opções Dracônicas",
+      titulo: "MORE COMPETITIVE FORMATS MIGHT BE TOO INTENSE",
       conteudo: `A primeira é um trio de opções de raça dracônica apresentadas como uma alternativa à raça draconato do Livro do Jogador, bem como uma nova visão da raça kobold. Em seguida, vem um punhado de opções de talentos que refletem uma conexão com o poder dracônico. Finalmente, uma seleção de feitiços – muitos deles com nomes de dragões famosos ou infames – oferece uma variedade de abordagens para manifestar a magia dracônica. A versão final desse material saiu nos livros Fizban Treasury of Dragons e Mordenkainen Presents: Monsters of the Multiverse.`,
       data: new Date(),
-      descricao_curta: "Aproveite o poder dos dragões nesta edição da Unearthed Arcana",
-      img_1: "https://www.rederpg.com.br/wp/wp-content/uploads/2016/07/Article_Feats-864x467.jpg",
+      descricao_curta: "As a Magic: The Gathering player gains experience and skill, they might feel ready to get into a more competitive format such as Modern or Legacy, only to be overwhelmed by what they find.",
+      img_1: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/grand-abolisher-mtg.jpg?q=50&fit=crop&w=750&dpr=1.5",
       img_2: "",
       img_3: "",
       usuarios_id: 2,
