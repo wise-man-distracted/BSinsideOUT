@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="breadcrumbs">
 			<ol class="breadcrumb">
-			  <li><a href="#">Home</a></li>
+			  <li><a href="/">Home</a></li>
 			  <li class="active">Check out</li>
 			</ol>
 		</div><!--/breadcrums-->
@@ -21,18 +21,18 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="shopper-info">
-						<p>Entrar na conta</p>
+						<p>Login</p>
 						<form>
 							<input type="email" placeholder="E-mail">
 							<input type="password" placeholder="Password">
 						</form>
-						<a class="btn btn-primary" href="">Cadastrar</a>
+						<a class="btn btn-primary" href="login">Cadastrar</a>
 						<a class="btn btn-primary" href="">Entrar</a>
 					</div>
 				</div>
 				<div class="col-sm-5 clearfix">
 					<div class="bill-to">
-						<p>Informações de pagamento e Endereço</p>
+						<p>Preencha o formulário</p>
 						<div class="form-one">
 							<form>
 								<input type="text" placeholder="Nome Completo *">
@@ -61,8 +61,8 @@
 				</div>
 				<div class="col-sm-3">
 					<div class="shopper-info">							
-						<a class="btn btn-primary" href="">PAGAR AGORA</a>
-						<a class="btn btn-primary" href="">REVISAR PEDIDO</a>
+						<a class="btn btn-primary" href="">Finalizar Compra</a>
+						<a class="btn btn-primary" href="#anchor1">Revisar Pedido</a>
 					</div>
 				</div>	
 				<div class="col-sm-4">	
@@ -72,7 +72,7 @@
 		</div>
 		<div class="review-payment">
 			
-			<h2>Revisar o pedido e Pagar</h2>
+			<h2><a name="anchor1">Revisar o pedido</a></h2>
 		</div>
 
 		<div class="table-responsive cart_info">
@@ -169,16 +169,16 @@
 						<td colspan="2">
 							<table class="table table-condensed total-result">
 								<tr>
-									<td>Cart Sub Total</td>
+									<td>Sub Total</td>
 									<td>$59</td>
 								</tr>
 								<tr>
-									<td>Exo Tax</td>
+									<td>Taxas</td>
 									<td>$2</td>
 								</tr>
 								<tr class="shipping-cost">
-									<td>Shipping Cost</td>
-									<td>Free</td>										
+									<td>Frete</td>
+									<td>Grátis</td>										
 								</tr>
 								<tr>
 									<td>Total</td>
@@ -190,16 +190,5 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="payment-options">
-				<span>
-					<label><input type="checkbox"> Direct Bank Transfer</label>
-				</span>
-				<span>
-					<label><input type="checkbox"> Check Payment</label>
-				</span>
-				<span>
-					<label><input type="checkbox"> Paypal</label>
-				</span>
-			</div>
-	</div>
+		
 </section>

@@ -263,7 +263,7 @@ border-bottom: 1px solid #f5f5f5;
 
     &:hover {
       color: #84C9FB;
-      background: #2A2A2A;
+      background: #141414;
     }
   }
 }
@@ -634,6 +634,33 @@ ul.sub-menu {
   padding-bottom: 45px;
   
 }
+@media (min-width: 701px) and (max-width: 768px) {
+  .mini-slide {    
+    display:none
+  }
+
+}
+@media (max-width: 700px) {
+  .mini-slide {    
+    display:none
+  }
+
+}
+
+
+.mini-slide{
+  
+  text-align: center;
+  max-height: 150px;
+  
+}
+.mini-slide img {
+  
+  text-align: center;
+  width:20%;
+  margin-left:auto;
+  margin-right: auto;
+}
 
 
 .carousel-inner {
@@ -644,6 +671,7 @@ ul.sub-menu {
   align-items: center;
   
 }
+
 
 .carousel-indicators li {
   background: #C4C4BE;
@@ -1260,7 +1288,7 @@ h2.title {
   overflow: hidden;
 
   ul {
-    background: #F7F7F0;
+    background: #4b4b0d;
     margin-bottom: 50px;
 
     li a:hover {
@@ -1523,7 +1551,7 @@ h2.title {
         }
 
         &:hover {
-          background: #fff;
+          background: #2A2A2A;
           color: #84C9FB;
         }
       }

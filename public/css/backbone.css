@@ -13990,7 +13990,7 @@ a#scrollUp i {
 }
 .shop-menu ul li a:hover {
   color: #84C9FB;
-  background: #2A2A2A;
+  background: #141414;
 }
 
 .header-bottom {
@@ -14318,6 +14318,28 @@ ul.sub-menu {
 
 #slider {
   padding-bottom: 45px;
+}
+
+@media (min-width: 701px) and (max-width: 768px) {
+  .mini-slide {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .mini-slide {
+    display: none;
+  }
+}
+.mini-slide {
+  text-align: center;
+  max-height: 150px;
+}
+
+.mini-slide img {
+  text-align: center;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-inner {
@@ -14879,7 +14901,7 @@ h2.title {
   overflow: hidden;
 }
 .our_partners ul {
-  background: #F7F7F0;
+  background: #4b4b0d;
   margin-bottom: 50px;
 }
 .our_partners ul li a:hover {
@@ -15107,7 +15129,7 @@ h2.title {
   padding-right: 8px;
 }
 #reviews ul li a:hover {
-  background: #fff;
+  background: #2A2A2A;
   color: #84C9FB;
 }
 #reviews form span {
