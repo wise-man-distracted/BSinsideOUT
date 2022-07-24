@@ -1,5 +1,6 @@
 const { Usuario, Comentario_Produto, Produto } = require('../models');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+const { Op } = require('sequelize');
 
 module.exports = {
     login : async (req, res) => {
@@ -53,6 +54,16 @@ module.exports = {
 
             res.redirect("back")
         } catch (error) {
+            return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", usuario: req.usuario, status: 500})
+        }
+    },
+    pesquisar: async (req, res) => {
+        try {
+            const busca = `%${req.body.busca}%`
+            const produtos = await Produto.findAll({ where: { nome: { [Op.like]: busca } }, raw: true, nest: true })
+            res.render("loja", {produtos, usuario : req.usuario})        
+        } catch (error) {
+            console.log(error)
             return res.render('error', {error: "O servidor pode estar ocupado numa sidequest. Tente novamente mais tarde", usuario: req.usuario, status: 500})
         }
     }

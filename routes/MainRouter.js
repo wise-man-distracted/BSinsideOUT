@@ -27,6 +27,7 @@ router.get('/sair', (req, res) => {
     res.render('index', {usuario: ""})
 })
 
+router.post('/search', loginCheck, PostController.pesquisar)
 router.post('/login', PostController.login)
 router.post('/cadastro', cadastrador, PostController.cadastrar)
 router.post('/comentar', loginCheck, PostController.comentar)
