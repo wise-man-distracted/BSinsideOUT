@@ -187,15 +187,17 @@ a#scrollUp {
   background-color:#141414;
 }
 
-.header-middle .container {
-  width: 100%;
+.header-middle {
   border-bottom: 1px solid #f5f5f5;
+ .container .row {
+  
+  
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 20px;
   padding-top: 20px;
-  padding-right: 50px;
-  padding-left: 50px;
+ }
+  
   
 
   .col-sm-8 {
@@ -261,7 +263,7 @@ a#scrollUp {
 
     &:hover {
       color: #84C9FB;
-      background: #141414;
+      background: #2A2A2A;
     }
   }
 }
